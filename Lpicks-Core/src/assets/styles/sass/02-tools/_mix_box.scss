@@ -1,0 +1,15 @@
+@mixin box($size: null) {
+    @if $size == small {
+        padding: $base-unit;
+    } @else if $size == base {
+        padding: $base-unit * 2;
+    } @else if $size == medium {
+        padding: $base-unit * 3;
+    } @else if $size == large {
+        padding: $base-unit * 4;
+    } @else if $size == xlarge {
+        padding: $base-unit * 6;
+    } @else if $size == xxlarge {
+        padding: $base-unit * 8;
+    }
+}

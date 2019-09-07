@@ -1,0 +1,22 @@
+// ==========================================================================
+// MIXIN: vishidden (visually hidden)
+// ==========================================================================
+
+//
+// An easy way to hide text from screen but not from screen-readers.
+//
+// USAGE:
+//
+// @include vishidden;
+//
+
+@mixin vishidden() {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}

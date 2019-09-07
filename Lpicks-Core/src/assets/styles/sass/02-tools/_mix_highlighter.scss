@@ -1,0 +1,21 @@
+// ==========================================================================
+// MIXIN: highlighter
+// ==========================================================================
+
+//
+// An easy way to highlight a text-element with a "brand"-typ highlight effect
+// using background-gradient.
+//
+// USAGE:
+//
+// @include highlighter($color);
+//
+
+@mixin highlighter($color: $klp-morning-red--light) {
+    background-image: linear-gradient(to bottom, transparent 60%, $color 60%);
+    padding: 0 0.15em;
+    margin: 0 -0.075em;
+    font-family: inherit;
+    text-decoration: none;
+    display: inline-block;
+}

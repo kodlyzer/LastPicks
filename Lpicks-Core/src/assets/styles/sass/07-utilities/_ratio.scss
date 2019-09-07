@@ -1,0 +1,65 @@
+// Intrinsic ratios - used to responsively scale iframes, videos, objects etc
+// ==========================================================================
+
+.kx-ratio {
+    @include ratio;
+}
+
+// The following rules uses `:` as part of the selector. To be able to do that
+// in CSS, we escape this special character with `\`, like this:
+//
+// .kx-ratio--4\:3 {...}
+//
+// Remember that you in your HTML, exclude this escape character, and just use the
+// more natural selector:
+//
+// <span class="kx-ratio kx-ratio--4:3"></span>
+//
+
+.kx-ratio--1\:1 {
+    &:before {
+        padding-bottom: calc((1/1) * 100%);
+    }
+}
+
+.kx-ratio--4\:3 {
+    &:before {
+        padding-bottom: calc((3/4) * 100%);
+    }
+}
+
+.kx-ratio--3\:2 {
+    &:before {
+        padding-bottom: calc((2/3) * 100%);
+    }
+}
+
+.kx-ratio--16\:10 {
+    &:before {
+        padding-bottom: calc((10/16) * 100%);
+    }
+}
+
+.kx-ratio--5\:3 {
+    &:before {
+        padding-bottom: calc((3/5) * 100%);
+    }
+}
+
+.kx-ratio--16\:9 {
+    &:before {
+        padding-bottom: calc((9/16) * 100%);
+    }
+}
+
+.kx-ratio--2\:1 {
+    &:before {
+        padding-bottom: calc((1/2) * 100%);
+    }
+}
+
+.kx-ratio--3\:1 {
+    &:before {
+        padding-bottom: calc((1/3) * 100%);
+    }
+}

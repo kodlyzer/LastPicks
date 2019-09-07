@@ -1,0 +1,55 @@
+// ==========================================================================
+// MIXIN: text-underline
+// ==========================================================================
+
+//
+// This mixin uses a linear gradient as background-image to emulate an underline
+// on the element (usually text-links). This is the same methods used at Medium.com
+// The size of the underline i relative to the font-size and will adjust accordingly.
+//
+// The mixin uses default values as sensible defaults if no parameters are passed to
+// the mixin. But these can be overridden by passing in values for $color an $color-hover.
+//
+// USAGE:
+//
+// @include text-underline;                         // Sensible defaults
+// @include text-underline($red, $blue);            // With overrides
+//
+
+@mixin text-underline($color: currentColor, $color--hover: currentColor) {
+    color: inherit;
+    text-decoration: none;
+    background-repeat: repeat-x;
+    background-size: 2px 0.1em;
+    background-position: 0 1.25em;
+    background-image: linear-gradient(#{$color}, #{$color});
+
+    &:hover,
+    &:focus {
+        color: #{$color--hover};
+    }
+}
+
+//
+// We also offer a reset-version that can be used if you need to remove the style
+// provided in the original mixin. A common use-case can be if you need a
+// block-element wrapped in a link, e.g. image wrapped inside a link.
+//
+// USAGE:
+//
+// @include reset-text-underline;
+//
+
+@mixin reset-text-underline {
+    color: inherit;
+    text-decoration: none;
+    background-repeat: initial;
+    background-size: initial;
+    background-position: initial;
+    background-image: initial;
+
+    &:hover,
+    &:focus {
+        background-image: initial;
+    }
+}

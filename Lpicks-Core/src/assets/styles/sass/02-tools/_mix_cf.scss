@@ -1,0 +1,21 @@
+// ==========================================================================
+// MIXIN: clearfix-micro
+// ==========================================================================
+
+//
+// This is a simpler version of the well known clearfix hack made by Nicolas
+// Gallagher. This version is simplified for more modern browsers
+// http://cssmojo.com/latest_new_clearfix_so_far/
+//
+// USAGE:
+//
+// @include cf;
+//
+
+@mixin cf {
+    &::after {
+        content: '';
+        display: table;
+        clear: both;
+    }
+}

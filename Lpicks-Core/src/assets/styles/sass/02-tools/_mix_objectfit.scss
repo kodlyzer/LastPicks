@@ -1,0 +1,20 @@
+@mixin objectfit {
+    position: relative;
+
+    .kx-objectfit__img {
+        @include cover;
+        position: absolute;
+        object-fit: cover;
+    }
+
+    &.kx-objectfit--compat {
+        background-size: cover;
+        background-position: center center;
+
+        // hide image if object fit is not supported
+        .kx-objectfit__img {
+            opacity: 0;
+        }
+    }
+}
+

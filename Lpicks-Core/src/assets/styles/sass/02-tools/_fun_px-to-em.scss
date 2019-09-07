@@ -1,0 +1,17 @@
+// ==========================================================================
+// FUNCTION: em
+// ==========================================================================
+
+//
+// This function automatically converts pixels to EMs with Sass so
+// that you don’t have to manually calculate them.
+//
+// The function takes two arguments, pixels and context.
+// You can either use the default context and specify only the pixels
+// you want to convert — or you can specify pixels and a custom context
+// for the conversion.
+//
+
+@function em($pixels, $context: $base-font-size) {
+    @return #{$pixels/$context}em;
+}

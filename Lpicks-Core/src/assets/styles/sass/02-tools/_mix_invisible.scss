@@ -1,0 +1,16 @@
+// ==========================================================================
+// MIXIN: hidden
+// ==========================================================================
+
+//
+// An easy way to hide an element visually, but preserve the elements space in
+// the layout.
+//
+// USAGE:
+//
+// @include invisible;
+//
+
+@mixin invisible() {
+    visibility: hidden;
+}

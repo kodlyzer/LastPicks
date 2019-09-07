@@ -1,0 +1,17 @@
+// ==========================================================================
+// MIXIN: type-weight
+// ==========================================================================
+
+//
+// This mixin takes a parameter for typographic weight (sass-map: $type-weight).
+// It then uses the function map-fetch to reach deep key:value pairs within
+// this map. Finally it outputs the correct weight.
+//
+// USAGE:
+//
+// @include type-weight(light);
+//
+
+@mixin type-weight($weight) {
+    font-weight: map-get($type-weight, $weight);
+}

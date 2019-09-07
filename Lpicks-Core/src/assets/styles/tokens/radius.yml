@@ -1,0 +1,9 @@
+# radius/props.yml
+global:
+  category: 'radius'
+  type: 'radius'
+props:
+  - name: 'radius-global'
+    value: '2px'
+    comment: 'Global border-radius'
+

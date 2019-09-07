@@ -1,0 +1,73 @@
+{
+  "_args": [
+    [
+      "quantity-queries@0.4.0",
+      "C:\\Users\\ronnyas\\Dev\\Projects\\DesignSystem"
+    ]
+  ],
+  "_development": true,
+  "_from": "quantity-queries@0.4.0",
+  "_id": "quantity-queries@0.4.0",
+  "_inBundle": false,
+  "_integrity": "sha1-jhBuKk8Wcg0I3MQuAjmxbz1x1fc=",
+  "_location": "/quantity-queries",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "quantity-queries@0.4.0",
+    "name": "quantity-queries",
+    "escapedName": "quantity-queries",
+    "rawSpec": "0.4.0",
+    "saveSpec": null,
+    "fetchSpec": "0.4.0"
+  },
+  "_requiredBy": [
+    "#DEV:/"
+  ],
+  "_resolved": "https://kdi.jfrog.io/kdi/api/npm/npm/quantity-queries/-/quantity-queries-0.4.0.tgz",
+  "_spec": "0.4.0",
+  "_where": "C:\\Users\\ronnyas\\Dev\\Projects\\DesignSystem",
+  "author": {
+    "name": "Daniel Guillan",
+    "email": "daniel.guillan@gmail.com"
+  },
+  "bugs": {
+    "url": "https://github.com/danielguillan/quantity-queries/issues"
+  },
+  "description": "Simple quantity queries mixins for Sass",
+  "directories": {
+    "test": "tests"
+  },
+  "eyeglass": {
+    "sassDir": "stylesheets",
+    "exports": false,
+    "name": "quantity-queries",
+    "needs": "*"
+  },
+  "homepage": "https://github.com/danielguillan/quantity-queries#readme",
+  "keywords": [
+    "sass",
+    "eyeglass-module",
+    "scss",
+    "css",
+    "quantity",
+    "query",
+    "at-least",
+    "at-most",
+    "between",
+    "exactly",
+    "count",
+    "elements"
+  ],
+  "license": "MIT",
+  "name": "quantity-queries",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danielguillan/quantity-queries.git"
+  },
+  "scripts": {
+    "test": "rake test"
+  },
+  "version": "0.4.0"
+}

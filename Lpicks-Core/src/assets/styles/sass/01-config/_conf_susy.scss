@@ -1,0 +1,18 @@
+// ==========================================================================
+// Susy 3 Grid settings
+// ==========================================================================
+
+// 12 symmetrical, fluid columns…
+// gutters are static, triggering calc()…
+// elements span equal columns & gutters…
+// containers span equal columns & gutters…
+
+$grid-columns: 12;
+
+$susy: (
+    'columns': susy-repeat($grid-columns),
+    'gutters': 1.5rem,
+    'container-spread': 'wide',
+    'spread': 'wide',
+    'svg-grid-colors': hsl(180, 50%, 80%)
+);

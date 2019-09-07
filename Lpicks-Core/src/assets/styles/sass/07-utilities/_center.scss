@@ -1,0 +1,15 @@
+// Absolute Center - To put stuff in the center of things using absolute position
+// ==========================================================================
+.kx-abcenter-x {
+    @include absolute-center(true, false);
+}
+
+.kx-abcenter-y {
+    @include absolute-center(false, true);
+}
+
+.kx-abcenter-xy {
+    @include absolute-center(true, true);
+}
+
+

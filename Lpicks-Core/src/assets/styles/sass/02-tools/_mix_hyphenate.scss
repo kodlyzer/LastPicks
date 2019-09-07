@@ -1,0 +1,20 @@
+// ==========================================================================
+// MIXIN: hyphenate
+// ==========================================================================
+
+//
+// Word-break is a property that can be used to change when line breaks ought
+// to occur. Normally, line breaks in text can only occur in certain spaces,
+// like when there is a space or a hyphen.
+//
+// USAGE:
+//
+// @include hyphenate;
+//
+
+@mixin hyphenate {
+    hyphens: auto;
+    word-break: break-all;
+    // Non standard for webkit
+    word-break: break-word;
+}

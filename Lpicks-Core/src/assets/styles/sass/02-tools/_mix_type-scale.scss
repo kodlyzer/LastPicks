@@ -1,0 +1,29 @@
+// ==========================================================================
+// MIXIN: type-scale
+// ==========================================================================
+
+//
+// This mixin takes a parameter for typographic scale (sass-map: $type-scale).
+// It then uses the function map-fetch to reach deep key:value pairs within
+// this map. Finally it outputs the correct pairing of font-size and
+// line-height, using the compass-mixin `adjust-font-size-to`.
+//
+// USAGE:
+//
+// @include type-scale(xxlarge);
+//
+
+@mixin type-scale($scale, $map: $type-scale) {
+    $font-size: map-fetch($map, $scale font-size);
+    $base-lines: map-fetch($map, $scale base-lines);
+    font-size: rem-calc($font-size);
+    line-height: rem-calc($base-lines * $base-unit);
+}
+
+@mixin make-type-scale-classes() {
+    @each $scale, $font-size, $base-lines in $type-scale {
+        .kx-typescale--#{$scale} {
+            @include type-scale($scale);
+        }
+    }
+}

@@ -1,0 +1,5 @@
+// Ellipsis - Three `...` at the end of a single line
+// ==========================================================================
+.kx-ellipsis {
+    @include truncate;
+}

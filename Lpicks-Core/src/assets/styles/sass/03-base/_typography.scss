@@ -1,0 +1,282 @@
+// ==========================================================================
+// BASE: Type definitions
+// ==========================================================================
+
+// Headers
+// ==========================================================================
+h1, h2, h3, h4, h5, h6 {
+    @include my(none);
+}
+
+p {
+    @include mb(none);
+}
+
+h1,
+.kx-h1 {
+    @include type-scale(xxxlarge);
+    @include type-weight(extra-bold);
+
+    @include mq($until: tab-m) {
+        @include type-scale(xxlarge);
+    }
+}
+
+h2,
+.kx-h2 {
+    @include type-scale(xxlarge);
+    @include type-weight(extra-bold);
+
+    @include mq($until: tab-m) {
+        @include type-scale(xlarge);
+    }
+}
+
+h3,
+.kx-h3 {
+    @include type-scale(xlarge);
+    @include type-weight(extra-bold);
+}
+
+h4,
+.kx-h4 {
+    @include type-scale(large);
+    @include type-weight(extra-bold);
+}
+
+h5,
+.kx-h5 {
+    @include type-scale(base);
+    @include type-weight(extra-bold);
+
+}
+
+h6,
+.kx-h6 {
+    @include type-scale(small);
+    @include type-weight(extra-bold);
+}
+
+// .kx-prose is used to wrap common tags used in editorial context. This creates
+// a good typographic foundation for your long-form text (prose).
+
+.kx-prose {
+    ul:not([class]),
+    ol:not([class]) {
+        padding: 0;
+
+        ul:not([class]),
+        ol:not([class]) {
+            @include mt(small);
+        }
+
+        li {
+            + li {
+                @include mt(small);
+            }
+        }
+    }
+
+    ul:not([class]) {
+        list-style: disc;
+    }
+
+    ol:not([class]) {
+        list-style: decimal;
+    }
+
+    [dir='ltr'] & {
+        ul:not([class]),
+        ol:not([class]) {
+            li {
+                @include ml(large);
+                @include pl(mini);
+            }
+        }
+    }
+
+    [dir='rtl'] & {
+        ul:not([class]),
+        ol:not([class]) {
+            li {
+                @include mr(large);
+                @include pr(mini);
+            }
+        }
+    }
+
+    blockquote {
+        @include pb(large);
+        @include pl(medium);
+        @include mt(xxlarge);
+        max-width: 80ch;
+        border-left: rem-calc(2) solid $color-black;
+        font-style: italic;
+
+    }
+
+    table {
+        @include table-base;
+        @include table-fit-tight;
+        @include table-border;
+        @include table-fluid;
+        @include table-rows;
+
+        thead {
+            background-color: $color-theme-foam-bg;
+            color: $color-theme-foam-txt;
+        }
+    }
+
+    img {
+        width: 100%;
+    }
+}
+
+// Spacing between elements
+// ==========================================================================
+p,
+ul,
+ol,
+dl,
+table,
+pre,
+blockquote,
+hr,
+figure,
+.kx-ui,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    + p,
+    + ul,
+    + ol,
+    + dl,
+    + table,
+    + pre,
+    + blockquote,
+    + hr,
+    + figure,
+    + .kx-ui,
+    + code {
+        @include mt(large);
+    }
+
+    + h1,
+    + h2 {
+        margin-top: rem-calc(44);
+    }
+
+    + h3,
+    + h4,
+    + h5,
+    + h6 {
+        margin-top: rem-calc(36);
+    }
+}
+
+h1,
+h2,
+h3 {
+    + p,
+    + ul,
+    + ol,
+    + dl,
+    + table,
+    + pre,
+    + blockquote,
+    + hr,
+    + figure,
+    + .kx-ui {
+        @include mt(base);
+    }
+}
+
+h4 {
+    + p,
+    + ul,
+    + ol,
+    + dl,
+    + table,
+    + pre,
+    + blockquote,
+    + hr,
+    + figure,
+    + .kx-ui {
+        @include mt(tiny);
+    }
+}
+
+h5,
+h6 {
+    + p,
+    + ul,
+    + ol,
+    + dl,
+    + table,
+    + pre,
+    + blockquote,
+    + hr,
+    + figure,
+    + .kx-ui {
+        @include mt(none);
+    }
+}
+
+// LoVe For HAte
+// We don't declare a:link. This causes high specificity for the <a>-element.
+// This is known to cause problem for button-classes that might be applied to
+// this tag. a:link {..} would override .kx-btn--primary {...} if the same
+// properties are declared in both rules.
+
+a {
+    &:not([class]) {
+        color: $color-link-txt;
+        outline: none;
+        transition: color $duration-fast ease-in-out, background-color $duration-fast ease-in-out;
+        text-decoration: underline;
+
+        // V
+        &:visited {
+            color: $color-link-txt-visited;
+        }
+
+        // F
+        &:focus {
+            outline: none;
+            color: $color-link-txt-focus !important;
+            background-color: $color-link-bg-focus;
+        }
+
+        // H
+        &:hover {
+            text-decoration: none;
+        }
+
+        // A
+        //&:active {
+        //
+        //}
+    }
+}
+
+@include make-type-scale-classes();
+
+.kx-typeweight--light {
+    font-weight: 300;
+}
+
+.kx-typeweight--regular {
+    font-weight: 400;
+}
+
+.kx-typeweight--bold {
+    font-weight: 600;
+}
+
+.kx-typeweight--extrabold {
+    font-weight: 700;
+}

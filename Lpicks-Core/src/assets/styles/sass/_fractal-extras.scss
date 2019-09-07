@@ -1,0 +1,98 @@
+@charset 'UTF-8';
+// ==========================================================================
+// Main stylesheet for your application
+// ==========================================================================
+
+// Swatches - Collections of colors, icons and such inside doc-pages
+// ==========================================================================
+
+.swatch__tile {
+    height: 5rem;
+
+    .swatch--color & {
+        margin: rem-calc(-12 -12 12 -12);
+
+    }
+
+    .swatch--icon & {
+        height: auto;
+    }
+}
+
+.swatch__info {
+    @include type-scale(small);
+    @include flex;
+    flex: 1 1 100%;
+    flex-direction: column;
+}
+
+.swatches {
+    list-style: none;
+    padding: 0 !important;
+}
+
+.box {
+    background: rgba($color-teal-06, 0.25);
+    color: $color-black;
+    box-shadow: rem-calc(0 0 0 1) $color-teal-06 inset;
+}
+
+.learn-more {
+    padding-top: rem-calc(28);
+    padding-bottom: rem-calc(20);
+    margin-top: rem-calc(44);
+    border-top: 1px solid $color-gray-02;
+}
+
+.kx-dodont {
+    @include reset-list;
+    @include flex;
+    @include justify-content-between;
+}
+
+.kx-dodont__item {
+    width: calc(50% - 12px);
+
+    img {
+        @include p(base);
+        display: block;
+        margin: 0;
+        max-width: 100%;
+        width: 100%;
+        border: 1px solid $color-gray-04;
+        border-bottom: 8px solid $color-green-06;
+    }
+
+    p:before {
+        @include type-weight(extra-bold);
+        content: 'Do';
+        text-transform: uppercase;
+        color: $color-green-06;
+
+    }
+}
+
+.kx-dodont__item--dont {
+    img {
+        border-bottom-color: $color-red-06;
+    }
+
+    p:before {
+        content: 'Don\'t';
+        color: $color-red-06;
+    }
+}
+
+.kx-spaceboxes {
+    @include reset-list;
+}
+
+.kx-spaceboxes__item {
+    @include py(small);
+    @include flex;
+    @include align-items-center;
+
+    + .kx-spaceboxes__item {
+        border-top: 1px solid $color-gray-02;
+    }
+}

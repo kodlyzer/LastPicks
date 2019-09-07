@@ -1,0 +1,719 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2543.22 3381.67">
+  <title>Breakpoint Graph</title>
+  <g id="BG">
+    <rect width="3096" height="5764" fill="#fff"/>
+  </g>
+  <g id="Bullets">
+    <g>
+      <rect x="2385" y="103" width="14" height="68" fill="#00738e" opacity="0.13"/>
+      <rect x="2409" y="103" width="14" height="68" fill="#00738e" opacity="0.13"/>
+      <rect x="2433" y="103" width="14" height="68" fill="#00738e" opacity="0.13"/>
+      <rect x="2457" y="103" width="14" height="68" fill="#00738e" opacity="0.13"/>
+      <rect x="359" y="103" width="2016" height="68" fill="#00738e" opacity="0.13"/>
+      <rect x="359" y="103" width="1921" height="68" fill="#00738e" opacity="0.13"/>
+      <rect x="359" y="103" width="1441" height="68" fill="#00738e" opacity="0.13"/>
+      <rect x="359" y="103" width="1025" height="68" fill="#00738e" opacity="0.13"/>
+      <rect x="359" y="103" width="769" height="68" fill="#00738e" opacity="0.13"/>
+      <rect x="359" y="103" width="376" height="68" fill="#00738e" opacity="0.13"/>
+      <rect x="359" y="103" width="321" height="68" fill="#00738e" opacity="0.13"/>
+    </g>
+    <g>
+      <line x1="359" y1="137" x2="2372" y2="137" fill="none" stroke="#004758" stroke-miterlimit="10" stroke-width="8"/>
+      <g>
+        <ellipse cx="2362.72" cy="123.06" rx="3.04" ry="4" fill="#004758"/>
+        <ellipse cx="2372.91" cy="136.5" rx="3.04" ry="4" fill="#004758"/>
+        <polygon points="2375.06 133.67 2364.86 120.24 2360.57 125.89 2370.77 139.33 2375.06 133.67" fill="#004758"/>
+      </g>
+      <g>
+        <ellipse cx="2362.72" cy="149.94" rx="3.04" ry="4" fill="#004758"/>
+        <ellipse cx="2372.91" cy="136.5" rx="3.04" ry="4" fill="#004758"/>
+        <polygon points="2370.77 133.67 2360.57 147.11 2364.86 152.76 2375.06 139.33 2370.77 133.67" fill="#004758"/>
+      </g>
+    </g>
+    <g id="dtp">
+      <g>
+        <g>
+          <circle cx="2280" cy="137" r="20" fill="#fff"/>
+          <path d="M2280,121a16,16,0,1,1-16,16,16,16,0,0,1,16-16m0-8a24,24,0,1,0,24,24,24,24,0,0,0-24-24Z" fill="#004758"/>
+        </g>
+        <circle cx="2280" cy="137" r="9"/>
+        <text transform="translate(2256.38 95.08)" font-size="24" font-family="MyriadPro-Regular, Myriad Pro">1920</text>
+      </g>
+      <text transform="translate(2263.43 202.08)" font-size="24" font-family="MyriadPro-Regular, Myriad Pro">dtp</text>
+    </g>
+    <g id="ltp-m">
+      <g>
+        <g>
+          <circle cx="1800" cy="137" r="20" fill="#fff"/>
+          <path d="M1800,121a16,16,0,1,1-16,16,16,16,0,0,1,16-16m0-8a24,24,0,1,0,24,24,24,24,0,0,0-24-24Z" fill="#004758"/>
+        </g>
+        <circle cx="1800" cy="137" r="9"/>
+        <text transform="translate(1775.38 95.08)" font-size="24" font-family="MyriadPro-Regular, Myriad Pro">1440</text>
+      </g>
+      <text transform="translate(1772.5 202.08)" font-size="24" font-family="MyriadPro-Regular, Myriad Pro">lt<tspan x="13.61" y="0" letter-spacing="0.01em">p</tspan><tspan x="27.62" y="0" letter-spacing="0em">-m</tspan></text>
+    </g>
+    <g id="ltp-s">
+      <g>
+        <g>
+          <circle cx="1640" cy="137" r="20" fill="#fff"/>
+          <path d="M1640,121a16,16,0,1,1-16,16,16,16,0,0,1,16-16m0-8a24,24,0,1,0,24,24,24,24,0,0,0-24-24Z" fill="#004758"/>
+        </g>
+        <circle cx="1640" cy="137" r="9"/>
+        <text transform="translate(1615.38 95.08)" font-size="24" font-family="MyriadPro-Regular, Myriad Pro">1280</text>
+      </g>
+      <text transform="translate(1617.75 202.08)" font-size="24" font-family="MyriadPro-Regular, Myriad Pro">lt<tspan x="13.61" y="0" letter-spacing="0.01em">p</tspan><tspan x="27.62" y="0" letter-spacing="0em">-s</tspan></text>
+    </g>
+    <g id="tab-l">
+      <g>
+        <g>
+          <circle cx="1384" cy="137" r="20" fill="#fff"/>
+          <path d="M1384,121a16,16,0,1,1-16,16,16,16,0,0,1,16-16m0-8a24,24,0,1,0,24,24,24,24,0,0,0-24-24Z" fill="#004758"/>
+        </g>
+        <circle cx="1384" cy="137" r="9"/>
+        <text transform="translate(1359.38 95.08)" font-size="24" font-family="MyriadPro-Regular, Myriad Pro">1024</text>
+      </g>
+      <text transform="translate(1360.72 202.08)" font-size="24" font-family="MyriadPro-Regular, Myriad Pro">ta<tspan x="19.51" y="0" letter-spacing="0.01em">b</tspan><tspan x="33.53" y="0">-l</tspan></text>
+    </g>
+    <g id="tab-m">
+      <g>
+        <g>
+          <circle cx="1128" cy="137" r="20" fill="#fff"/>
+          <path d="M1128,121a16,16,0,1,1-16,16,16,16,0,0,1,16-16m0-8a24,24,0,1,0,24,24,24,24,0,0,0-24-24Z" fill="#004758"/>
+        </g>
+        <circle cx="1128" cy="137" r="9"/>
+        <text transform="translate(1110.53 95.08)" font-size="24" font-family="MyriadPro-Regular, Myriad Pro">768</text>
+      </g>
+      <text transform="translate(1097.54 202.08)" font-size="24" font-family="MyriadPro-Regular, Myriad Pro">ta<tspan x="19.51" y="0" letter-spacing="0.01em">b</tspan><tspan x="33.53" y="0">-m</tspan></text>
+    </g>
+    <g id="tab-s">
+      <g>
+        <g>
+          <circle cx="960" cy="137" r="20" fill="#fff"/>
+          <path d="M960,121a16,16,0,1,1-16,16,16,16,0,0,1,16-16m0-8a24,24,0,1,0,24,24,24,24,0,0,0-24-24Z" fill="#004758"/>
+        </g>
+        <circle cx="960" cy="137" r="9"/>
+        <text transform="translate(942.53 95.08)" font-size="24" font-family="MyriadPro-Regular, Myriad Pro">600</text>
+      </g>
+      <text transform="translate(934.8 202.08)" font-size="24" font-family="MyriadPro-Regular, Myriad Pro">ta<tspan x="19.51" y="0" letter-spacing="0.01em">b</tspan><tspan x="33.53" y="0">-s</tspan></text>
+    </g>
+    <g id="mod-m">
+      <g>
+        <g>
+          <circle cx="735" cy="137" r="20" fill="#fff"/>
+          <path d="M735,121a16,16,0,1,1-16,16,16,16,0,0,1,16-16m0-8a24,24,0,1,0,24,24,24,24,0,0,0-24-24Z" fill="#004758"/>
+        </g>
+        <circle cx="735" cy="137" r="9"/>
+        <text transform="translate(716.53 95.08)" font-size="24" font-family="MyriadPro-Regular, Myriad Pro">375</text>
+      </g>
+      <text transform="translate(716.7 202.08)" font-size="24" font-family="MyriadPro-Regular, Myriad Pro">mo<tspan x="33.19" y="0" letter-spacing="0.01em">b</tspan><tspan x="47.21" y="0">-m</tspan></text>
+    </g>
+    <g id="mob-s">
+      <g>
+        <g>
+          <circle cx="680" cy="137" r="20" fill="#fff"/>
+          <path d="M680,121a16,16,0,1,1-16,16,16,16,0,0,1,16-16m0-8a24,24,0,1,0,24,24,24,24,0,0,0-24-24Z" fill="#004758"/>
+        </g>
+        <circle cx="680" cy="137" r="9"/>
+        <text transform="translate(661.53 95.08)" font-size="24" font-family="MyriadPro-Regular, Myriad Pro">320</text>
+      </g>
+      <text transform="translate(637.96 202.08)" font-size="24" font-family="MyriadPro-Regular, Myriad Pro">mo<tspan x="33.19" y="0" letter-spacing="0.01em">b</tspan><tspan x="47.21" y="0">-s</tspan></text>
+    </g>
+    <g id="all">
+      <g>
+        <g>
+          <circle cx="359" cy="137" r="20" fill="#fff"/>
+          <path d="M359,121a16,16,0,1,1-16,16,16,16,0,0,1,16-16m0-8a24,24,0,1,0,24,24,24,24,0,0,0-24-24Z" fill="#004758"/>
+        </g>
+        <circle cx="359" cy="137" r="9"/>
+        <text transform="translate(352.84 95.08)" font-size="24" font-family="MyriadPro-Regular, Myriad Pro">0</text>
+      </g>
+      <text transform="translate(347.55 202.08)" font-size="24" font-family="MyriadPro-Regular, Myriad Pro">all</text>
+    </g>
+  </g>
+  <g id="Columns">
+    <line id="_0" data-name="0" x1="359" y1="211.85" x2="359" y2="3317" fill="none" stroke="#bfbfbf" stroke-miterlimit="10" stroke-width="8"/>
+    <line id="_320" data-name="320" x1="680" y1="211.85" x2="680" y2="3317" fill="none" stroke="#bfbfbf" stroke-miterlimit="10" stroke-width="8"/>
+    <line id="_375" data-name="375" x1="735" y1="211.65" x2="735" y2="3317" fill="none" stroke="#bfbfbf" stroke-miterlimit="10" stroke-width="8"/>
+    <line id="_600" data-name="600" x1="960" y1="211.85" x2="960" y2="3317" fill="none" stroke="#bfbfbf" stroke-miterlimit="10" stroke-width="8"/>
+    <line id="_768" data-name="768" x1="1128" y1="211.85" x2="1128" y2="3317" fill="none" stroke="#bfbfbf" stroke-miterlimit="10" stroke-width="8"/>
+    <line id="_1024" data-name="1024" x1="1384" y1="211.85" x2="1384" y2="3317" fill="none" stroke="#bfbfbf" stroke-miterlimit="10" stroke-width="8"/>
+    <line id="_1280" data-name="1280" x1="1640" y1="211.85" x2="1640" y2="3317" fill="none" stroke="#bfbfbf" stroke-miterlimit="10" stroke-width="8"/>
+    <line id="_1440" data-name="1440" x1="1800" y1="211.85" x2="1800" y2="3317" fill="none" stroke="#bfbfbf" stroke-miterlimit="10" stroke-width="8"/>
+    <line id="_1920" data-name="1920" x1="2280" y1="212" x2="2280" y2="3317" fill="none" stroke="#bfbfbf" stroke-miterlimit="10" stroke-width="8"/>
+  </g>
+  <g id="Graphs">
+    <g id="from_dtp" data-name="from dtp">
+      <g>
+        <line x1="359" y1="3246" x2="363" y2="3246" fill="none" stroke="#bfbfbf" stroke-miterlimit="10" stroke-width="8"/>
+        <line x1="371" y1="3246" x2="2272" y2="3246" fill="none" stroke="#bfbfbf" stroke-miterlimit="10" stroke-width="8" stroke-dasharray="8 8"/>
+        <line x1="2276" y1="3246" x2="2280" y2="3246" fill="none" stroke="#bfbfbf" stroke-miterlimit="10" stroke-width="8"/>
+      </g>
+      <g>
+        <line x1="2299.77" y1="3246" x2="2355.23" y2="3246" fill="none" stroke="#0084a3" stroke-miterlimit="10" stroke-width="8"/>
+        <polygon points="2280 3246 2307.86 3257.38 2301.25 3246 2307.86 3234.62 2280 3246" fill="#0084a3"/>
+        <polygon points="2375 3246 2347.14 3257.38 2353.75 3246 2347.14 3234.62 2375 3246" fill="#0084a3"/>
+      </g>
+      <text transform="translate(250.97 3253.04)" font-size="24" font-family="MyriadPro-Regular, Myriad Pro">f<tspan x="7.01" y="0" letter-spacing="-0.01em">r</tspan><tspan x="14.62" y="0" letter-spacing="0em">om dtp</tspan></text>
+    </g>
+    <g id="until_dtp" data-name="until dtp">
+      <g>
+        <line x1="359" y1="3177.11" x2="363" y2="3177.11" fill="none" stroke="#bfbfbf" stroke-miterlimit="10" stroke-width="8"/>
+        <line x1="371" y1="3177.11" x2="2272" y2="3177.11" fill="none" stroke="#bfbfbf" stroke-miterlimit="10" stroke-width="8" stroke-dasharray="8 8"/>
+        <line x1="2276" y1="3177.11" x2="2280" y2="3177.11" fill="none" stroke="#bfbfbf" stroke-miterlimit="10" stroke-width="8"/>
+      </g>
+      <g>
+        <line x1="378.77" y1="3177.11" x2="2260.23" y2="3177.11" fill="none" stroke="#0084a3" stroke-miterlimit="10" stroke-width="8"/>
+        <polygon points="359 3177.11 386.86 3188.49 380.25 3177.11 386.86 3165.73 359 3177.11" fill="#0084a3"/>
+        <polygon points="2280 3177.11 2252.14 3188.49 2258.75 3177.11 2252.14 3165.73 2280 3177.11" fill="#0084a3"/>
+      </g>
+      <text transform="translate(256.11 3184.15)" font-size="24" font-family="MyriadPro-Regular, Myriad Pro">u<tspan x="13.22" y="0" letter-spacing="0em">n</tspan><tspan x="26.45" y="0">til dtp</tspan></text>
+    </g>
+    <g id="from_ltp-m" data-name="from ltp-m">
+      <text transform="translate(231.1 3115.26)" font-size="24" font-family="MyriadPro-Regular, Myriad Pro">f<tspan x="7.01" y="0" letter-spacing="-0.01em">r</tspan><tspan x="14.62" y="0" letter-spacing="0em">om lt</tspan><tspan x="66.5" y="0" letter-spacing="0.01em">p</tspan><tspan x="80.52" y="0" letter-spacing="0em">-m</tspan></text>
+      <g>
+        <line x1="359" y1="3108.22" x2="363" y2="3108.22" fill="none" stroke="#bfbfbf" stroke-miterlimit="10" stroke-width="8"/>
+        <line x1="371" y1="3108.22" x2="2272" y2="3108.22" fill="none" stroke="#bfbfbf" stroke-miterlimit="10" stroke-width="8" stroke-dasharray="8 8"/>
+        <line x1="2276" y1="3108.22" x2="2280" y2="3108.22" fill="none" stroke="#bfbfbf" stroke-miterlimit="10" stroke-width="8"/>
+      </g>
+      <g>
+        <line x1="1816.82" y1="3108.22" x2="2355.23" y2="3108.22" fill="none" stroke="#0084a3" stroke-miterlimit="10" stroke-width="8"/>
+        <polygon points="1797.05 3108.22 1824.91 3119.6 1818.3 3108.22 1824.91 3096.84 1797.05 3108.22" fill="#0084a3"/>
+        <polygon points="2375 3108.22 2347.14 3119.6 2353.75 3108.22 2347.14 3096.84 2375 3108.22" fill="#0084a3"/>
+      </g>
+    </g>
+    <g id="from_ltp-m_until_dtp" data-name="from ltp-m until dtp">
+      <text transform="translate(143.11 3046.37)" font-size="24" font-family="MyriadPro-Regular, Myriad Pro">f<tspan x="7.01" y="0" letter-spacing="-0.01em">r</tspan><tspan x="14.62" y="0">om lt</tspan><tspan x="66.5" y="0" letter-spacing="0.01em">p</tspan><tspan x="80.52" y="0">-m u</tspan><tspan x="126.21" y="0" letter-spacing="0em">n</tspan><tspan x="139.44" y="0">til dtp</tspan></text>
+      <g>
+        <line x1="359" y1="3039.33" x2="363" y2="3039.33" fill="none" stroke="#bfbfbf" stroke-miterlimit="10" stroke-width="8"/>
+        <line x1="371" y1="3039.33" x2="2272" y2="3039.33" fill="none" stroke="#bfbfbf" stroke-miterlimit="10" stroke-width="8" stroke-dasharray="8 8"/>
+        <line x1="2276" y1="3039.33" x2="2280" y2="3039.33" fill="none" stroke="#bfbfbf" stroke-miterlimit="10" stroke-width="8"/>
+      </g>
+      <g>
+        <line x1="1819.77" y1="3039.33" x2="2260.23" y2="3039.33" fill="none" stroke="#0084a3" stroke-miterlimit="10" stroke-width="8"/>
+        <polygon points="1800 3039.33 1827.86 3050.71 1821.25 3039.33 1827.86 3027.95 1800 3039.33" fill="#0084a3"/>
+        <polygon points="2280 3039.33 2252.14 3050.71 2258.75 3039.33 2252.14 3027.95 2280 3039.33" fill="#0084a3"/>
+      </g>
+    </g>
+    <g id="until_ltp-m" data-name="until ltp-m">
+      <text transform="translate(236.23 2977.48)" font-size="24" font-family="MyriadPro-Regular, Myriad Pro">u<tspan x="13.22" y="0" letter-spacing="0em">n</tspan><tspan x="26.45" y="0">til lt</tspan><tspan x="64.37" y="0" letter-spacing="0.01em">p</tspan><tspan x="78.38" y="0">-m</tspan></text>
+      <g>
+        <line x1="359" y1="2970.43" x2="363" y2="2970.43" fill="none" stroke="#bfbfbf" stroke-miterlimit="10" stroke-width="8"/>
+        <line x1="371" y1="2970.43" x2="2272" y2="2970.43" fill="none" stroke="#bfbfbf" stroke-miterlimit="10" stroke-width="8" stroke-dasharray="8 8"/>
+        <line x1="2276" y1="2970.43" x2="2280" y2="2970.43" fill="none" stroke="#bfbfbf" stroke-miterlimit="10" stroke-width="8"/>
+      </g>
+      <g>
+        <line x1="378.77" y1="2970.43" x2="1780.23" y2="2970.43" fill="none" stroke="#0084a3" stroke-miterlimit="10" stroke-width="8"/>
+        <polygon points="359 2970.43 386.86 2981.82 380.25 2970.43 386.86 2959.05 359 2970.43" fill="#0084a3"/>
+        <polygon points="1800 2970.43 1772.14 2981.82 1778.75 2970.43 1772.14 2959.05 1800 2970.43" fill="#0084a3"/>
+      </g>
+    </g>
+    <g id="from_ltp-s" data-name="from ltp-s">
+      <g>
+        <line x1="359" y1="2901.54" x2="363" y2="2901.54" fill="none" stroke="#bfbfbf" stroke-miterlimit="10" stroke-width="8"/>
+        <line x1="371" y1="2901.54" x2="2272" y2="2901.54" fill="none" stroke="#bfbfbf" stroke-miterlimit="10" stroke-width="8" stroke-dasharray="8 8"/>
+        <line x1="2276" y1="2901.54" x2="2280" y2="2901.54" fill="none" stroke="#bfbfbf" stroke-miterlimit="10" stroke-width="8"/>
+      </g>
+      <g>
+        <line x1="1659.77" y1="2901.54" x2="2355.23" y2="2901.54" fill="none" stroke="#0084a3" stroke-miterlimit="10" stroke-width="8"/>
+        <polygon points="1640 2901.54 1667.86 2912.93 1661.25 2901.54 1667.86 2890.16 1640 2901.54" fill="#0084a3"/>
+        <polygon points="2375 2901.54 2347.14 2912.93 2353.75 2901.54 2347.14 2890.16 2375 2901.54" fill="#0084a3"/>
+      </g>
+      <text transform="translate(235.61 2908.59)" font-size="24" font-family="MyriadPro-Regular, Myriad Pro">f<tspan x="7.01" y="0" letter-spacing="-0.01em">r</tspan><tspan x="14.62" y="0">om lt</tspan><tspan x="66.5" y="0" letter-spacing="0.01em">p</tspan><tspan x="80.52" y="0">-s</tspan></text>
+    </g>
+    <g id="from_ltp-s_until_dtp" data-name="from ltp-s until dtp">
+      <text transform="translate(153.63 2839.7)" font-size="24" font-family="MyriadPro-Regular, Myriad Pro">f<tspan x="7.01" y="0" letter-spacing="-0.01em">r</tspan><tspan x="14.62" y="0" letter-spacing="0em">om lt</tspan><tspan x="66.5" y="0" letter-spacing="0.01em">p</tspan><tspan x="80.52" y="0" letter-spacing="0em">-s u</tspan><tspan x="115.7" y="0" letter-spacing="0em">n</tspan><tspan x="128.93" y="0" letter-spacing="0em">til dtp</tspan></text>
+      <g>
+        <line x1="359" y1="2831.65" x2="363" y2="2831.65" fill="none" stroke="#bfbfbf" stroke-miterlimit="10" stroke-width="8"/>
+        <line x1="371" y1="2831.65" x2="2272" y2="2831.65" fill="none" stroke="#bfbfbf" stroke-miterlimit="10" stroke-width="8" stroke-dasharray="8 8"/>
+        <line x1="2276" y1="2831.65" x2="2280" y2="2831.65" fill="none" stroke="#bfbfbf" stroke-miterlimit="10" stroke-width="8"/>
+      </g>
+      <g>
+        <line x1="1659.77" y1="2832.65" x2="2260.23" y2="2832.65" fill="none" stroke="#0084a3" stroke-miterlimit="10" stroke-width="8"/>
+        <polygon points="1640 2832.65 1667.86 2844.04 1661.25 2832.65 1667.86 2821.27 1640 2832.65" fill="#0084a3"/>
+        <polygon points="2280 2832.65 2252.14 2844.04 2258.75 2832.65 2252.14 2821.27 2280 2832.65" fill="#0084a3"/>
+      </g>
+    </g>
+    <g id="from_ltp-s_until_ltp-m" data-name="from ltp-s until ltp-m">
+      <text transform="translate(130.76 2770.81)" font-size="24" font-family="MyriadPro-Regular, Myriad Pro">f<tspan x="7.01" y="0" letter-spacing="-0.01em">r</tspan><tspan x="14.62" y="0" letter-spacing="0em">om lt</tspan><tspan x="66.5" y="0" letter-spacing="0.01em">p</tspan><tspan x="80.52" y="0" letter-spacing="0em">-s u</tspan><tspan x="115.7" y="0" letter-spacing="0em">n</tspan><tspan x="128.93" y="0" letter-spacing="0em">til lt</tspan><tspan x="166.84" y="0" letter-spacing="0.01em">p</tspan><tspan x="180.86" y="0" letter-spacing="0em">-m</tspan></text>
+      <g>
+        <line x1="359" y1="2763.76" x2="363" y2="2763.76" fill="none" stroke="#bfbfbf" stroke-miterlimit="10" stroke-width="8"/>
+        <line x1="371" y1="2763.76" x2="2272" y2="2763.76" fill="none" stroke="#bfbfbf" stroke-miterlimit="10" stroke-width="8" stroke-dasharray="8 8"/>
+        <line x1="2276" y1="2763.76" x2="2280" y2="2763.76" fill="none" stroke="#bfbfbf" stroke-miterlimit="10" stroke-width="8"/>
+      </g>
+      <g>
+        <line x1="1659.77" y1="2763.76" x2="1780.23" y2="2763.76" fill="none" stroke="#0084a3" stroke-miterlimit="10" stroke-width="8"/>
+        <polygon points="1640 2763.76 1667.86 2775.14 1661.25 2763.76 1667.86 2752.38 1640 2763.76" fill="#0084a3"/>
+        <polygon points="1800 2763.76 1772.14 2775.14 1778.75 2763.76 1772.14 2752.38 1800 2763.76" fill="#0084a3"/>
+      </g>
+    </g>
+    <g id="until_ltp-s" data-name="until ltp-s">
+      <text transform="translate(243.75 2701.91)" font-size="24" font-family="MyriadPro-Regular, Myriad Pro">u<tspan x="13.22" y="0" letter-spacing="0em">n</tspan><tspan x="26.45" y="0">til lt</tspan><tspan x="64.37" y="0" letter-spacing="0.01em">p</tspan><tspan x="78.38" y="0">-s</tspan></text>
+      <g>
+        <line x1="359" y1="2694.87" x2="363" y2="2694.87" fill="none" stroke="#bfbfbf" stroke-miterlimit="10" stroke-width="8"/>
+        <line x1="371" y1="2694.87" x2="2272" y2="2694.87" fill="none" stroke="#bfbfbf" stroke-miterlimit="10" stroke-width="8" stroke-dasharray="8 8"/>
+        <line x1="2276" y1="2694.87" x2="2280" y2="2694.87" fill="none" stroke="#bfbfbf" stroke-miterlimit="10" stroke-width="8"/>
+      </g>
+      <g>
+        <line x1="378.77" y1="2694.87" x2="1618.23" y2="2694.87" fill="none" stroke="#0084a3" stroke-miterlimit="10" stroke-width="8"/>
+        <polygon points="359 2694.87 386.86 2706.25 380.25 2694.87 386.86 2683.49 359 2694.87" fill="#0084a3"/>
+        <polygon points="1638 2694.87 1610.14 2706.25 1616.75 2694.87 1610.14 2683.49 1638 2694.87" fill="#0084a3"/>
+      </g>
+    </g>
+    <g id="from_tab-l" data-name="from tab-l">
+      <g>
+        <line x1="359" y1="2625.93" x2="363" y2="2625.93" fill="none" stroke="#bfbfbf" stroke-miterlimit="10" stroke-width="8"/>
+        <line x1="371" y1="2625.93" x2="2272" y2="2626.03" fill="none" stroke="#bfbfbf" stroke-miterlimit="10" stroke-width="8" stroke-dasharray="8 8"/>
+        <line x1="2276" y1="2626.03" x2="2280" y2="2626.03" fill="none" stroke="#bfbfbf" stroke-miterlimit="10" stroke-width="8"/>
+      </g>
+      <g>
+        <line x1="1403.77" y1="2625.98" x2="2355.23" y2="2625.98" fill="none" stroke="#0084a3" stroke-miterlimit="10" stroke-width="8"/>
+        <polygon points="1384 2625.98 1411.86 2637.36 1405.25 2625.98 1411.86 2614.6 1384 2625.98" fill="#0084a3"/>
+        <polygon points="2375 2625.98 2347.14 2637.36 2353.75 2625.98 2347.14 2614.6 2375 2625.98" fill="#0084a3"/>
+      </g>
+      <text transform="translate(239.55 2633.02)" font-size="24" font-family="MyriadPro-Regular, Myriad Pro">f<tspan x="7.01" y="0" letter-spacing="-0.01em">r</tspan><tspan x="14.62" y="0" letter-spacing="0em">om ta</tspan><tspan x="72.41" y="0" letter-spacing="0.01em">b</tspan><tspan x="86.42" y="0">-l</tspan></text>
+    </g>
+    <g id="from_tab-l_until_dtp" data-name="from tab-l until dtp">
+      <text transform="translate(148.56 2564.13)" font-size="24" font-family="MyriadPro-Regular, Myriad Pro">f<tspan x="7.01" y="0" letter-spacing="-0.01em">r</tspan><tspan x="14.62" y="0">om ta</tspan><tspan x="72.41" y="0" letter-spacing="0.01em">b</tspan><tspan x="86.42" y="0">-l u</tspan><tspan x="117.77" y="0" letter-spacing="0em">n</tspan><tspan x="130.99" y="0" letter-spacing="0em">til dtp</tspan></text>
+      <g>
+        <line x1="359" y1="2557.09" x2="363" y2="2557.09" fill="none" stroke="#bfbfbf" stroke-miterlimit="10" stroke-width="8"/>
+        <line x1="371" y1="2557.09" x2="2272" y2="2557.09" fill="none" stroke="#bfbfbf" stroke-miterlimit="10" stroke-width="8" stroke-dasharray="8 8"/>
+        <line x1="2276" y1="2557.09" x2="2280" y2="2557.09" fill="none" stroke="#bfbfbf" stroke-miterlimit="10" stroke-width="8"/>
+      </g>
+      <g>
+        <line x1="1403.77" y1="2557.09" x2="2260.23" y2="2557.09" fill="none" stroke="#0084a3" stroke-miterlimit="10" stroke-width="8"/>
+        <polygon points="1384 2557.09 1411.86 2568.47 1405.25 2557.09 1411.86 2545.71 1384 2557.09" fill="#0084a3"/>
+        <polygon points="2280 2557.09 2252.14 2568.47 2258.75 2557.09 2252.14 2545.71 2280 2557.09" fill="#0084a3"/>
+      </g>
+    </g>
+    <g id="from_tab-l_until_ltp-m" data-name="from tab-l until ltp-m">
+      <text transform="translate(128.69 2495.24)" font-size="24" font-family="MyriadPro-Regular, Myriad Pro">f<tspan x="7.01" y="0" letter-spacing="-0.01em">r</tspan><tspan x="14.62" y="0" letter-spacing="0em">om ta</tspan><tspan x="72.41" y="0" letter-spacing="0.01em">b</tspan><tspan x="86.42" y="0">-l u</tspan><tspan x="117.77" y="0" letter-spacing="0em">n</tspan><tspan x="130.99" y="0" letter-spacing="0em">til lt</tspan><tspan x="168.91" y="0" letter-spacing="0.01em">p</tspan><tspan x="182.92" y="0">-m</tspan></text>
+      <g>
+        <line x1="359" y1="2488.2" x2="363" y2="2488.2" fill="none" stroke="#bfbfbf" stroke-miterlimit="10" stroke-width="8"/>
+        <line x1="371" y1="2488.2" x2="2272" y2="2488.2" fill="none" stroke="#bfbfbf" stroke-miterlimit="10" stroke-width="8" stroke-dasharray="8 8"/>
+        <line x1="2276" y1="2488.2" x2="2280" y2="2488.2" fill="none" stroke="#bfbfbf" stroke-miterlimit="10" stroke-width="8"/>
+      </g>
+      <g>
+        <line x1="1403.77" y1="2488.2" x2="1780.23" y2="2488.2" fill="none" stroke="#0084a3" stroke-miterlimit="10" stroke-width="8"/>
+        <polygon points="1384 2488.2 1411.86 2499.58 1405.25 2488.2 1411.86 2476.82 1384 2488.2" fill="#0084a3"/>
+        <polygon points="1800 2488.2 1772.14 2499.58 1778.75 2488.2 1772.14 2476.82 1800 2488.2" fill="#0084a3"/>
+      </g>
+    </g>
+    <g id="from_tab-l_until_ltp-s" data-name="from tab-l until ltp-s">
+      <text transform="translate(139.2 2426.35)" font-size="24" font-family="MyriadPro-Regular, Myriad Pro">f<tspan x="7.01" y="0" letter-spacing="-0.01em">r</tspan><tspan x="14.62" y="0" letter-spacing="0em">om ta</tspan><tspan x="72.41" y="0" letter-spacing="0.01em">b</tspan><tspan x="86.42" y="0">-l u</tspan><tspan x="117.77" y="0" letter-spacing="0em">n</tspan><tspan x="130.99" y="0" letter-spacing="0em">til lt</tspan><tspan x="168.91" y="0" letter-spacing="0.01em">p</tspan><tspan x="182.92" y="0">-s</tspan></text>
+      <g>
+        <line x1="359" y1="2419.31" x2="363" y2="2419.31" fill="none" stroke="#bfbfbf" stroke-miterlimit="10" stroke-width="8"/>
+        <line x1="371" y1="2419.31" x2="2272" y2="2419.31" fill="none" stroke="#bfbfbf" stroke-miterlimit="10" stroke-width="8" stroke-dasharray="8 8"/>
+        <line x1="2276" y1="2419.31" x2="2280" y2="2419.31" fill="none" stroke="#bfbfbf" stroke-miterlimit="10" stroke-width="8"/>
+      </g>
+      <g>
+        <line x1="1403.77" y1="2419.31" x2="1620.23" y2="2419.31" fill="none" stroke="#0084a3" stroke-miterlimit="10" stroke-width="8"/>
+        <polygon points="1384 2419.31 1411.86 2430.69 1405.25 2419.31 1411.86 2407.93 1384 2419.31" fill="#0084a3"/>
+        <polygon points="1640 2419.31 1612.14 2430.69 1618.75 2419.31 1612.14 2407.93 1640 2419.31" fill="#0084a3"/>
+      </g>
+    </g>
+    <g id="until_tab-l" data-name="until tab-l">
+      <text transform="translate(241.68 2357.46)" font-size="24" font-family="MyriadPro-Regular, Myriad Pro">u<tspan x="13.22" y="0" letter-spacing="0em">n</tspan><tspan x="26.45" y="0">til ta</tspan><tspan x="70.27" y="0" letter-spacing="0.01em">b</tspan><tspan x="84.29" y="0" letter-spacing="0em">-l</tspan></text>
+      <g>
+        <line x1="359" y1="2350.41" x2="363" y2="2350.41" fill="none" stroke="#bfbfbf" stroke-miterlimit="10" stroke-width="8"/>
+        <line x1="371" y1="2350.41" x2="2272" y2="2350.41" fill="none" stroke="#bfbfbf" stroke-miterlimit="10" stroke-width="8" stroke-dasharray="8 8"/>
+        <line x1="2276" y1="2350.41" x2="2280" y2="2350.41" fill="none" stroke="#bfbfbf" stroke-miterlimit="10" stroke-width="8"/>
+      </g>
+      <g>
+        <line x1="378.77" y1="2350.41" x2="1364.23" y2="2350.41" fill="none" stroke="#0084a3" stroke-miterlimit="10" stroke-width="8"/>
+        <polygon points="359 2350.41 386.86 2361.8 380.25 2350.41 386.86 2339.03 359 2350.41" fill="#0084a3"/>
+        <polygon points="1384 2350.41 1356.14 2361.8 1362.75 2350.41 1356.14 2339.03 1384 2350.41" fill="#0084a3"/>
+      </g>
+    </g>
+    <g id="from_tab-m" data-name="from tab-m">
+      <g>
+        <line x1="360" y1="2281.52" x2="364" y2="2281.52" fill="none" stroke="#bfbfbf" stroke-miterlimit="10" stroke-width="8"/>
+        <line x1="372" y1="2281.52" x2="2272" y2="2281.52" fill="none" stroke="#bfbfbf" stroke-miterlimit="10" stroke-width="8" stroke-dasharray="8 8"/>
+        <line x1="2276" y1="2281.52" x2="2280" y2="2281.52" fill="none" stroke="#bfbfbf" stroke-miterlimit="10" stroke-width="8"/>
+      </g>
+      <g>
+        <line x1="1147.77" y1="2281.64" x2="2355.23" y2="2281.4" fill="none" stroke="#0084a3" stroke-miterlimit="10" stroke-width="8"/>
+        <polygon points="1128 2281.65 1155.86 2293.03 1149.25 2281.64 1155.86 2270.26 1128 2281.65" fill="#0084a3"/>
+        <polygon points="2375 2281.4 2347.14 2292.78 2353.75 2281.4 2347.14 2270.02 2375 2281.4" fill="#0084a3"/>
+      </g>
+      <text transform="translate(225.19 2288.57)" font-size="24" font-family="MyriadPro-Regular, Myriad Pro">f<tspan x="7.01" y="0" letter-spacing="-0.01em">r</tspan><tspan x="14.62" y="0">om ta</tspan><tspan x="72.41" y="0" letter-spacing="0.01em">b</tspan><tspan x="86.42" y="0">-m</tspan></text>
+    </g>
+    <g id="from_tab-m_until_dtp" data-name="from tab-m until dtp">
+      <text transform="translate(134.21 2219.68)" font-size="24" font-family="MyriadPro-Regular, Myriad Pro">f<tspan x="7.01" y="0" letter-spacing="-0.01em">r</tspan><tspan x="14.62" y="0" letter-spacing="0em">om ta</tspan><tspan x="72.41" y="0" letter-spacing="0.01em">b</tspan><tspan x="86.42" y="0">-m u</tspan><tspan x="132.12" y="0" letter-spacing="0em">n</tspan><tspan x="145.34" y="0">til dtp</tspan></text>
+      <g>
+        <line x1="360" y1="2212.63" x2="364" y2="2212.63" fill="none" stroke="#bfbfbf" stroke-miterlimit="10" stroke-width="8"/>
+        <line x1="372" y1="2212.63" x2="2272" y2="2212.63" fill="none" stroke="#bfbfbf" stroke-miterlimit="10" stroke-width="8" stroke-dasharray="8 8"/>
+        <line x1="2276" y1="2212.63" x2="2280" y2="2212.63" fill="none" stroke="#bfbfbf" stroke-miterlimit="10" stroke-width="8"/>
+      </g>
+      <g>
+        <line x1="1147.77" y1="2212.63" x2="2260.23" y2="2212.63" fill="none" stroke="#0084a3" stroke-miterlimit="10" stroke-width="8"/>
+        <polygon points="1128 2212.63 1155.86 2224.01 1149.25 2212.63 1155.86 2201.25 1128 2212.63" fill="#0084a3"/>
+        <polygon points="2280 2212.63 2252.14 2224.01 2258.75 2212.63 2252.14 2201.25 2280 2212.63" fill="#0084a3"/>
+      </g>
+    </g>
+    <g id="from_tab-m_until_ltp-m" data-name="from tab-m until ltp-m">
+      <text transform="translate(114.34 2150.78)" font-size="24" font-family="MyriadPro-Regular, Myriad Pro">f<tspan x="7.01" y="0" letter-spacing="-0.01em">r</tspan><tspan x="14.62" y="0" letter-spacing="0em">om ta</tspan><tspan x="72.41" y="0" letter-spacing="0.01em">b</tspan><tspan x="86.42" y="0">-m u</tspan><tspan x="132.12" y="0" letter-spacing="0em">n</tspan><tspan x="145.34" y="0">til lt</tspan><tspan x="183.26" y="0" letter-spacing="0.01em">p</tspan><tspan x="197.28" y="0">-m</tspan></text>
+      <g>
+        <line x1="359" y1="2143.74" x2="363" y2="2143.74" fill="none" stroke="#bfbfbf" stroke-miterlimit="10" stroke-width="8"/>
+        <line x1="371" y1="2143.74" x2="2272" y2="2143.74" fill="none" stroke="#bfbfbf" stroke-miterlimit="10" stroke-width="8" stroke-dasharray="8 8"/>
+        <line x1="2276" y1="2143.74" x2="2280" y2="2143.74" fill="none" stroke="#bfbfbf" stroke-miterlimit="10" stroke-width="8"/>
+      </g>
+      <g>
+        <line x1="1147.77" y1="2143.7" x2="1780.23" y2="2143.78" fill="none" stroke="#0084a3" stroke-miterlimit="10" stroke-width="8"/>
+        <polygon points="1128 2143.69 1155.86 2155.08 1149.25 2143.7 1155.86 2132.32 1128 2143.69" fill="#0084a3"/>
+        <polygon points="1800 2143.79 1772.14 2155.17 1778.75 2143.78 1772.14 2132.4 1800 2143.79" fill="#0084a3"/>
+      </g>
+    </g>
+    <g id="from_tab-m_until_ltp-s" data-name="from tab-m until ltp-s">
+      <text transform="translate(124.85 2081.89)" font-size="24" font-family="MyriadPro-Regular, Myriad Pro">f<tspan x="7.01" y="0" letter-spacing="-0.01em">r</tspan><tspan x="14.62" y="0">om ta</tspan><tspan x="72.41" y="0" letter-spacing="0.01em">b</tspan><tspan x="86.42" y="0">-m u</tspan><tspan x="132.12" y="0" letter-spacing="0em">n</tspan><tspan x="145.34" y="0">til lt</tspan><tspan x="183.26" y="0" letter-spacing="0.01em">p</tspan><tspan x="197.28" y="0">-s</tspan></text>
+      <g>
+        <line x1="359" y1="2074.85" x2="363" y2="2074.85" fill="none" stroke="#bfbfbf" stroke-miterlimit="10" stroke-width="8"/>
+        <line x1="371" y1="2074.85" x2="2272" y2="2074.85" fill="none" stroke="#bfbfbf" stroke-miterlimit="10" stroke-width="8" stroke-dasharray="8 8"/>
+        <line x1="2276" y1="2074.85" x2="2280" y2="2074.85" fill="none" stroke="#bfbfbf" stroke-miterlimit="10" stroke-width="8"/>
+      </g>
+      <g>
+        <line x1="1147.77" y1="2074.85" x2="1620.23" y2="2074.85" fill="none" stroke="#0084a3" stroke-miterlimit="10" stroke-width="8"/>
+        <polygon points="1128 2074.85 1155.86 2086.23 1149.25 2074.85 1155.86 2063.47 1128 2074.85" fill="#0084a3"/>
+        <polygon points="1640 2074.85 1612.14 2086.23 1618.75 2074.85 1612.14 2063.47 1640 2074.85" fill="#0084a3"/>
+      </g>
+    </g>
+    <g id="from_tab-m_until_tab-l" data-name="from tab-m until tab-l">
+      <text transform="translate(122.79 2013)" font-size="24" font-family="MyriadPro-Regular, Myriad Pro">f<tspan x="7.01" y="0" letter-spacing="-0.01em">r</tspan><tspan x="14.62" y="0" letter-spacing="0em">om ta</tspan><tspan x="72.41" y="0" letter-spacing="0.01em">b</tspan><tspan x="86.42" y="0">-m u</tspan><tspan x="132.12" y="0" letter-spacing="0em">n</tspan><tspan x="145.34" y="0">til ta</tspan><tspan x="189.17" y="0" letter-spacing="0.01em">b</tspan><tspan x="203.18" y="0" letter-spacing="0em">-l</tspan></text>
+      <g>
+        <line x1="359" y1="2005.96" x2="363" y2="2005.96" fill="none" stroke="#bfbfbf" stroke-miterlimit="10" stroke-width="8"/>
+        <line x1="371" y1="2005.96" x2="2272" y2="2005.96" fill="none" stroke="#bfbfbf" stroke-miterlimit="10" stroke-width="8" stroke-dasharray="8 8"/>
+        <line x1="2276" y1="2005.96" x2="2280" y2="2005.96" fill="none" stroke="#bfbfbf" stroke-miterlimit="10" stroke-width="8"/>
+      </g>
+      <g>
+        <line x1="1147.77" y1="2005.96" x2="1364.23" y2="2005.95" fill="none" stroke="#0084a3" stroke-miterlimit="10" stroke-width="8"/>
+        <polygon points="1128 2005.96 1155.86 2017.34 1149.25 2005.96 1155.86 1994.58 1128 2005.96" fill="#0084a3"/>
+        <polygon points="1384 2005.95 1356.14 2017.33 1362.75 2005.95 1356.14 1994.57 1384 2005.95" fill="#0084a3"/>
+      </g>
+    </g>
+    <g id="until_tab-m" data-name="until tab-m">
+      <text transform="translate(227.33 1944.11)" font-size="24" font-family="MyriadPro-Regular, Myriad Pro">u<tspan x="13.22" y="0" letter-spacing="0em">n</tspan><tspan x="26.45" y="0">til ta</tspan><tspan x="70.27" y="0" letter-spacing="0.01em">b</tspan><tspan x="84.29" y="0" letter-spacing="0em">-m</tspan></text>
+      <g>
+        <line x1="359" y1="1937.07" x2="363" y2="1937.07" fill="none" stroke="#bfbfbf" stroke-miterlimit="10" stroke-width="8"/>
+        <line x1="371" y1="1937.07" x2="2272" y2="1937.07" fill="none" stroke="#bfbfbf" stroke-miterlimit="10" stroke-width="8" stroke-dasharray="8 8"/>
+        <line x1="2276" y1="1937.07" x2="2280" y2="1937.07" fill="none" stroke="#bfbfbf" stroke-miterlimit="10" stroke-width="8"/>
+      </g>
+      <g>
+        <line x1="378.77" y1="1937.07" x2="1108.23" y2="1937.07" fill="none" stroke="#0084a3" stroke-miterlimit="10" stroke-width="8"/>
+        <polygon points="359 1937.07 386.86 1948.45 380.25 1937.07 386.86 1925.69 359 1937.07" fill="#0084a3"/>
+        <polygon points="1128 1937.07 1100.14 1948.45 1106.75 1937.07 1100.14 1925.69 1128 1937.07" fill="#0084a3"/>
+      </g>
+    </g>
+    <g id="from_tab-s" data-name="from tab-s">
+      <text transform="translate(227.89 1875.22) scale(1.01 1)" font-size="24" font-family="MyriadPro-Regular, Myriad Pro">f<tspan x="7.01" y="0" letter-spacing="-0.01em">r</tspan><tspan x="14.62" y="0">om ta</tspan><tspan x="72.41" y="0" letter-spacing="0.02em">b</tspan><tspan x="86.42" y="0" letter-spacing="0em">-s</tspan></text>
+      <g>
+        <line x1="359" y1="1868.61" x2="363" y2="1868.61" fill="none" stroke="#bfbfbf" stroke-miterlimit="10" stroke-width="8"/>
+        <line x1="371" y1="1868.61" x2="2272" y2="1868.18" fill="none" stroke="#bfbfbf" stroke-miterlimit="10" stroke-width="8" stroke-dasharray="8 8"/>
+        <line x1="2276" y1="1868.18" x2="2280" y2="1868.18" fill="none" stroke="#bfbfbf" stroke-miterlimit="10" stroke-width="8"/>
+      </g>
+      <g>
+        <line x1="980.77" y1="1868.18" x2="2355.23" y2="1868.18" fill="none" stroke="#0084a3" stroke-miterlimit="10" stroke-width="8"/>
+        <polygon points="961 1868.18 988.86 1879.56 982.25 1868.18 988.86 1856.8 961 1868.18" fill="#0084a3"/>
+        <polygon points="2375 1868.18 2347.14 1879.56 2353.75 1868.18 2347.14 1856.8 2375 1868.18" fill="#0084a3"/>
+      </g>
+    </g>
+    <g id="from_tab-s_until_dtp" data-name="from tab-s until dtp">
+      <text transform="translate(144.72 1806.33)" font-size="24" font-family="MyriadPro-Regular, Myriad Pro">f<tspan x="7.01" y="0" letter-spacing="-0.01em">r</tspan><tspan x="14.62" y="0" letter-spacing="0em">om ta</tspan><tspan x="72.41" y="0" letter-spacing="0.01em">b</tspan><tspan x="86.42" y="0">-s u</tspan><tspan x="121.61" y="0" letter-spacing="0em">n</tspan><tspan x="134.83" y="0">til dtp</tspan></text>
+      <g>
+        <line x1="359" y1="1799.28" x2="363" y2="1799.28" fill="none" stroke="#bfbfbf" stroke-miterlimit="10" stroke-width="8"/>
+        <line x1="371" y1="1799.28" x2="2272" y2="1799.28" fill="none" stroke="#bfbfbf" stroke-miterlimit="10" stroke-width="8" stroke-dasharray="8 8"/>
+        <line x1="2276" y1="1799.28" x2="2280" y2="1799.28" fill="none" stroke="#bfbfbf" stroke-miterlimit="10" stroke-width="8"/>
+      </g>
+      <g>
+        <line x1="979.77" y1="1799.28" x2="2260.23" y2="1799.28" fill="none" stroke="#0084a3" stroke-miterlimit="10" stroke-width="8"/>
+        <polygon points="960 1799.28 987.86 1810.67 981.25 1799.28 987.86 1787.9 960 1799.28" fill="#0084a3"/>
+        <polygon points="2280 1799.28 2252.14 1810.67 2258.75 1799.28 2252.14 1787.9 2280 1799.28" fill="#0084a3"/>
+      </g>
+    </g>
+    <g id="from_tab-s_until_ltp-m" data-name="from tab-s until ltp-m">
+      <text transform="translate(124.85 1737.44)" font-size="24" font-family="MyriadPro-Regular, Myriad Pro">f<tspan x="7.01" y="0" letter-spacing="-0.01em">r</tspan><tspan x="14.62" y="0">om ta</tspan><tspan x="72.41" y="0" letter-spacing="0.01em">b</tspan><tspan x="86.42" y="0">-s u</tspan><tspan x="121.61" y="0" letter-spacing="0em">n</tspan><tspan x="134.83" y="0">til lt</tspan><tspan x="172.75" y="0" letter-spacing="0.01em">p</tspan><tspan x="186.76" y="0">-m</tspan></text>
+      <g>
+        <line x1="359" y1="1730.39" x2="363" y2="1730.39" fill="none" stroke="#bfbfbf" stroke-miterlimit="10" stroke-width="8"/>
+        <line x1="371" y1="1730.39" x2="2272" y2="1730.39" fill="none" stroke="#bfbfbf" stroke-miterlimit="10" stroke-width="8" stroke-dasharray="8 8"/>
+        <line x1="2276" y1="1730.39" x2="2280" y2="1730.39" fill="none" stroke="#bfbfbf" stroke-miterlimit="10" stroke-width="8"/>
+      </g>
+      <g>
+        <line x1="980.77" y1="1730.39" x2="1780.23" y2="1730.39" fill="none" stroke="#0084a3" stroke-miterlimit="10" stroke-width="8"/>
+        <polygon points="961 1730.39 988.86 1741.78 982.25 1730.39 988.86 1719.01 961 1730.39" fill="#0084a3"/>
+        <polygon points="1800 1730.39 1772.14 1741.78 1778.75 1730.39 1772.14 1719.01 1800 1730.39" fill="#0084a3"/>
+      </g>
+    </g>
+    <g id="from_tab-s_until_ltp-s" data-name="from tab-s until ltp-s">
+      <g>
+        <line x1="359" y1="1661.5" x2="363" y2="1661.5" fill="none" stroke="#bfbfbf" stroke-miterlimit="10" stroke-width="8"/>
+        <line x1="371" y1="1661.5" x2="2272" y2="1661.5" fill="none" stroke="#bfbfbf" stroke-miterlimit="10" stroke-width="8" stroke-dasharray="8 8"/>
+        <line x1="2276" y1="1661.5" x2="2280" y2="1661.5" fill="none" stroke="#bfbfbf" stroke-miterlimit="10" stroke-width="8"/>
+      </g>
+      <g>
+        <line x1="979.77" y1="1661.5" x2="1620.23" y2="1661.5" fill="none" stroke="#0084a3" stroke-miterlimit="10" stroke-width="8"/>
+        <polygon points="960 1661.5 987.86 1672.88 981.25 1661.5 987.86 1650.12 960 1661.5" fill="#0084a3"/>
+        <polygon points="1640 1661.5 1612.14 1672.88 1618.75 1661.5 1612.14 1650.12 1640 1661.5" fill="#0084a3"/>
+      </g>
+      <text transform="translate(135.36 1668.55)" font-size="24" font-family="MyriadPro-Regular, Myriad Pro">f<tspan x="7.01" y="0" letter-spacing="-0.01em">r</tspan><tspan x="14.62" y="0" letter-spacing="0em">om ta</tspan><tspan x="72.41" y="0" letter-spacing="0.01em">b</tspan><tspan x="86.42" y="0">-s u</tspan><tspan x="121.61" y="0" letter-spacing="0em">n</tspan><tspan x="134.83" y="0">til lt</tspan><tspan x="172.75" y="0" letter-spacing="0.01em">p</tspan><tspan x="186.76" y="0">-s</tspan></text>
+    </g>
+    <g id="from_tab-s_until_tab-l" data-name="from tab-s until tab-l">
+      <g>
+        <line x1="359" y1="1592.61" x2="363" y2="1592.61" fill="none" stroke="#bfbfbf" stroke-miterlimit="10" stroke-width="8"/>
+        <line x1="371" y1="1592.61" x2="2272" y2="1592.61" fill="none" stroke="#bfbfbf" stroke-miterlimit="10" stroke-width="8" stroke-dasharray="8 8"/>
+        <line x1="2276" y1="1592.61" x2="2280" y2="1592.61" fill="none" stroke="#bfbfbf" stroke-miterlimit="10" stroke-width="8"/>
+      </g>
+      <g>
+        <line x1="980.77" y1="1592.62" x2="1364.23" y2="1592.82" fill="none" stroke="#0084a3" stroke-miterlimit="10" stroke-width="8"/>
+        <polygon points="961 1592.61 988.85 1604.01 982.25 1592.62 988.86 1581.25 961 1592.61" fill="#0084a3"/>
+        <polygon points="1384 1592.83 1356.14 1604.2 1362.75 1592.82 1356.15 1581.43 1384 1592.83" fill="#0084a3"/>
+      </g>
+      <text transform="translate(133.3 1599.65)" font-size="24" font-family="MyriadPro-Regular, Myriad Pro">f<tspan x="7.01" y="0" letter-spacing="-0.01em">r</tspan><tspan x="14.62" y="0">om ta</tspan><tspan x="72.41" y="0" letter-spacing="0.01em">b</tspan><tspan x="86.42" y="0">-s u</tspan><tspan x="121.61" y="0" letter-spacing="0em">n</tspan><tspan x="134.83" y="0">til ta</tspan><tspan x="178.65" y="0" letter-spacing="0.01em">b</tspan><tspan x="192.67" y="0" letter-spacing="0em">-l</tspan></text>
+    </g>
+    <g id="from_tab-s_until-m" data-name="from tab-s until-m">
+      <text transform="translate(118.95 1530.76)" font-size="24" font-family="MyriadPro-Regular, Myriad Pro">f<tspan x="7.01" y="0" letter-spacing="-0.01em">r</tspan><tspan x="14.62" y="0" letter-spacing="0em">om ta</tspan><tspan x="72.41" y="0" letter-spacing="0.01em">b</tspan><tspan x="86.42" y="0">-s u</tspan><tspan x="121.61" y="0" letter-spacing="0em">n</tspan><tspan x="134.83" y="0">til ta</tspan><tspan x="178.65" y="0" letter-spacing="0.01em">b</tspan><tspan x="192.67" y="0">-m</tspan></text>
+      <g>
+        <line x1="359" y1="1523.72" x2="363" y2="1523.72" fill="none" stroke="#bfbfbf" stroke-miterlimit="10" stroke-width="8"/>
+        <line x1="371" y1="1523.72" x2="2272" y2="1523.72" fill="none" stroke="#bfbfbf" stroke-miterlimit="10" stroke-width="8" stroke-dasharray="8 8"/>
+        <line x1="2276" y1="1523.72" x2="2280" y2="1523.72" fill="none" stroke="#bfbfbf" stroke-miterlimit="10" stroke-width="8"/>
+      </g>
+      <g>
+        <line x1="979.77" y1="1523.72" x2="1108.23" y2="1523.72" fill="none" stroke="#0084a3" stroke-miterlimit="10" stroke-width="8"/>
+        <polygon points="960 1523.72 987.86 1535.1 981.25 1523.72 987.86 1512.34 960 1523.72" fill="#0084a3"/>
+        <polygon points="1128 1523.72 1100.14 1535.1 1106.75 1523.72 1100.14 1512.34 1128 1523.72" fill="#0084a3"/>
+      </g>
+    </g>
+    <g id="until_tab-s" data-name="until tab-s">
+      <text transform="translate(237.84 1461.87)" font-size="24" font-family="MyriadPro-Regular, Myriad Pro">u<tspan x="13.22" y="0" letter-spacing="0em">n</tspan><tspan x="26.45" y="0">til ta</tspan><tspan x="70.27" y="0" letter-spacing="0.01em">b</tspan><tspan x="84.29" y="0">-s</tspan></text>
+      <g>
+        <line x1="359" y1="1453.79" x2="363" y2="1453.79" fill="none" stroke="#bfbfbf" stroke-miterlimit="10" stroke-width="8"/>
+        <line x1="371" y1="1453.79" x2="2272" y2="1453.79" fill="none" stroke="#bfbfbf" stroke-miterlimit="10" stroke-width="8" stroke-dasharray="8 8"/>
+        <line x1="2276" y1="1453.79" x2="2280" y2="1453.79" fill="none" stroke="#bfbfbf" stroke-miterlimit="10" stroke-width="8"/>
+      </g>
+      <g>
+        <line x1="378.77" y1="1453.79" x2="940.23" y2="1453.79" fill="none" stroke="#0084a3" stroke-miterlimit="10" stroke-width="8"/>
+        <polygon points="359 1453.8 386.86 1465.18 380.25 1453.8 386.86 1442.41 359 1453.8" fill="#0084a3"/>
+        <polygon points="960 1453.8 932.14 1465.18 938.75 1453.8 932.14 1442.41 960 1453.8" fill="#0084a3"/>
+      </g>
+    </g>
+    <g id="from_mob-m" data-name="from mob-m">
+      <text transform="translate(209.21 1392.98) scale(0.97 1)" font-size="24" font-family="MyriadPro-Regular, Myriad Pro">f<tspan x="7.01" y="0" letter-spacing="-0.01em">r</tspan><tspan x="14.62" y="0">om mo</tspan><tspan x="86.09" y="0" letter-spacing="0.02em">b</tspan><tspan x="100.1" y="0">-m</tspan></text>
+      <g>
+        <line x1="360" y1="1385.78" x2="364" y2="1385.78" fill="none" stroke="#bfbfbf" stroke-miterlimit="10" stroke-width="8"/>
+        <line x1="372" y1="1385.78" x2="2272" y2="1385.78" fill="none" stroke="#bfbfbf" stroke-miterlimit="10" stroke-width="8" stroke-dasharray="8 8"/>
+        <line x1="2276" y1="1385.78" x2="2280" y2="1385.78" fill="none" stroke="#bfbfbf" stroke-miterlimit="10" stroke-width="8"/>
+      </g>
+      <g>
+        <line x1="754.77" y1="1385.94" x2="2355.23" y2="1385.94" fill="none" stroke="#0084a3" stroke-miterlimit="10" stroke-width="8"/>
+        <polygon points="735 1385.94 762.86 1397.32 756.25 1385.94 762.86 1374.56 735 1385.94" fill="#0084a3"/>
+        <polygon points="2375 1385.94 2347.14 1397.32 2353.75 1385.94 2347.14 1374.56 2375 1385.94" fill="#0084a3"/>
+      </g>
+    </g>
+    <g id="from_mob-m_until_dtp" data-name="from mob-m until dtp">
+      <text transform="translate(120.53 1324.09)" font-size="24" font-family="MyriadPro-Regular, Myriad Pro">f<tspan x="7.01" y="0" letter-spacing="-0.01em">r</tspan><tspan x="14.62" y="0" letter-spacing="0em">om mo</tspan><tspan x="86.09" y="0" letter-spacing="0.01em">b</tspan><tspan x="100.1" y="0">-m u</tspan><tspan x="145.8" y="0" letter-spacing="0em">n</tspan><tspan x="159.02" y="0">til dtp</tspan></text>
+      <g>
+        <line x1="359" y1="1317.05" x2="363" y2="1317.05" fill="none" stroke="#bfbfbf" stroke-miterlimit="10" stroke-width="8"/>
+        <line x1="371" y1="1317.05" x2="2272" y2="1317.05" fill="none" stroke="#bfbfbf" stroke-miterlimit="10" stroke-width="8" stroke-dasharray="8 8"/>
+        <line x1="2276" y1="1317.05" x2="2280" y2="1317.05" fill="none" stroke="#bfbfbf" stroke-miterlimit="10" stroke-width="8"/>
+      </g>
+      <g>
+        <line x1="754.77" y1="1317.05" x2="2260.23" y2="1317.05" fill="none" stroke="#0084a3" stroke-miterlimit="10" stroke-width="8"/>
+        <polygon points="735 1317.05 762.86 1328.43 756.25 1317.05 762.86 1305.67 735 1317.05" fill="#0084a3"/>
+        <polygon points="2280 1317.05 2252.14 1328.43 2258.75 1317.05 2252.14 1305.67 2280 1317.05" fill="#0084a3"/>
+      </g>
+    </g>
+    <g id="from_mob-m_until_ltp-m" data-name="from mob-m until ltp-m">
+      <text transform="translate(103.66 1255.2)" font-size="24" font-family="MyriadPro-Regular, Myriad Pro">f<tspan x="7.01" y="0" letter-spacing="-0.01em">r</tspan><tspan x="14.62" y="0">om mo</tspan><tspan x="86.09" y="0" letter-spacing="0.01em">b</tspan><tspan x="100.1" y="0">-m u</tspan><tspan x="145.8" y="0" letter-spacing="0em">n</tspan><tspan x="159.02" y="0">til lt</tspan><tspan x="196.94" y="0" letter-spacing="0.01em">p</tspan><tspan x="210.96" y="0">-m</tspan></text>
+      <g>
+        <line x1="359" y1="1248.15" x2="363" y2="1248.15" fill="none" stroke="#bfbfbf" stroke-miterlimit="10" stroke-width="8"/>
+        <line x1="371" y1="1248.15" x2="2272" y2="1248.15" fill="none" stroke="#bfbfbf" stroke-miterlimit="10" stroke-width="8" stroke-dasharray="8 8"/>
+        <line x1="2276" y1="1248.15" x2="2280" y2="1248.15" fill="none" stroke="#bfbfbf" stroke-miterlimit="10" stroke-width="8"/>
+      </g>
+      <g>
+        <line x1="754.77" y1="1248.15" x2="1780.23" y2="1248.15" fill="none" stroke="#0084a3" stroke-miterlimit="10" stroke-width="8"/>
+        <polygon points="735 1248.15 762.86 1259.54 756.25 1248.15 762.86 1236.77 735 1248.15" fill="#0084a3"/>
+        <polygon points="1800 1248.15 1772.14 1259.54 1778.75 1248.15 1772.14 1236.77 1800 1248.15" fill="#0084a3"/>
+      </g>
+    </g>
+    <g id="from_mob-m_until_ltp-s" data-name="from mob-m until ltp-s">
+      <text transform="translate(114.17 1186.31)" font-size="24" font-family="MyriadPro-Regular, Myriad Pro">f<tspan x="7.01" y="0" letter-spacing="-0.01em">r</tspan><tspan x="14.62" y="0" letter-spacing="0em">om mo</tspan><tspan x="86.09" y="0" letter-spacing="0.01em">b</tspan><tspan x="100.1" y="0">-m u</tspan><tspan x="145.8" y="0" letter-spacing="0em">n</tspan><tspan x="159.02" y="0">til lt</tspan><tspan x="196.94" y="0" letter-spacing="0.01em">p</tspan><tspan x="210.96" y="0">-s</tspan></text>
+      <g>
+        <line x1="359" y1="1179.26" x2="363" y2="1179.26" fill="none" stroke="#bfbfbf" stroke-miterlimit="10" stroke-width="8"/>
+        <line x1="371" y1="1179.26" x2="2272" y2="1179.26" fill="none" stroke="#bfbfbf" stroke-miterlimit="10" stroke-width="8" stroke-dasharray="8 8"/>
+        <line x1="2276" y1="1179.26" x2="2280" y2="1179.26" fill="none" stroke="#bfbfbf" stroke-miterlimit="10" stroke-width="8"/>
+      </g>
+      <g>
+        <line x1="754.77" y1="1179.26" x2="1620.23" y2="1179.26" fill="none" stroke="#0084a3" stroke-miterlimit="10" stroke-width="8"/>
+        <polygon points="735 1179.26 762.86 1190.65 756.25 1179.26 762.86 1167.88 735 1179.26" fill="#0084a3"/>
+        <polygon points="1640 1179.26 1612.14 1190.65 1618.75 1179.26 1612.14 1167.88 1640 1179.26" fill="#0084a3"/>
+      </g>
+    </g>
+    <g id="from_mob-m_until_tab-l" data-name="from mob-m until tab-l">
+      <text transform="translate(112.11 1117.42)" font-size="24" font-family="MyriadPro-Regular, Myriad Pro">f<tspan x="7.01" y="0" letter-spacing="-0.01em">r</tspan><tspan x="14.62" y="0">om mo</tspan><tspan x="86.09" y="0" letter-spacing="0.01em">b</tspan><tspan x="100.1" y="0">-m u</tspan><tspan x="145.8" y="0" letter-spacing="0em">n</tspan><tspan x="159.02" y="0">til ta</tspan><tspan x="202.85" y="0" letter-spacing="0.01em">b</tspan><tspan x="216.86" y="0" letter-spacing="0em">-l</tspan></text>
+      <g>
+        <line x1="359" y1="1110.37" x2="363" y2="1110.37" fill="none" stroke="#bfbfbf" stroke-miterlimit="10" stroke-width="8"/>
+        <line x1="371" y1="1110.37" x2="2272" y2="1110.37" fill="none" stroke="#bfbfbf" stroke-miterlimit="10" stroke-width="8" stroke-dasharray="8 8"/>
+        <line x1="2276" y1="1110.37" x2="2280" y2="1110.37" fill="none" stroke="#bfbfbf" stroke-miterlimit="10" stroke-width="8"/>
+      </g>
+      <g>
+        <line x1="754.77" y1="1110.37" x2="1364.23" y2="1110.37" fill="none" stroke="#0084a3" stroke-miterlimit="10" stroke-width="8"/>
+        <polygon points="735 1110.37 762.86 1121.76 756.25 1110.37 762.86 1098.99 735 1110.37" fill="#0084a3"/>
+        <polygon points="1384 1110.37 1356.14 1121.76 1362.75 1110.37 1356.14 1098.99 1384 1110.37" fill="#0084a3"/>
+      </g>
+    </g>
+    <g id="from_mob-m_until_tab-m" data-name="from mob-m until tab-m">
+      <g>
+        <text transform="translate(97.76 1048.53)" font-size="24" font-family="MyriadPro-Regular, Myriad Pro">f<tspan x="7.01" y="0" letter-spacing="-0.01em">r</tspan><tspan x="14.62" y="0" letter-spacing="0em">om mo</tspan><tspan x="86.09" y="0" letter-spacing="0.01em">b</tspan><tspan x="100.1" y="0">-m u</tspan><tspan x="145.8" y="0" letter-spacing="0em">n</tspan><tspan x="159.02" y="0">til ta</tspan><tspan x="202.85" y="0" letter-spacing="0.01em">b</tspan><tspan x="216.86" y="0">-m</tspan></text>
+        <g>
+          <line x1="359" y1="1041.48" x2="363" y2="1041.48" fill="none" stroke="#bfbfbf" stroke-miterlimit="10" stroke-width="8"/>
+          <line x1="371" y1="1041.48" x2="2272" y2="1041.48" fill="none" stroke="#bfbfbf" stroke-miterlimit="10" stroke-width="8" stroke-dasharray="8 8"/>
+          <line x1="2276" y1="1041.48" x2="2280" y2="1041.48" fill="none" stroke="#bfbfbf" stroke-miterlimit="10" stroke-width="8"/>
+        </g>
+      </g>
+      <g>
+        <line x1="754.77" y1="1041.48" x2="1108.23" y2="1041.48" fill="none" stroke="#0084a3" stroke-miterlimit="10" stroke-width="8"/>
+        <polygon points="735 1041.48 762.86 1052.87 756.25 1041.48 762.86 1030.1 735 1041.48" fill="#0084a3"/>
+        <polygon points="1128 1041.48 1100.14 1052.87 1106.75 1041.48 1100.14 1030.1 1128 1041.48" fill="#0084a3"/>
+      </g>
+    </g>
+    <g id="from_mob-m_until_tab-s" data-name="from mob-m until tab-s">
+      <g>
+        <text transform="translate(105.27 979.63)" font-size="24" font-family="MyriadPro-Regular, Myriad Pro">f<tspan x="7.01" y="0" letter-spacing="-0.01em">r</tspan><tspan x="14.62" y="0" letter-spacing="0em">om mo</tspan><tspan x="86.09" y="0" letter-spacing="0.01em">b</tspan><tspan x="100.1" y="0">-m u</tspan><tspan x="145.8" y="0" letter-spacing="0em">n</tspan><tspan x="159.02" y="0">til ta</tspan><tspan x="202.85" y="0" letter-spacing="0.01em">b</tspan><tspan x="216.86" y="0">-s</tspan></text>
+        <g>
+          <line x1="359" y1="972.59" x2="363" y2="972.59" fill="none" stroke="#bfbfbf" stroke-miterlimit="10" stroke-width="8"/>
+          <line x1="371" y1="972.59" x2="2272" y2="972.59" fill="none" stroke="#bfbfbf" stroke-miterlimit="10" stroke-width="8" stroke-dasharray="8 8"/>
+          <line x1="2276" y1="972.59" x2="2280" y2="972.59" fill="none" stroke="#bfbfbf" stroke-miterlimit="10" stroke-width="8"/>
+        </g>
+      </g>
+      <g>
+        <line x1="754.77" y1="972.59" x2="940.23" y2="972.59" fill="none" stroke="#0084a3" stroke-miterlimit="10" stroke-width="8"/>
+        <polygon points="735 972.59 762.86 983.97 756.25 972.59 762.86 961.21 735 972.59" fill="#0084a3"/>
+        <polygon points="960 972.59 932.14 983.97 938.75 972.59 932.14 961.21 960 972.59" fill="#0084a3"/>
+      </g>
+    </g>
+    <g id="until_mob-m" data-name="until mob-m">
+      <text transform="translate(193.03 910.74)" font-size="24" font-family="MyriadPro-Regular, Myriad Pro">u<tspan x="13.22" y="0" letter-spacing="0em">n</tspan><tspan x="26.45" y="0">til mobil</tspan><tspan x="108.89" y="0" letter-spacing="0.03em">e</tspan><tspan x="121.58" y="0">-m</tspan></text>
+      <g>
+        <line x1="359" y1="903.7" x2="363" y2="903.7" fill="none" stroke="#bfbfbf" stroke-miterlimit="10" stroke-width="8"/>
+        <line x1="371" y1="903.7" x2="2272" y2="903.7" fill="none" stroke="#bfbfbf" stroke-miterlimit="10" stroke-width="8" stroke-dasharray="8 8"/>
+        <line x1="2276" y1="903.7" x2="2280" y2="903.7" fill="none" stroke="#bfbfbf" stroke-miterlimit="10" stroke-width="8"/>
+      </g>
+      <g>
+        <line x1="378.77" y1="903.7" x2="715.23" y2="903.7" fill="none" stroke="#0084a3" stroke-miterlimit="10" stroke-width="8"/>
+        <polygon points="359 903.7 386.86 915.08 380.25 903.7 386.86 892.32 359 903.7" fill="#0084a3"/>
+        <polygon points="735 903.7 707.14 915.08 713.75 903.7 707.14 892.32 735 903.7" fill="#0084a3"/>
+      </g>
+    </g>
+    <g id="from_mob-s" data-name="from mob-s">
+      <g>
+        <text transform="translate(201.39 841.85)" font-size="24" font-family="MyriadPro-Regular, Myriad Pro">f<tspan x="7.01" y="0" letter-spacing="-0.01em">r</tspan><tspan x="14.62" y="0">om mobil</tspan><tspan x="111.02" y="0" letter-spacing="0.03em">e</tspan><tspan x="123.72" y="0" letter-spacing="0em">-s</tspan></text>
+        <g>
+          <line x1="359.11" y1="836.89" x2="363.11" y2="836.89" fill="none" stroke="#bfbfbf" stroke-miterlimit="10" stroke-width="8"/>
+          <line x1="371.11" y1="836.89" x2="2272" y2="836.89" fill="none" stroke="#bfbfbf" stroke-miterlimit="10" stroke-width="8" stroke-dasharray="8 8"/>
+          <line x1="2276" y1="836.89" x2="2280" y2="836.89" fill="none" stroke="#bfbfbf" stroke-miterlimit="10" stroke-width="8"/>
+        </g>
+        <g>
+          <line x1="699.77" y1="836.81" x2="2355.23" y2="836.89" fill="none" stroke="#0084a3" stroke-miterlimit="10" stroke-width="8"/>
+          <polygon points="680 836.81 707.86 848.19 701.25 836.81 707.86 825.43 680 836.81" fill="#0084a3"/>
+          <polygon points="2375 836.89 2347.14 848.27 2353.75 836.89 2347.14 825.51 2375 836.89" fill="#0084a3"/>
+        </g>
+      </g>
+    </g>
+    <g id="from_mob-s_until_dtp" data-name="from mob-s until dtp">
+      <text transform="translate(110.43 772.96)" font-size="24" font-family="MyriadPro-Regular, Myriad Pro">f<tspan x="7.01" y="0" letter-spacing="-0.01em">r</tspan><tspan x="14.62" y="0">om mobil</tspan><tspan x="111.02" y="0" letter-spacing="0.03em">e</tspan><tspan x="123.72" y="0" letter-spacing="0em">-s u</tspan><tspan x="158.9" y="0" letter-spacing="0em">n</tspan><tspan x="172.13" y="0" letter-spacing="0em">til dtp</tspan></text>
+      <g>
+        <line x1="359" y1="765.92" x2="363" y2="765.92" fill="none" stroke="#bfbfbf" stroke-miterlimit="10" stroke-width="8"/>
+        <line x1="371" y1="765.92" x2="2272" y2="765.92" fill="none" stroke="#bfbfbf" stroke-miterlimit="10" stroke-width="8" stroke-dasharray="8 8"/>
+        <line x1="2276" y1="765.92" x2="2280" y2="765.92" fill="none" stroke="#bfbfbf" stroke-miterlimit="10" stroke-width="8"/>
+      </g>
+      <g>
+        <line x1="699.77" y1="765.92" x2="2260.23" y2="765.92" fill="none" stroke="#0084a3" stroke-miterlimit="10" stroke-width="8"/>
+        <polygon points="680 765.92 707.86 777.3 701.25 765.92 707.86 754.54 680 765.92" fill="#0084a3"/>
+        <polygon points="2280 765.92 2252.14 777.3 2258.75 765.92 2252.14 754.54 2280 765.92" fill="#0084a3"/>
+      </g>
+    </g>
+    <g id="from_mob-s_until_ltp-m" data-name="from mob-s until ltp-m">
+      <text transform="translate(90.56 704.07)" font-size="24" font-family="MyriadPro-Regular, Myriad Pro">f<tspan x="7.01" y="0" letter-spacing="-0.01em">r</tspan><tspan x="14.62" y="0" letter-spacing="0em">om mobil</tspan><tspan x="111.02" y="0" letter-spacing="0.03em">e</tspan><tspan x="123.72" y="0">-s u</tspan><tspan x="158.9" y="0" letter-spacing="0em">n</tspan><tspan x="172.13" y="0" letter-spacing="0em">til lt</tspan><tspan x="210.04" y="0" letter-spacing="0.01em">p</tspan><tspan x="224.06" y="0">-m</tspan></text>
+      <g>
+        <line x1="359" y1="697.02" x2="363" y2="697.02" fill="none" stroke="#bfbfbf" stroke-miterlimit="10" stroke-width="8"/>
+        <line x1="371" y1="697.02" x2="2272" y2="697.02" fill="none" stroke="#bfbfbf" stroke-miterlimit="10" stroke-width="8" stroke-dasharray="8 8"/>
+        <line x1="2276" y1="697.02" x2="2280" y2="697.02" fill="none" stroke="#bfbfbf" stroke-miterlimit="10" stroke-width="8"/>
+      </g>
+      <g>
+        <line x1="699.77" y1="697.02" x2="1780.23" y2="697.02" fill="none" stroke="#0084a3" stroke-miterlimit="10" stroke-width="8"/>
+        <polygon points="680 697.02 707.86 708.41 701.25 697.02 707.86 685.64 680 697.02" fill="#0084a3"/>
+        <polygon points="1800 697.02 1772.14 708.41 1778.75 697.02 1772.14 685.64 1800 697.02" fill="#0084a3"/>
+      </g>
+    </g>
+    <g id="from_mob-s_until_ltp-s" data-name="from mob-s until ltp-s">
+      <text transform="translate(101.07 635.18)" font-size="24" font-family="MyriadPro-Regular, Myriad Pro">f<tspan x="7.01" y="0" letter-spacing="-0.01em">r</tspan><tspan x="14.62" y="0" letter-spacing="0em">om mobil</tspan><tspan x="111.02" y="0" letter-spacing="0.03em">e</tspan><tspan x="123.72" y="0">-s u</tspan><tspan x="158.9" y="0" letter-spacing="0em">n</tspan><tspan x="172.13" y="0" letter-spacing="0em">til lt</tspan><tspan x="210.04" y="0" letter-spacing="0.01em">p</tspan><tspan x="224.06" y="0">-s</tspan></text>
+      <g>
+        <line x1="359" y1="628.13" x2="363" y2="628.13" fill="none" stroke="#bfbfbf" stroke-miterlimit="10" stroke-width="8"/>
+        <line x1="371" y1="628.13" x2="2272" y2="628.13" fill="none" stroke="#bfbfbf" stroke-miterlimit="10" stroke-width="8" stroke-dasharray="8 8"/>
+        <line x1="2276" y1="628.13" x2="2280" y2="628.13" fill="none" stroke="#bfbfbf" stroke-miterlimit="10" stroke-width="8"/>
+      </g>
+      <g>
+        <line x1="699.77" y1="628.13" x2="1620.23" y2="628.13" fill="none" stroke="#0084a3" stroke-miterlimit="10" stroke-width="8"/>
+        <polygon points="680 628.13 707.86 639.52 701.25 628.13 707.86 616.75 680 628.13" fill="#0084a3"/>
+        <polygon points="1640 628.13 1612.14 639.52 1618.75 628.13 1612.14 616.75 1640 628.13" fill="#0084a3"/>
+      </g>
+    </g>
+    <g id="from_mob-s_until_tab-l" data-name="from mob-s until tab-l">
+      <g>
+        <line x1="359" y1="560.24" x2="363" y2="560.24" fill="none" stroke="#bfbfbf" stroke-miterlimit="10" stroke-width="8"/>
+        <line x1="371" y1="560.24" x2="2272" y2="560.24" fill="none" stroke="#bfbfbf" stroke-miterlimit="10" stroke-width="8" stroke-dasharray="8 8"/>
+        <line x1="2276" y1="560.24" x2="2280" y2="560.24" fill="none" stroke="#bfbfbf" stroke-miterlimit="10" stroke-width="8"/>
+      </g>
+      <g>
+        <line x1="699.77" y1="560.24" x2="1364.23" y2="560.24" fill="none" stroke="#0084a3" stroke-miterlimit="10" stroke-width="8"/>
+        <polygon points="680 560.24 707.86 571.63 701.25 560.24 707.86 548.86 680 560.24" fill="#0084a3"/>
+        <polygon points="1384 560.24 1356.14 571.63 1362.75 560.24 1356.14 548.86 1384 560.24" fill="#0084a3"/>
+      </g>
+      <text transform="translate(122.62 566.29)" font-size="24" font-family="MyriadPro-Regular, Myriad Pro">f<tspan x="7.01" y="0" letter-spacing="-0.01em">r</tspan><tspan x="14.62" y="0" letter-spacing="0em">om mo</tspan><tspan x="86.09" y="0" letter-spacing="0.01em">b</tspan><tspan x="100.1" y="0">-s u</tspan><tspan x="135.29" y="0" letter-spacing="0em">n</tspan><tspan x="148.51" y="0">til ta</tspan><tspan x="192.33" y="0" letter-spacing="0.01em">b</tspan><tspan x="206.35" y="0" letter-spacing="0em">-l</tspan></text>
+    </g>
+    <g id="from_mob-s_until_tab-m" data-name="from mob-s until tab-m">
+      <text transform="translate(108.27 497.4)" font-size="24" font-family="MyriadPro-Regular, Myriad Pro">f<tspan x="7.01" y="0" letter-spacing="-0.01em">r</tspan><tspan x="14.62" y="0" letter-spacing="0em">om mo</tspan><tspan x="86.09" y="0" letter-spacing="0.01em">b</tspan><tspan x="100.1" y="0">-s u</tspan><tspan x="135.29" y="0" letter-spacing="0em">n</tspan><tspan x="148.51" y="0">til ta</tspan><tspan x="192.33" y="0" letter-spacing="0.01em">b</tspan><tspan x="206.35" y="0" letter-spacing="0em">-m</tspan></text>
+      <g>
+        <line x1="359" y1="490.35" x2="363" y2="490.35" fill="none" stroke="#bfbfbf" stroke-miterlimit="10" stroke-width="8"/>
+        <line x1="371" y1="490.35" x2="2272" y2="490.35" fill="none" stroke="#bfbfbf" stroke-miterlimit="10" stroke-width="8" stroke-dasharray="8 8"/>
+        <line x1="2276" y1="490.35" x2="2280" y2="490.35" fill="none" stroke="#bfbfbf" stroke-miterlimit="10" stroke-width="8"/>
+      </g>
+      <g>
+        <line x1="699.77" y1="490.35" x2="1108.23" y2="490.35" fill="none" stroke="#0084a3" stroke-miterlimit="10" stroke-width="8"/>
+        <polygon points="680 490.35 707.86 501.73 701.25 490.35 707.86 478.97 680 490.35" fill="#0084a3"/>
+        <polygon points="1128 490.35 1100.14 501.73 1106.75 490.35 1100.14 478.97 1128 490.35" fill="#0084a3"/>
+      </g>
+    </g>
+    <g id="from_mob-s_until_tab-s" data-name="from mob-s until tab-s">
+      <text transform="translate(118.78 428.5)" font-size="24" font-family="MyriadPro-Regular, Myriad Pro">f<tspan x="7.01" y="0" letter-spacing="-0.01em">r</tspan><tspan x="14.62" y="0">om mo</tspan><tspan x="86.09" y="0" letter-spacing="0.01em">b</tspan><tspan x="100.1" y="0">-s u</tspan><tspan x="135.29" y="0" letter-spacing="0em">n</tspan><tspan x="148.51" y="0">til ta</tspan><tspan x="192.33" y="0" letter-spacing="0.01em">b</tspan><tspan x="206.35" y="0">-s</tspan></text>
+      <g>
+        <line x1="359" y1="421.46" x2="363" y2="421.46" fill="none" stroke="#bfbfbf" stroke-miterlimit="10" stroke-width="8"/>
+        <line x1="371" y1="421.46" x2="2272" y2="421.46" fill="none" stroke="#bfbfbf" stroke-miterlimit="10" stroke-width="8" stroke-dasharray="8 8"/>
+        <line x1="2276" y1="421.46" x2="2280" y2="421.46" fill="none" stroke="#bfbfbf" stroke-miterlimit="10" stroke-width="8"/>
+      </g>
+      <g>
+        <line x1="699.77" y1="421.12" x2="940.23" y2="421.12" fill="none" stroke="#0084a3" stroke-miterlimit="10" stroke-width="8"/>
+        <polygon points="680 421.12 707.86 432.5 701.25 421.12 707.86 409.74 680 421.12" fill="#0084a3"/>
+        <polygon points="960 421.12 932.14 432.5 938.75 421.12 932.14 409.74 960 421.12" fill="#0084a3"/>
+      </g>
+    </g>
+    <g id="from_mob-s_until_mob-m" data-name="from mob-s until mob-m">
+      <text transform="translate(94.59 359.61)" font-size="24" font-family="MyriadPro-Regular, Myriad Pro">f<tspan x="7.01" y="0" letter-spacing="-0.01em">r</tspan><tspan x="14.62" y="0" letter-spacing="0em">om mo</tspan><tspan x="86.09" y="0" letter-spacing="0.01em">b</tspan><tspan x="100.1" y="0">-s u</tspan><tspan x="135.29" y="0" letter-spacing="0em">n</tspan><tspan x="148.51" y="0">til mo</tspan><tspan x="206.01" y="0" letter-spacing="0.01em">b</tspan><tspan x="220.03" y="0">-m</tspan></text>
+      <g>
+        <line x1="359" y1="353.57" x2="363" y2="353.57" fill="none" stroke="#bfbfbf" stroke-miterlimit="10" stroke-width="8"/>
+        <line x1="371" y1="353.57" x2="2272" y2="353.57" fill="none" stroke="#bfbfbf" stroke-miterlimit="10" stroke-width="8" stroke-dasharray="8 8"/>
+        <line x1="2276" y1="353.57" x2="2280" y2="353.57" fill="none" stroke="#bfbfbf" stroke-miterlimit="10" stroke-width="8"/>
+      </g>
+      <g>
+        <line x1="699.77" y1="353.57" x2="715.23" y2="353.57" fill="none" stroke="#0084a3" stroke-miterlimit="10" stroke-width="8"/>
+        <polygon points="680 353.57 707.86 364.95 701.25 353.57 707.86 342.19 680 353.57" fill="#0084a3"/>
+        <polygon points="735 353.57 707.14 364.95 713.75 353.57 707.14 342.19 735 353.57" fill="#0084a3"/>
+      </g>
+    </g>
+    <g id="until_mob-s" data-name="until mob-s">
+      <text transform="translate(227.16 290.72)" font-size="24" font-family="MyriadPro-Regular, Myriad Pro">u<tspan x="13.22" y="0" letter-spacing="0em">n</tspan><tspan x="26.45" y="0">til mo</tspan><tspan x="83.95" y="0" letter-spacing="0.01em">b</tspan><tspan x="97.97" y="0">-s</tspan></text>
+      <g>
+        <line x1="378.77" y1="283.68" x2="660.23" y2="283.68" fill="none" stroke="#0084a3" stroke-miterlimit="10" stroke-width="8"/>
+        <polygon points="359 283.68 386.86 295.06 380.25 283.68 386.86 272.3 359 283.68" fill="#0084a3"/>
+        <polygon points="680 283.68 652.14 295.06 658.75 283.68 652.14 272.3 680 283.68" fill="#0084a3"/>
+      </g>
+    </g>
+  </g>
+</svg>

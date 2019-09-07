@@ -1,0 +1,66 @@
+// ==========================================================================
+// Container
+// ==========================================================================
+
+// This is a generic, reusable class that applies a container-context to an
+// element. Combined with modifiers, you can set a max-width and alignment as
+// you wish.
+// ==========================================================================
+
+// Block (parent)
+// ==========================================================================
+.kx-container {
+    @include cf;
+    padding-left: gutter() / 2;
+    padding-right: gutter() / 2;
+    box-sizing: content-box;
+
+    @if ($debug-container) {
+        background: susy-svg-grid($offset: 16px) no-repeat scroll;
+    }
+
+    .kx-container {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+// Modifiers
+// =========================================================================
+
+// Maximum width - equals to media queries defined sass-map $mq-breakpoints
+// in _conf_mq.scss. Only use these modifiers if you'd like to constrain the
+// container to a maximum width.
+
+.kx-container--mob-s {
+    max-width: rem-calc(mq-get-breakpoint-width(mob-s) - 1px) - gutter();
+}
+
+.kx-container--mob-m {
+    max-width: rem-calc(mq-get-breakpoint-width(mob-m) - 1px) - gutter();
+}
+
+.kx-container--tab-s {
+    max-width: rem-calc(mq-get-breakpoint-width(tab-s) - 1px) - gutter();
+}
+
+.kx-container--tab-m {
+    max-width: rem-calc(mq-get-breakpoint-width(tab-m) - 1px) - gutter();
+}
+
+.kx-container--tab-l {
+    max-width: rem-calc(mq-get-breakpoint-width(tab-l) - 1px) - gutter();
+}
+
+.kx-container--ltp-s {
+    max-width: rem-calc(mq-get-breakpoint-width(ltp-s) - 1px) - gutter();
+}
+
+.kx-container--ltp-m {
+    max-width: rem-calc(mq-get-breakpoint-width(ltp-m) - 1px) - gutter();
+}
+
+.kx-container--dtp {
+    max-width: rem-calc(mq-get-breakpoint-width(dtp) - 1px) - gutter();
+}
+

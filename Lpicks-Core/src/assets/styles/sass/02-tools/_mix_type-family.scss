@@ -1,0 +1,17 @@
+// ==========================================================================
+// MIXIN: type-family
+// ==========================================================================
+
+//
+// This mixin takes a parameter for typographic family (sass-map: $type-family).
+// It then uses the function map-fetch to reach deep key:value pairs within
+// this map. Finally it outputs the correct font-stack.
+//
+// USAGE:
+//
+// @include type-family(base);
+//
+
+@mixin type-family($family) {
+    font-family: map-get($type-family, $family);
+}

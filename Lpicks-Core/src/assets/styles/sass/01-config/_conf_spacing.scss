@@ -1,0 +1,20 @@
+// ==========================================================================
+// Spacing: Based on https://github.com/digitaledgeit/sass-spacing
+// ==========================================================================
+
+$spacing-sizes: (
+    'none':     0px,
+    'nano':     2px,
+    'tiny':     4px,
+    'mini':     8px,
+    'small':    12px,
+    'base':     16px,
+    'moderate': 20px,
+    'medium':   24px,
+    'large':    32px,
+    'xlarge':   48px,
+    'xxlarge':  64px,
+    'xxxlarge': 128px
+) !default;
+
+$spacing-important: false !default;

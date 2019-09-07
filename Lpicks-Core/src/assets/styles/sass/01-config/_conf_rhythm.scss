@@ -1,0 +1,13 @@
+// ==========================================================================
+// Vertical Rhythm setup
+// ==========================================================================
+$base-unit: 4px;
+
+$base-font-size: 16px;
+$base-line-height: $base-unit;
+
+$body-line-height: $base-unit * 6;
+
+$grid-baseline-color: $color-red-06;
+$grid-background-baseline-color: rgba($grid-baseline-color, 0.25);
+$grid-background-baseline-height: $base-line-height;

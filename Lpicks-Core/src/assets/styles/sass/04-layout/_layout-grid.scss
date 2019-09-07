@@ -1,0 +1,28 @@
+// ==========================================================================
+// Grid
+// ==========================================================================
+
+// Grid uses traditional bootstrap-like grid-classes for rows and columns
+// See _mix_grid.scss
+// ==========================================================================
+
+// Block (parent)
+// ==========================================================================
+
+// Uses mixin make-grid-classes to produce css-classes for each breakpoint
+@include make-grid-classes();
+
+@if ($debug-grid) {
+    .kx-col {
+        background: linear-gradient(to left, rgba($color-red-base, 0.125), rgba($color-red-base, 0.125)), rgba($color-white, 0.5);
+        background-clip: content-box, padding-box;
+    }
+}
+
+// Make direct descendants of .kx-col within a row-container with modifier kx-align-items-stretch,
+// stretch height of row.
+[class*='kx-align-items-stretch'] {
+    .kx-col > * {
+        height: 100%;
+    }
+}

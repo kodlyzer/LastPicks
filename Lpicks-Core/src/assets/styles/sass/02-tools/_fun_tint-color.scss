@@ -1,0 +1,21 @@
+// ==========================================================================
+// FUNCTION: tint
+// ==========================================================================
+//
+// Slightly lighten a color without blowing out the color all the way to white
+//
+// USAGE:
+//
+//  .foo {
+//      color: tint(#BADA55, 42%);
+//  }
+//
+//  .bar {
+//      background-color: tint(#663399, 42%);
+//  }
+//
+
+@function tint($color, $percentage) {
+    @return mix(white, $color, $percentage);
+}
+

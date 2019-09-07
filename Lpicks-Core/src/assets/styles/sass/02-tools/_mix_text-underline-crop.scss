@@ -1,0 +1,55 @@
+// ==========================================================================
+// MIXIN: text-underline-crop
+// ==========================================================================
+
+//
+// This mixins creates a special effect when combined with the mixin
+// 'text-underline'. Instead of the underline and descenders in the font colliding,
+// this mixin creates visual space between the underline and font. It looks like
+// the underline skips the descenders in the text.
+//
+// To achieve this effect, the mixin uses several text-shadows with a color that
+// matches the background-color. This creates a mask-effect.
+//
+// To make this work, remember to pass inn a parameter for $background
+//
+// USAGE:
+//
+// @include text-underline-crop($red);
+//
+
+@mixin text-underline-crop($background) {
+    text-shadow:  0.03em 0 $background,
+    -0.03em 0 $background,
+    0 0.03em $background,
+    0 -0.03em $background,
+    0.06em 0 $background,
+    -0.06em 0 $background,
+    0.09em 0 $background,
+    -0.09em 0 $background,
+    0.12em 0 $background,
+    -0.12em 0 $background,
+    0.15em 0 $background,
+    -0.15em 0 $background;
+
+    &::selection {
+        text-shadow: none;
+    }
+
+    &::-moz-selection {
+        text-shadow: none;
+    }
+}
+
+//
+// We also offer a reset-version that can be used if you need to remove the style
+// provided in the original mixin.
+//
+// USAGE:
+//
+// @include reset-text-underline-crop;
+//
+
+@mixin reset-text-underline-crop($background) {
+    text-shadow:  none;
+}

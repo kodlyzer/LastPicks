@@ -1,0 +1,86 @@
+// Hide from both screenreaders and browsers
+// ==========================================================================
+.kx-is-hidden {
+    @include hidden;
+}
+
+//@include mq($until: mob-s) {
+//    .kx-is-hidden\@until-mob-s {
+//        @include hidden;
+//    }
+//}
+//
+//@include mq($until: mob-m) {
+//    .kx-is-hidden\@until-mob-m {
+//        @include hidden;
+//    }
+//}
+//
+//@include mq($until: tab-s) {
+//    .kx-is-hidden\@until-tab-s {
+//        @include hidden;
+//    }
+//}
+//
+//@include mq($until: tab-m) {
+//    .kx-is-hidden\@until-tab-m {
+//        @include hidden;
+//    }
+//}
+//
+//@include mq($until: tab-l) {
+//    .kx-is-hidden\@until-tab-l {
+//        @include hidden;
+//    }
+//}
+//
+//@include mq($until: ltp-s) {
+//    .kx-is-hidden\@until-ltp-s {
+//        @include hidden;
+//    }
+//}
+//
+//@include mq($until: ltp-m) {
+//    .kx-is-hidden\@until-ltp-m {
+//        @include hidden;
+//    }
+//}
+//
+//@include mq($until: dtp) {
+//    .kx-is-hidden\@until-dtp {
+//        @include hidden;
+//    }
+//}
+
+// Hide only visually, but have it available for screenreaders
+// ==========================================================================
+.kx-is-vishidden {
+    @include vishidden;
+}
+
+// Hide visually and from screenreaders, but maintain layout
+// ==========================================================================
+.kx-is-invisible {
+    @include invisible;
+}
+
+// Generate responsive classes
+// ==========================================================================
+
+$stipped-mq-breakpoints: map-remove($mq-breakpoints, (all));
+
+@each $mq, $units in $stipped-mq-breakpoints {
+    @include mq($until: $mq) {
+        .kx-is-hidden\@until-#{$mq} {
+            @include hidden;
+        }
+
+        .kx-is-vishidden\@until-#{$mq} {
+            @include vishidden;
+        }
+
+        .kx-is-invisible\@until-#{$mq} {
+            @include invisible;
+        }
+    }
+}

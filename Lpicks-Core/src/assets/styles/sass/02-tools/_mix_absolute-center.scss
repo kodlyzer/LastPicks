@@ -1,0 +1,31 @@
+// ==========================================================================
+// MIXIN: centerer
+// ==========================================================================
+
+//
+// A mixin that helps absolute centering, or in either X or Y direction
+//
+// USAGE: center-x + center-y
+// @include absolute-center(true, true);
+//
+// USAGE: center-x
+// @include absolute-center(true, false);
+//
+// USAGE: center-y
+// @include absolute-center(false, true);
+//
+
+@mixin absolute-center($horizontal: true, $vertical: true) {
+    position: absolute;
+    @if ($horizontal and $vertical) {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    } @else if ($horizontal) {
+        left: 50%;
+        transform: translate(-50%, 0);
+    } @else if ($vertical) {
+        top: 50%;
+        transform: translate(0, -50%);
+    }
+}

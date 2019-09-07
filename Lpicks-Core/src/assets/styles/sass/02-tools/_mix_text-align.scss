@@ -1,0 +1,37 @@
+// ==========================================================================
+// MIXIN: Text Align
+// ==========================================================================
+
+//
+// A mixin that helps text-alignment
+//
+// text-align: start; and text-align: end; allows the browser to decide how to
+// best align text based on the user's LTR or RTL preference. Browser support is
+// quite good, but to be sure, we use a backup solution for `start`and `end`,
+// using double declarations, hence falling back to `left`and `right`.
+//
+// USAGE: text-align
+// @include text-align(start);
+//
+
+@mixin text-align($direction) {
+    @if $direction == 'start' {
+        text-align: left;
+        text-align: start;
+    } @else if $direction == 'end' {
+        text-align: right;
+        text-align: end;
+    } @else if $direction == 'left' {
+        text-align: left;
+    } @else if $direction == 'right' {
+        text-align: right;
+    } @else if $direction == 'center' {
+        text-align: center;
+    } @else if $direction == 'justify' {
+        text-align: justify;
+    } @else if $direction == 'justify-all' {
+        text-align: justify-all;
+    } @else if $direction == 'match-parent' {
+        text-align: match-parent;
+    }
+}

@@ -1,0 +1,44 @@
+// ==========================================================================
+// MIXIN: basepadding
+// ==========================================================================
+
+//
+// The mixin takes in numbers of @base-unit in each direction:
+// top, right, bottom, left, or specific directions using directional variables. 
+// Then multiplies these numbers with the current $base-unit set in the config.
+//
+// Think of it as "how many rhythmic units of space" do I need?
+// E.g. if the $base-unit is set to 6px, the calculated values for:
+//
+// @include base-padding(0, 2, 3, 4) = padding: 0 12px 18px 24px;
+// 
+// The mixin uses the function rem-calc to output the values as rem units.
+//
+// USAGE:
+//
+// @include base-padding(0, 2, 3, 4);
+// @include base-padding($bottom: 3);
+
+@mixin base-padding(
+    $top: null,
+    $right: null,
+    $bottom: null,
+    $left: null,
+    $imp: '') {
+    @if $top != null and $right != null and $bottom != null and $left != null {
+        padding: rem-calc(($base-unit * $top) ($base-unit * $right) ($base-unit * $bottom) ($base-unit * $left)) #{$imp};
+    } @else {
+        @if $top != null {
+            padding-top: rem-calc($base-unit * $top) #{$imp};
+        }
+        @if $right != null {
+            padding-right: rem-calc($base-unit * $right) #{$imp};
+        }
+        @if $bottom != null {
+            padding-bottom: rem-calc($base-unit * $bottom) #{$imp};
+        }
+        @if $left != null {
+            padding-left: rem-calc($base-unit * $left) #{$imp};
+        }
+    }
+}

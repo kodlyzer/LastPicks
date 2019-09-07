@@ -1,0 +1,249 @@
+.kx-flex {
+    @include flex;
+}
+
+.kx-inline-flex {
+    @include inline-flex;
+    width: fit-content;
+}
+
+.kx-flex-row {
+    @include flex-row;
+}
+
+.kx-flex-row-reverse {
+    @include flex-row-reverse;
+}
+
+.kx-flex-column {
+    @include flex-column;
+}
+
+.kx-flex-column-reverse {
+    @include flex-column-reverse;
+}
+
+.kx-justify-content-start {
+    @include justify-content-start;
+}
+
+.kx-justify-content-center {
+    @include justify-content-center;
+}
+
+.kx-justify-content-end {
+    @include justify-content-end;
+}
+
+.kx-justify-content-between {
+    @include justify-content-between;
+}
+
+.kx-justify-content-around {
+    @include justify-content-around;
+}
+
+.kx-align-items-start {
+    @include align-items-start;
+}
+
+.kx-align-items-center {
+    @include align-items-center;
+}
+
+.kx-align-items-end {
+    @include align-items-end;
+}
+
+.kx-align-items-baseline {
+    @include align-items-baseline;
+}
+
+.kx-align-items-stretch {
+    @include align-items-stretch;
+}
+
+.kx-align-self-start {
+    @include align-self-start;
+}
+
+.kx-align-self-center {
+    @include align-self-center;
+}
+
+.kx-align-self-end {
+    @include align-self-end;
+}
+
+.kx-align-self-baseline {
+    @include align-self-baseline;
+}
+
+.kx-align-self-stretch {
+    @include align-self-stretch;
+}
+
+.kx-flex-wrap {
+    @include flex-wrap;
+}
+
+.kx-flex-nowrap {
+    @include flex-nowrap;
+}
+
+.kx-flex-wrap-reverse {
+    @include flex-wrap-reverse;
+}
+
+.kx-align-content-start {
+    @include align-content-start;
+}
+
+.kx-align-content-center {
+    @include align-content-center;
+}
+
+.kx-align-content-end {
+    @include align-content-end;
+}
+
+.kx-align-content-between {
+    @include align-content-between;
+}
+
+.kx-align-content-around {
+    @include align-content-around;
+}
+
+.kx-align-content-stretch {
+    @include align-content-stretch;
+}
+
+$stipped-mq-breakpoints: map-remove($mq-breakpoints, (all));
+
+@each $mq, $units in $stipped-mq-breakpoints {
+    @include mq($mq) {
+        // Enable flex behaviour on parent
+        .kx-flex\@#{$mq} {
+            @include flex;
+        }
+
+        .kx-inline-flex\@#{$mq} {
+            @include inline-flex;
+        }
+
+        // Direction
+        .kx-flex-row\@#{$mq} {
+            @include flex-row;
+        }
+
+        .kx-flex-row-reverse\@#{$mq} {
+            @include flex-row-reverse;
+        }
+
+        .kx-flex-column\@#{$mq} {
+            @include flex-column;
+        }
+
+        .kx-flex-column-reverse\@#{$mq} {
+            @include flex-column-reverse;
+        }
+
+        // Justify content
+        .kx-justify-content-start\@#{$mq} {
+            @include justify-content-start;
+        }
+
+        .kx-justify-content-center\@#{$mq} {
+            @include justify-content-center;
+        }
+
+        .kx-justify-content-end\@#{$mq} {
+            @include justify-content-end;
+        }
+
+        .kx-justify-content-between\@#{$mq} {
+            @include justify-content-between;
+        }
+
+        .kx-justify-content-around\@#{$mq} {
+            @include justify-content-around;
+        }
+
+        .kx-align-items-start\@#{$mq} {
+            @include align-items-start;
+        }
+
+        .kx-align-items-center\@#{$mq} {
+            @include align-items-center;
+        }
+
+        .kx-align-items-end\@#{$mq} {
+            @include align-items-end;
+        }
+
+        .kx-align-items-baseline\@#{$mq} {
+            @include align-items-baseline;
+        }
+
+        .kx-align-items-stretch\@#{$mq} {
+            @include align-items-stretch;
+        }
+
+        .kx-align-self-start\@#{$mq} {
+            @include align-self-start;
+        }
+
+        .kx-align-self-center\@#{$mq} {
+            @include align-self-center;
+        }
+
+        .kx-align-self-end\@#{$mq} {
+            @include align-self-end;
+        }
+
+        .kx-align-self-baseline\@#{$mq} {
+            @include align-self-baseline;
+        }
+
+        .kx-align-self-stretch\@#{$mq} {
+            @include align-self-stretch;
+        }
+
+        .kx-flex-wrap\@#{$mq} {
+            @include flex-wrap;
+        }
+
+        .kx-flex-nowrap\@#{$mq} {
+            @include flex-nowrap;
+        }
+
+        .kx-flex-wrap-reverse\@#{$mq} {
+            @include flex-wrap-reverse;
+        }
+
+        .kx-align-content-start\@#{$mq} {
+            @include align-content-start;
+        }
+
+        .kx-align-content-center\@#{$mq} {
+            @include align-content-center;
+        }
+
+        .kx-align-content-end\@#{$mq} {
+            @include align-content-end;
+        }
+
+        .kx-align-content-between\@#{$mq} {
+            @include align-content-between;
+        }
+
+        .kx-align-content-around\@#{$mq} {
+            @include align-content-around;
+        }
+
+        .kx-align-content-stretch\@#{$mq} {
+            @include align-content-stretch;
+        }
+    }
+}

@@ -1,0 +1,16 @@
+// ==========================================================================
+// MIXIN: hidden
+// ==========================================================================
+
+//
+// An easy way to hide an element from both screenreaders and browsers
+//
+// USAGE:
+//
+// @include hidden;
+//
+
+@mixin hidden() {
+    display: none;
+    visibility: hidden;
+}

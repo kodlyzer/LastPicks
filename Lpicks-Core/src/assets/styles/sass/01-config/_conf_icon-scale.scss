@@ -1,0 +1,41 @@
+// ==========================================================================
+// Icon Scale: sets width/ height of icons. Matches $type-scale
+// ==========================================================================
+$icon-scale: (
+    tiny: (
+        width:  12px,
+        height: 12px
+    ),
+    small: (
+        width:  14px,
+        height: 14px
+    ),
+    base: (
+        width:  18px,
+        height: 18px
+    ),
+    moderate: (
+        width:  24px,
+        height: 24px
+    ),
+    medium: (
+        width:  32px,
+        height: 32px
+    ),
+    large: (
+        width:  44px,
+        height: 44px
+    ),
+    xlarge: (
+        width:  56px,
+        height: 56px
+    ),
+    xxlarge: (
+        width:  64px,
+        height: 64px
+    ),
+    xxxlarge: (
+        width:  88px,
+        height: 88px
+    )
+);

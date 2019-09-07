@@ -1,0 +1,15 @@
+// ==========================================================================
+// MIXIN: Overflow margin fix
+// ==========================================================================
+
+//
+// A mixin that helps contain overflowing margins: http://codepen.io/siiron/pen/egzWBY
+//
+// USAGE: overflow-margin-fix
+// @include overflow-margin-fix;
+//
+
+@mixin overflow-margin-fix {
+    padding-top: 0.1px;
+    padding-bottom: 0.1px;
+}

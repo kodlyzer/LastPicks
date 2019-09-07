@@ -1,0 +1,13 @@
+// Release - Releases the element out of a bounding container. Nice if you
+// have long prose content in a nice container to improve readability, but
+// would like an image to be able to "release" itself from the container and
+// stretch from the viewport's left edge to the right edge.
+// ==========================================================================
+
+.kx-release {
+    margin-left: calc(-50vw + 50%);
+    margin-right: calc(-50vw + 50%);
+}
+
+
+

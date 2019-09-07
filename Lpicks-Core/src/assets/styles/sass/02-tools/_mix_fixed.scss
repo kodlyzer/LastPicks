@@ -1,0 +1,16 @@
+// ==========================================================================
+// MIXIN: fixed
+// ==========================================================================
+
+//
+// An easy way to fix an element to the page. This makes it fixed relative to
+// the viewport.
+//
+// USAGE:
+//
+// @include fixed;
+//
+
+@mixin fixed() {
+    position: fixed;
+}

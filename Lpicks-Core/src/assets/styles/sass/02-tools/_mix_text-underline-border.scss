@@ -1,0 +1,47 @@
+// ==========================================================================
+// MIXIN: text-underline-border
+// ==========================================================================
+
+//
+// This mixin applies a border on the bottom of the element. This is almost the
+// same as the good ol' text-decoration: underline. But with this mixin, you can
+// have different colors for the text and the border.
+//
+// USAGE:
+//
+// @include text-underline-border();                // Sensible defaults
+// @include text-underline-border($red, $blue);     // With overrides
+//
+
+@mixin text-underline-border($border-color: currentColor, $border-color--hover: currentColor) {
+    color: inherit;
+    text-decoration: none;
+    border-bottom: rem-calc(1) solid #{$border-color};
+
+    &:hover,
+    &:focus {
+        color: #{$border-color-hover};
+        border-bottom-width: 0;
+    }
+}
+
+//
+// We also offer a reset-version that can be used if you need to remove the style
+// provided in the original mixin.
+//
+// USAGE:
+//
+// @include reset-text-link;
+//
+
+@mixin reset-text-link {
+    color: inherit;
+    text-decoration: none;
+    border-bottom: 0;
+
+    &:hover,
+    &:focus {
+        color: inherit;
+        border-bottom-width: 0;
+    }
+}

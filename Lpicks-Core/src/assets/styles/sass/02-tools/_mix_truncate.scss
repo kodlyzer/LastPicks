@@ -1,0 +1,18 @@
+// ==========================================================================
+// MIXIN: truncate
+// ==========================================================================
+
+//
+// An easy way to truncate text with an ellipsis.
+// Requires the element to be `block` or `inline-block`.
+//
+// USAGE:
+//
+// @include truncate;
+//
+
+@mixin truncate() {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}

@@ -1,0 +1,32 @@
+<div class="kx-dropdown" role="group">
+  <button id="--17883" class="kx-dropdown__toggle kx-btn kx-btn--skin-primary kx-btn--size-large" aria-haspopup="true"
+    [attr.aria-expanded]="open" (click)="open = !open" (clickOutside)="close()">
+    <span class="kx-btn__inner">
+      <span class="kx-btn__txt">{{ dropdown.title }}</span>
+      <!-- ICON Component -->
+      <i class="kx-icon kx-icon--size-small">
+        <img src="../../../assets/img/icons/caret-down.svg" alt="CaretDown">
+      </i>
+    </span>
+  </button>
+  <div class="kx-dropdown__menu kx-dropdown__menu--align-left kx-js-dropdown__menu" aria-labelledby="--17883">
+    <ul class="kx-dropdown__list" *ngIf="dropdown.items.length > 0">
+      <li class="kx-dropdown__item" *ngFor="let item of dropdown.items">
+        <a class="kx-dropdown__link" [href]="item.link">
+          <span class="kx-dropdown__item__txt">{{ item.name }}</span>
+          <i class="kx-icon kx-icon--size-small" *ngIf="item.sub.length > 0">
+            <img src="../../../assets/img/icons/angle-right.svg" alt="AngleRight">
+          </i>
+        </a>
+        <div class="kx-dropdown__menu" *ngIf="item.sub.length > 0">
+          <ul class="kx-dropdown__list">
+            <li class="kx-dropdown__item" *ngFor ="let _item of item.sub">
+              <a class="kx-dropdown__link" [href]="_item.link">
+                {{ _item.name }}
+              </a>
+          </ul>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>

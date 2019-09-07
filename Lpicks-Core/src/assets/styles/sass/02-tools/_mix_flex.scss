@@ -1,0 +1,158 @@
+// Enable flex behaviour on parent
+// ==========================================================================
+@mixin flex {
+    display: flex;
+}
+
+@mixin inline-flex {
+    display: inline-flex;
+}
+
+// Direction
+// ==========================================================================
+
+// Row -  horizontal
+@mixin flex-row {
+    flex-direction: row;
+}
+
+// Row - reverse order of children
+@mixin flex-row-reverse {
+    flex-direction: row-reverse;
+}
+
+// Column -  vertical
+@mixin flex-column {
+    flex-direction: column;
+}
+
+// Column - reverse order of children
+@mixin flex-column-reverse {
+    flex-direction: column-reverse;
+}
+
+// Justify content (start, center, end, between, around)
+// ==========================================================================
+
+// Row - horizontally align children (columns) to start
+@mixin justify-content-start {
+    justify-content: flex-start;
+}
+
+// Row - horizontally align children (columns) to center
+@mixin justify-content-center {
+    justify-content: center;
+}
+
+// Row - horizontally align children (columns) to end
+@mixin justify-content-end {
+    justify-content: flex-end;
+}
+
+// Row - distribute children (columns) with even spacing between
+@mixin justify-content-between {
+    justify-content: space-between;
+}
+
+// Row - distribute children (columns) with even spacing around
+@mixin justify-content-around {
+    justify-content: space-around;
+}
+
+// Align items (start, center, end, baseline, stretch)
+// ==========================================================================
+
+// Row - vertically align children (columns) to top
+@mixin align-items-start {
+    align-items: flex-start;
+}
+
+// Row - vertically align children (columns) to middle
+@mixin align-items-center {
+    align-items: center;
+}
+
+// Row - vertically align children (columns) to bottom
+@mixin align-items-end {
+    align-items: flex-end;
+}
+
+// Row - vertically stretch children (columns)
+@mixin align-items-baseline {
+    align-items: baseline;
+}
+
+// Row - vertically stretch children (columns)
+@mixin align-items-stretch {
+    align-items: stretch;
+}
+
+// Align self (start, center, end, baseline, stretch)
+// ==========================================================================
+
+// Row - vertically align children (columns) to top
+@mixin align-self-start {
+    align-self: flex-start;
+}
+
+// Row - vertically align children (columns) to middle
+@mixin align-self-center {
+    align-self: center;
+}
+
+// Row - vertically align children (columns) to bottom
+@mixin align-self-end {
+    align-self: flex-end;
+}
+
+// Row - vertically stretch children (columns)
+@mixin align-self-baseline {
+    align-self: baseline;
+}
+
+// Row - vertically stretch children (columns)
+@mixin align-self-stretch {
+    align-self: stretch;
+}
+
+// Wrap
+// ==========================================================================
+
+@mixin flex-wrap {
+    flex-wrap: wrap;
+}
+
+@mixin flex-nowrap {
+    flex-wrap: nowrap;
+}
+
+@mixin flex-wrap-reverse {
+    flex-wrap: wrap-reverse;
+}
+
+// Align content (start, center, end, between, around, stretch)
+// ==========================================================================
+
+@mixin align-content-start {
+    align-content: flex-start;
+}
+
+@mixin align-content-center {
+    align-content: center;
+}
+
+@mixin align-content-end {
+    align-content: flex-end;
+}
+
+@mixin align-content-between {
+    align-content: space-between;
+}
+
+@mixin align-content-around {
+    align-content: space-around;
+}
+
+@mixin align-content-stretch {
+    align-content: stretch;
+}

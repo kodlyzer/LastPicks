@@ -1,0 +1,143 @@
+
+@mixin table-base {
+    background: $color-table-bg;
+    border-spacing: 0;
+    overflow: hidden;
+
+    caption {
+        @include type-scale(base);
+        @include type-weight(extra-bold);
+    }
+
+    th,
+    td {
+        text-align: left;
+        vertical-align: top;
+    }
+
+    th {
+        background-color: inherit;
+        color: inherit;
+        border-bottom: rem-calc(1) solid $color-th-border;
+    }
+
+    td {
+        background-color: $color-td-bg;
+
+        code {
+            white-space: nowrap;
+        }
+    }
+}
+
+@mixin table-fit-tight {
+    @include type-scale(small);
+
+    th, td {
+        padding: rem-calc(11 12 12 12);
+    }
+}
+
+@mixin table-fit-container {
+    @include type-scale(base);
+
+    table-layout: fixed;
+
+    width: 100%;
+}
+
+@mixin table-row-double-height {
+    @include type-scale(base);
+
+    line-height: 2.5rem;
+}
+
+@mixin table-row-compact {
+    @include type-scale(base);
+
+    line-height: 1rem;
+
+    font-size: 0.7rem;
+}
+
+@mixin table-fit-loose {
+    @include type-scale(base);
+
+    th, td {
+        padding: rem-calc(17 18 18 18);
+    }
+}
+
+@mixin table-border {
+    border: rem-calc(1) solid $color-table-border;
+
+    tr {
+        &:last-child {
+            td {
+                border-bottom: 0;
+            }
+        }
+    }
+}
+
+@mixin table-fluid {
+    width: 100%;
+}
+
+@mixin table-rows {
+    tr {
+        td {
+            border-bottom: rem-calc(1) solid $color-td-border;
+        }
+    }
+}
+
+@mixin table-cols {
+    td {
+        border-left: rem-calc(1) solid $color-td-border;
+
+        &:first-child {
+            border-left: 0;
+        }
+
+        &:last-child {
+            border-right: 0;
+        }
+    }
+}
+
+@mixin table-zebra {
+    tr {
+        &:nth-child(odd) {
+            td {
+                background-color: $color-td-bg-even;
+            }
+        }
+    }
+}
+
+@mixin table-highlight {
+    tr {
+        &:hover {
+            > td {
+                background-color: $color-td-bg-hover;
+            }
+        }
+    }
+}
+
+@mixin table-hover {
+    tr {
+        &:hover {
+            > td {
+                background-color: $color-td-bg-hover-green;
+            }
+        }
+    }
+}
+
+@mixin table-responsive {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+}

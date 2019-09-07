@@ -1,0 +1,21 @@
+# duration/props.yml
+global:
+  category: 'duration'
+  type: 'duration'
+props:
+  - name: 'duration-instant'
+    value: '100ms'
+    comment: 'Instant'
+  - name: 'duration-fast'
+    value: '200ms'
+    comment: 'Fast'
+  - name: 'duration-default'
+    value: '300ms'
+    comment: 'Default'
+  - name: 'duration-easy'
+    value: '500ms'
+    comment: 'Easy'
+  - name: 'duration-slow'
+    value: '800ms'
+    comment: 'Slow'
+

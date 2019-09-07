@@ -1,0 +1,21 @@
+// ==========================================================================
+// FUNCTION: shade
+// ==========================================================================
+//
+// Slightly darken a color without blowing out the color all the way to black
+//
+// USAGE:
+//
+//  .foo {
+//      color: shade(#BADA55, 42%);
+//  }
+//
+//  .bar {
+//      background-color: shade(#663399, 42%);
+//  }
+//
+
+@function shade($color, $percentage) {
+    @return mix(black, $color, $percentage);
+}
+

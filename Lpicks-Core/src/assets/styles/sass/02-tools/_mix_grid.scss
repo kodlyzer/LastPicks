@@ -1,0 +1,184 @@
+// ==========================================================================
+// Component: grid
+// ==========================================================================
+
+// Mixins for row-elements. Mixins can be used directly in scss.
+// They are also used for generating utility-classes for use in HTML. Please see
+// usage in:
+//
+// - @mixin make-column-breakpoint-classes()
+// - @mixin make-grid-classes()
+//
+// ==========================================================================
+
+// Row - base styling
+@mixin row-base() {
+    @include flex;
+    @include flex-wrap;
+    @include my(none);
+
+    &:after {
+        content: none;
+    }
+}
+
+// Row - Add gutters on children (.kx-col) in both directions; horizontal + vertical
+@mixin row-gutters {
+    margin-right: -(gutter()/2);
+    margin-left: -(gutter()/2);
+
+    .kx-col {
+        padding-top: 0;
+        padding-right: gutter() / 2;
+        padding-bottom: gutter();
+        padding-left: gutter() / 2;
+    }
+}
+
+// Row - Add gutters on children (.kx-col) vertically (bottom)
+@mixin row-gutters--vertical {
+    .kx-col {
+        padding-bottom: gutter();
+    }
+}
+
+// Row - Add gutters on children (.kx-col) horizontally (left + right)
+@mixin row-gutters--horizontal {
+    margin-right: -(gutter()/2);
+    margin-left: -(gutter()/2);
+
+    .kx-col {
+        padding-right: gutter() / 2;
+        padding-left: gutter() / 2;
+    }
+}
+
+// Column - base styling.
+@mixin column-base() {
+    position: relative;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+}
+
+// Column - Set column to be ordered first
+@mixin col-first() {
+    order: -1;
+}
+
+// Column - Set column to be ordered last
+@mixin col-last() {
+    order: 1;
+}
+
+// Generate utility-classes
+// ==========================================================================
+
+// Mixin uses $breakpoint as parameter.
+// This mixin is used in @mixin make-grid-classes().
+@mixin make-grid-breakpoint-classes($mq) {
+    @for $i from 1 through $grid-columns {
+        .kx-col--#{$i}\@#{$mq} {
+            width: percentage($i/$grid-columns);
+        }
+    }
+
+    .kx-col--first\@#{$mq} {
+        @include col-first();
+    }
+
+    .kx-col--last\@#{$mq} {
+        @include col-last();
+    }
+
+    @for $i from 1 through $grid-columns {
+        .kx-offset-#{$i}\@#{$mq} {
+            margin-left: percentage($i/$grid-columns);
+        }
+    }
+}
+
+// Creates responsive grid classes
+@mixin make-grid-classes() {
+    .kx-row {
+        @include row-base();
+        @include flex-row;
+    }
+
+    .kx-row--gutters {
+        @include row-gutters;
+    }
+
+    .kx-row--gutters-v {
+        @include row-gutters--vertical;
+    }
+
+    .kx-row--gutters-h {
+        @include row-gutters--horizontal;
+    }
+
+    .kx-col {
+        @include column-base();
+        flex-grow: 1; // Makes default columns flex-grow to fill available space
+    }
+
+    [class*='kx-col--'] {
+        flex-grow: 0; // Restrict columns with defined width from growing
+        position: relative;
+    }
+
+    @for $i from 1 through $grid-columns {
+        .kx-col--#{$i} {
+            width: percentage($i/$grid-columns);
+        }
+    }
+
+    .kx-col--first {
+        @include col-first();
+    }
+
+    .kx-col--last {
+        @include col-last();
+    }
+
+    @for $i from 1 through $grid-columns {
+        .kx-offset-#{$i} {
+            margin-left: percentage($i/$grid-columns);
+        }
+    }
+
+    // Responsive utility-classes are here scoped to breakpoints
+
+    @include mq($from: mob-s) {
+        @include make-grid-breakpoint-classes(mob-s);
+    }
+
+    @include mq($from: mob-m) {
+        @include make-grid-breakpoint-classes(mob-m);
+    }
+
+    @include mq($from: tab-s) {
+        @include make-grid-breakpoint-classes(tab-s);
+    }
+
+    @include mq($from: tab-m) {
+        @include make-grid-breakpoint-classes(tab-m);
+    }
+
+    @include mq($from: tab-l) {
+        @include make-grid-breakpoint-classes(tab-l);
+    }
+
+    @include mq($from: ltp-s) {
+        @include make-grid-breakpoint-classes(ltp-s);
+    }
+
+    @include mq($from: ltp-m) {
+        @include make-grid-breakpoint-classes(ltp-m);
+    }
+
+    @include mq($from: dtp) {
+        @include make-grid-breakpoint-classes(dtp);
+    }
+}
+

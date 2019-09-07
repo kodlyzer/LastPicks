@@ -1,0 +1,150 @@
+@mixin m($t: nano, $r: null, $b: null, $l: null, $spacing-important: false) {
+    @if ($t and $r and $b and $l) {
+
+        @include mt($t);
+        @include mr($r);
+        @include mb($b);
+        @include ml($l);
+
+    } @else if ($t and $r and $b and not $l) {
+
+        @include mt($t);
+        @include mx($r);
+        @include mb($b);
+
+    } @else if ($t and $r and not $b and not $l) {
+
+        @include my($t);
+        @include mx($r);
+
+    } @else if ($t and not $r and not $b and not $l) {
+
+        @if ($t == 'auto') {
+            @include my(none); //be explicit about what the browser does
+            @include mx(auto);
+        } @else {
+            @include my($t);
+            @include mx($t);
+        }
+
+    } @else {
+        @error 'm(#{$t}, #{$r}, #{$b}, #{$l}): Invalid parameters. Expects m($size), m($y, $x), m($t, $x, $b) or m($t, $r, $b, $l)';
+    }
+}
+
+@mixin mx($r: nano, $l: null, $spacing-important: false) {
+    @if ($r and $l) {
+        @include mr($r);
+        @include ml($l);
+    } @else if ($r and not $l) {
+        @include mr($r);
+        @include ml($r);
+    } @else {
+        @error 'mx(#{$r}, #{$l}): Invalid parameters. Expects mx($size) or mx($r, $l)';
+    }
+}
+
+@mixin my($t: nano, $b: null, $spacing-important: false) {
+    @if ($t and $b) {
+        @include mt($t);
+        @include mb($b);
+    } @else if ($t and not $b) {
+        @include mt($t);
+        @include mb($t);
+    } @else {
+        @error 'my(#{$t}, #{$b}): Invalid parameters. Expects my($size) or my($t, $b)';
+    }
+}
+
+@mixin ml($size: nano, $spacing-important: false) {
+    @if ($size == 'auto') {
+        margin-left: auto #{if($spacing-important, '!important', '')};
+    } @else {
+        margin-left: rem-calc(map-get($spacing-sizes, $size)) #{if($spacing-important, '!important', '')};
+    }
+}
+
+@mixin mt($size: nano, $spacing-important: false) {
+    margin-top: rem-calc(map-get($spacing-sizes, $size)) #{if($spacing-important, '!important', '')};
+}
+
+@mixin mr($size: nano, $spacing-important: false) {
+    @if ($size == 'auto') {
+        margin-right: auto #{if($spacing-important, '!important', '')};
+    } @else {
+        margin-right: rem-calc(map-get($spacing-sizes, $size)) #{if($spacing-important, '!important', '')};
+    }
+}
+
+@mixin mb($size: nano, $spacing-important: false) {
+    margin-bottom: rem-calc(map-get($spacing-sizes, $size)) #{if($spacing-important, '!important', '')};
+}
+
+@mixin p($t: nano, $r: null, $b: null, $l: null, $spacing-important: false) {
+    @if ($t and $r and $b and $l) {
+
+        @include pt($t);
+        @include pr($r);
+        @include pb($b);
+        @include pl($l);
+
+    } @else if ($t and $r and $b and not $l) {
+
+        @include pt($t);
+        @include px($r);
+        @include pb($b);
+
+    } @else if ($t and $r and not $b and not $l) {
+
+        @include py($t);
+        @include px($r);
+
+    } @else if ($t and not $r and not $b and not $l) {
+
+        @include py($t);
+        @include px($t);
+
+    } @else {
+        @error 'p(#{$t}, #{$r}, #{$b}, #{$l}): Invalid parameters. Expects p($size), p($y, $x), p($t, $x, $b) or p($t, $r, $b, $l)';
+    }
+}
+
+@mixin px($r: nano, $l: null, $spacing-important: false) {
+    @if ($r and $l) {
+        @include pr($r);
+        @include pl($l);
+    } @else if ($r and not $l) {
+        @include pr($r);
+        @include pl($r);
+    } @else {
+        @error 'px(#{$r}, #{$l}): Invalid parameters. Expects px($size) or px($r, $l)';
+    }
+}
+
+@mixin py($t: nano, $b: null, $spacing-important: false) {
+    @if ($t and $b) {
+        @include pt($t);
+        @include pb($b);
+    } @else if ($t and not $b) {
+        @include pt($t);
+        @include pb($t);
+    } @else {
+        @error 'py(#{$t}, #{$b}): Invalid parameters. Expects py($size) or py($t, $b)';
+    }
+}
+
+@mixin pl($size: nano, $spacing-important: false) {
+    padding-left: rem-calc(map-get($spacing-sizes, $size)) #{if($spacing-important, '!important', '')};
+}
+
+@mixin pt($size: nano, $spacing-important: false) {
+    padding-top: rem-calc(map-get($spacing-sizes, $size)) #{if($spacing-important, '!important', '')};
+}
+
+@mixin pr($size: nano, $spacing-important: false) {
+    padding-right: rem-calc(map-get($spacing-sizes, $size)) #{if($spacing-important, '!important', '')};
+}
+
+@mixin pb($size: nano, $spacing-important: false) {
+    padding-bottom: rem-calc(map-get($spacing-sizes, $size)) #{if($spacing-important, '!important', '')};
+}
