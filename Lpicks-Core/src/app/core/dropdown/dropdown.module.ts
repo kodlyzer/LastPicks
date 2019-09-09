@@ -2,15 +2,15 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { DropdownComponent } from './dropdown.component';
-import { ClickOutsideDirective } from './clickOutside.directive';
+import { ClickOutsideModule } from '../shared/click-outside/click-outside.module';
 
 @NgModule({
   declarations: [
-    DropdownComponent,
-    ClickOutsideDirective
+    DropdownComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    ClickOutsideModule
   ],
   exports: [
     DropdownComponent
