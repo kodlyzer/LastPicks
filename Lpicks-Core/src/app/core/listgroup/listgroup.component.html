@@ -5,22 +5,26 @@
 </header>
 <div class="kx-listgroup">
   <ul class="kx-listgroup__list">
-    <li class="kx-listgroup__row" [ngClass]="item.listSelected? 'kx-is-selected': null"  
-      *ngFor="let item of listgroup.listitems">
-      <!-- LINK AS BUTTON Component -->
-      <a class="kx-btn kx-listgroup__link" href="{{item.listLink}}"> <span class="kx-btn__inner">
+    <li class="kx-listgroup__row" *ngFor="let item of listgroup.listitems"
+      [ngClass]="item.listSelected? 'kx-is-selected': null">
+      <a class="kx-btn kx-listgroup__link" href="{{item.listLink}}" style="margin-right: 0px"> <span
+          class="kx-btn__inner">
           <span class="kx-btn__inner">
             <span class="kx-btn__txt">{{item.listName}}</span>
           </span>
         </span>
-      </a>
-      <div class="badgeClass" *ngIf="item.badgeNumber">
-        <span class="kx-badge kx-inline-flex kx-align-items-center">
-          <span class="kx-badge__fill kx-badge--skin-info kx-inline-flex kx-align-items-center">
-            <span class="kx-badge__txt">{{item.badgeNumber}}</span>
+        <div *ngIf="item.metadata">
+          <div class="kx-listgroup__metadata" style="width: 100px;">{{item.metadata}}</div>
+        </div>
+        <div *ngIf="item.badgeNumber">
+          <span class="kx-badge kx-inline-flex kx-align-items-center">
+            <span class="kx-badge__fill kx-badge--skin-info kx-inline-flex kx-align-items-center">
+              <span class="kx-badge__txt">{{item.badgeNumber}}</span>
+            </span>
           </span>
-        </span>
-      </div>
+        </div>
+      </a>
+
     </li>
   </ul>
 </div>

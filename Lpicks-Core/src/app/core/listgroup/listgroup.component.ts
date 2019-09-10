@@ -10,7 +10,7 @@ export class ListgroupComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    
+
   }
 }
 export interface Listgroup {
@@ -19,5 +19,6 @@ export interface Listgroup {
   listSelected: boolean;
   listTitle: string;
   badgeNumber: number;
+  metadata: string;
 }
 
