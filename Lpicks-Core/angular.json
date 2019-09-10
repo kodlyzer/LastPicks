@@ -27,7 +27,9 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "node_modules/@kognifai/design-system/www/assets/styles/css/kx-styles.css",
+              "node_modules/@kognifai/design-system/www/assets/styles/css/kx-fonts.css"
             ],
             "scripts": [],
             "es5BrowserSupport": true

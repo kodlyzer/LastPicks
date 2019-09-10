@@ -1,0 +1,38 @@
+<div class="kx-modal" tabindex="-1" role="dialog" aria-labelledby="--22029">
+    <div class="kx-modal__dialog kx-modal--skin-prominent kx-modal--size-medium" role="document">
+        <div class="kx-modal__content">
+            <div class="kx-modal__header">
+                <h5 class="kx-modal__title" id="--22029">{{overlay.title}}</h5>
+                <button class="kx-btn kx-btn--size-base kx-btn--icon kx-modal__close" aria-label="Close">
+                    <span class="kx-btn__inner">
+                        <i class="kx-icon kx-icon--size-moderate">
+                            <svg focusable="false">
+                                <use xlink:href="../../assets/img/icons/sprites/icons.svg#close"></use>
+                            </svg>
+                        </i>
+                        <span class="kx-btn__txt kx-is-vishidden">Close</span>
+                    </span>
+                </button>
+            </div>
+            <div class="kx-modal__body">
+                <!-- <ng-content></ng-content> -->
+                {{overlay.content}}
+            </div>
+
+            <div class="kx-modal__footer">
+                <div class="kx-btngroup kx-flex kx-flex-wrap kx-justify-content-center" role="group"
+                    *ngFor="let item of overlay?.option">
+
+                    <a class="kx-btn kx-btn--skin-primary kx-btn--size-large" [href]="item.link">
+                        <span class="kx-btn__inner">
+                            <span class="kx-btn__txt">{{item.name}}t</span>
+                        </span>
+                    </a>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="kx-modal__backdrop"></div>
+</div>
