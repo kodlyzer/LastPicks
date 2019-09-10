@@ -3,14 +3,19 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { ListgroupComponent } from './core/listgroup/listgroup.component';
+import { ListgroupDemoComponent } from './demo/listgroup-demo/listgroup-demo.component';
+import { ListGroupModule } from './core/listgroup/listgroup.module';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ListgroupDemoComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ListGroupModule
   ],
   providers: [],
   bootstrap: [AppComponent]

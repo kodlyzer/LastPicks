@@ -1,0 +1,26 @@
+<header class="kx-listgroup__header">
+  <h4 class="kx-listgroup__title">
+    {{listgroup.listTitle}}
+  </h4>
+</header>
+<div class="kx-listgroup">
+  <ul class="kx-listgroup__list">
+    <li class="kx-listgroup__row" [ngClass]="item.listSelected? 'kx-is-selected': null"  
+      *ngFor="let item of listgroup.listitems">
+      <!-- LINK AS BUTTON Component -->
+      <a class="kx-btn kx-listgroup__link" href="{{item.listLink}}"> <span class="kx-btn__inner">
+          <span class="kx-btn__inner">
+            <span class="kx-btn__txt">{{item.listName}}</span>
+          </span>
+        </span>
+      </a>
+      <div class="badgeClass" *ngIf="item.badgeNumber">
+        <span class="kx-badge kx-inline-flex kx-align-items-center">
+          <span class="kx-badge__fill kx-badge--skin-info kx-inline-flex kx-align-items-center">
+            <span class="kx-badge__txt">{{item.badgeNumber}}</span>
+          </span>
+        </span>
+      </div>
+    </li>
+  </ul>
+</div>
