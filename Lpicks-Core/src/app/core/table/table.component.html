@@ -1,0 +1,14 @@
+<table class="kx-table kx-table--fit-tight kx-ui">
+    <thead class="kx-theme--teal">
+        <tr>
+            <th *ngFor="let item of tablecontent?.header">{{ item }}</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="" *ngFor="let item of tablecontent.body">
+            <!-- <ng-container *ngIf="item.length === tablecontent.header.length"> -->
+                <td *ngFor="let _item of arrayN(item, tablecontent.header.length)">{{_item}}</td>
+            <!-- </ng-container> -->
+        </tr>
+    </tbody>
+</table>
