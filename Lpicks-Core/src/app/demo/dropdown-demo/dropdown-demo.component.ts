@@ -8,54 +8,85 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DropdownDemoComponent implements OnInit {
 
+  path: string;
   dropdown = {
     title: 'Courses',
     items: [
-      { link: '#',
-        name: 'Java',
-        sub: []
-      },
       {
+        icon: 'box',
         link: '#',
-        name: '.Net',
+        name: 'Java',
         sub: [
-          { link: '#',
-            name: 'FrameWork',
-            sub: []
+          {
+            icon: 'box',
+            link: '#',
+            name: 'Spring',
+            sub: [
+              {
+                link: '#',
+                name: 'Applets'
+              },
+              {
+                icon: 'papers',
+                link: '#',
+                name: 'JFrame'
+              }
+            ]
           },
-          { link: '#',
-            name: 'Core',
-            sub: []
+          {
+            link: '#',
+            name: 'Swing'
           }
         ]
       },
-      { link: '#',
-        name: 'C++',
-        sub: []
-      },
       {
+        icon: 'papers',
         link: '#',
-        name: 'Python',
+        name: '.Net',
         sub: [
-          { link: '#',
-            name: 'Djanjo',
-            sub: []
+          {
+            link: '#',
+            name: 'FrameWork'
           },
-          { link: '#',
-            name: 'Tkinter',
-            sub: [] }
+          {
+            link: '#',
+            name: 'Core'
+          }
         ]
       },
       {
+        icon: 'success',
         link: '#',
-        name: 'Javascript',
-        sub: []
+        name: 'C++'
+      },
+      {
+        icon: 'danger',
+        link: '#',
+        name: 'Python',
+        sub: [
+          {
+            link: '#',
+            name: 'Djanjo'
+          },
+          {
+            link: '#',
+            name: 'Tkinter'
+          }
+        ]
+      },
+      {
+        icon: 'info',
+        link: '#',
+        name: 'Javascript'
       },
     ]
   };
+
   constructor() { }
 
   ngOnInit() {
   }
-
+  handler(path: string) {
+    this.path = path;
+  }
 }

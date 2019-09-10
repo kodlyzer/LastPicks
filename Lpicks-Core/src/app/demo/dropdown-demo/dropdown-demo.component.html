@@ -1,1 +1,81 @@
-<kdi-dropdown [dropdown] = "dropdown"></kdi-dropdown>
+<div class="main">
+  <kdi-dropdown [dropdown]="dropdown" (getClickPath)="handler($event)"></kdi-dropdown>
+  <br>
+  <p class="kx-typescale--base">{{ path }}</p>
+  <br>
+</div>
+<!-- <nav class="kx-tabs">
+  <ol class="kx-tabs__list">
+    <li class="kx-tabs__item kx-is-active">
+      <a href="#" class="kx-tabs__label">
+        <span class="kx-tabs__txt">Overview</span>
+      </a>
+    </li>
+    <li class="kx-tabs__item">
+      <a href="#" class="kx-tabs__label">
+        <span class="kx-tabs__txt">Usage</span>
+      </a>
+    </li>
+    <li class="kx-tabs__item">
+      <a href="#" class="kx-tabs__label">
+        <span class="kx-tabs__txt">Live Demo</span>
+      </a>
+    </li>
+  </ol>
+</nav> -->
+
+<section>
+  <ul>
+    <li>Configuration Options</li>
+    <section>
+      <p class="kx-typescale--medium">Selector</p>
+      <p class="kx-p--base kx-typescale--base code" width="30">
+        &lt;kdi-dropdown [dropdown]="yourJavascriptObject" (getClickPath)="handler($event)"&gt;&lt;/kdi-dropdown&gt;
+      </p>
+    </section>
+    <li>How to use?</li>
+    <section>
+        <p class="kx-typescale--medium">Javascript Object</p>
+        <pre class="kx-p--base kx-typescale--base code" ngNonBindable width="30">
+            dropdown = &#123;
+              title: 'Courses',
+              items: [
+                &#123;
+                  icon: 'box',
+                  link: '#',
+                  name: 'Java',
+                &#125;,
+                &#123;
+                  icon: 'papers',
+                  link: '#',
+                  name: '.Net',
+                  sub: [
+                  &#123;
+                      link: '#',
+                      name: 'FrameWork'
+                    &#125;,
+                    &#123;
+                      link: '#',
+                      name: 'Core'
+                    &#125;
+                  ]
+                &#125;,
+                &#123;
+                  icon: 'success',
+                  link: '#',
+                  name: 'C++'
+                &#125;,
+                &#123;
+                  icon: 'danger',
+                  link: '#',
+                  name: 'Python',
+                &#125;
+              ]
+            &#125;;
+        </pre>
+      </section>
+    <li>How to listen to selecte item from drop down?</li>
+    <li>Live demo</li>
+    <li>More</li>
+  </ul>
+</section>

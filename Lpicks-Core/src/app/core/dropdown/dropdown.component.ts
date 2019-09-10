@@ -1,14 +1,16 @@
-import { Component, OnInit, Input, ViewChild, ElementRef, HostListener } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
-  // tslint:disable-next-line: component-selector
   selector: 'kdi-dropdown',
   templateUrl: './dropdown.component.html',
   styleUrls: ['./dropdown.component.scss']
 })
 export class DropdownComponent implements OnInit {
   open = false;
+  iconPath = '../../../assets/img/icons/';
   @Input() dropdown: Dropdown;
+  @Output()
+  public getClickPath = new EventEmitter<string>();
 
   constructor() {
   }
@@ -19,8 +21,8 @@ export class DropdownComponent implements OnInit {
   close() {
     this.open = false;
   }
-}
-export interface Dropdown {
-  title: string;
-  items: [];
+
+  onClick(item: string) {
+    this.getClickPath.emit(item);
+  }
 }

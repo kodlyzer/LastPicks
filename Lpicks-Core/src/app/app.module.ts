@@ -1,21 +1,19 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { DropdownModule } from './core/dropdown/dropdown.module';
 import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
-import { DropdownDemoComponent } from './demo/dropdown-demo/dropdown-demo.component';
+import { DemoModule } from './demo/demo.module';
 
 
 @NgModule({
   declarations: [
-    AppComponent,
-    DropdownDemoComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    DropdownModule
+    DemoModule
   ],
   providers: [],
   bootstrap: [AppComponent]
