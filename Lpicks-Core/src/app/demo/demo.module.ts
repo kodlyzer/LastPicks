@@ -1,11 +1,17 @@
 import { NgModule } from '@angular/core';
 import { DemoModalComponent } from './demo-modal/demo-modal.component';
 import { CoreModule } from '../core/core.module';
-const COMPONENTS = [DemoModalComponent];
+import { DropdownDemoComponent } from './dropdown-demo/dropdown-demo.component';
+import { DemoHeaderComponent } from './demo-header/demo-header.component';
+const COMPONENTS = [DemoModalComponent, DropdownDemoComponent,DemoHeaderComponent];
+
+
+
+
+
 @NgModule({
     imports: [CoreModule],
     declarations: [...COMPONENTS],
     exports: [...COMPONENTS]
 })
-export class DemoModule {
- }
+export class DemoModule { }
