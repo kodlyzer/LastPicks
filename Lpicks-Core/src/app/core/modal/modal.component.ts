@@ -1,5 +1,4 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { componentFactoryName } from '@angular/compiler';
 
 @Component({
   selector: 'kdi-modal',
@@ -7,10 +6,11 @@ import { componentFactoryName } from '@angular/compiler';
   styleUrls: ['./modal.component.scss']
 })
 export class ModalComponent implements OnInit {
-  @Input() overlay: { title: string, content: string, option: [] };
+  @Input() overlay: { title: string, option: [] };
   constructor() { }
 
   ngOnInit() {
   }
 
 }
+
