@@ -22,7 +22,8 @@ export class DemoModalComponent implements OnInit {
         link: '#',
         name: 'cancel'
       }
-    ]
+    ],
+    size: 'medium'
   };
   constructor() { }
 

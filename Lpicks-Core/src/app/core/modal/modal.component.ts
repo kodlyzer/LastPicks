@@ -6,7 +6,7 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./modal.component.scss']
 })
 export class ModalComponent implements OnInit {
-  @Input() overlay: { title: string, option: [] };
+  @Input() overlay: { title: string, option: [], size: string };
   constructor() { }
 
   ngOnInit() {

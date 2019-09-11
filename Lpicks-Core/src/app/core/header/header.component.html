@@ -1,0 +1,144 @@
+<div class="kx-page__header kx-flex">
+  <header class="kx-header kx-flex kx-align-items-center" role="banner">
+    <button class="kx-btn kx-hamburger kx-hamburger--spin kx-header__nav-toggle kx-js-header__nav-toggle">
+      <span class="kx-hamburger__inner">
+        <span class="kx-hamburger__icon"></span>
+      </span>
+      <span class="kx-hamburger__txt kx-is-vishidden">Menu</span>
+    </button>
+    <a class="kx-header__logo" href="#">
+      <img src="../../../assets/img/icons/industries/maritime-offshore-white.svg" alt="Kognifai logo">
+    </a>
+    <a class="kx-header__title" href="#">
+      {{ header }}
+    </a>
+    <div class="kx-header__tools">
+      <!-- BUTTON-GROUP Component -->
+      <div class="kx-btngroup kx-flex kx-flex-wrap kx-btngroup--fit-tight kx-ui" role="group"
+        aria-label="Tools and settings">
+        <!-- DROPDOWN Component -->
+        <div class="kx-dropdown" role="group">
+          <button id="--10800" class="kx-dropdown__toggle kx-btn kx-btn--size-base kx-btn--icon kx-js-dropdown__toggle"
+            aria-haspopup="true" aria-expanded="false">
+            <span class="kx-btn__inner">
+              <!-- ICON Component -->
+              <i class="kx-icon kx-icon--size-base">
+                <svg focusable="false">
+                  <use xlink:href="../../assets/img/icons/sprites/icons.svg#user"></use>
+                </svg>
+              </i>
+              <span class="kx-btn__txt kx-is-vishidden">User</span>
+            </span>
+          </button>
+          <div class="kx-dropdown__menu kx-dropdown__menu--align-right kx-js-dropdown__menu" aria-labelledby="--10800">
+            <ul class="kx-dropdown__list">
+              <li class="kx-dropdown__item">
+                <a class="kx-dropdown__link" href="#">
+                  <span class="kx-dropdown__item__txt">My profile</span>
+                </a>
+              </li>
+              <li class="kx-dropdown__item">
+                <a class="kx-dropdown__link" href="#">
+                  <span class="kx-dropdown__item__txt">Notification settings</span>
+                </a>
+              </li>
+              <li class="kx-dropdown__item">
+                <a class="kx-dropdown__link" href="#">
+                  <span class="kx-dropdown__item__txt">Security</span>
+                </a>
+              </li>
+              <li class="kx-dropdown__item">
+                <a class="kx-dropdown__link" href="#">
+                  <span class="kx-dropdown__item__txt">Usage</span>
+                </a>
+              </li>
+              <li class="kx-divider kx-divider--size-mini" aria-hidden="true" tabindex="-1"></li>
+              <li class="kx-dropdown__item">
+                <a class="kx-dropdown__link" href="#">
+                  <span class="kx-dropdown__item__txt">Logout</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- DROPDOWN Component -->
+        <div class="kx-dropdown" role="group">
+          <button id="--59023" class="kx-dropdown__toggle kx-btn kx-btn--size-base kx-btn--icon kx-js-dropdown__toggle"
+            aria-haspopup="true" aria-expanded="false">
+            <span class="kx-btn__inner">
+              <!-- ICON Component -->
+              <i class="kx-icon kx-icon--size-base">
+                <svg focusable="false">
+                  <use xlink:href="../../assets/img/icons/sprites/icons.svg#cog"></use>
+                </svg>
+              </i>
+              <span class="kx-btn__txt kx-is-vishidden">Settings</span>
+            </span>
+          </button>
+          <div class="kx-dropdown__menu kx-dropdown__menu--align-right kx-js-dropdown__menu" aria-labelledby="--59023">
+            <ul class="kx-dropdown__list">
+              <li class="kx-dropdown__item">
+                <a class="kx-dropdown__link" href="#">
+                  <span class="kx-dropdown__item__txt">Menu Editor</span>
+                </a>
+              </li>
+              <li class="kx-dropdown__item">
+                <a class="kx-dropdown__link" href="#">
+                  <span class="kx-dropdown__item__txt">Unit of Measure</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <kdi-dropdown [dropdown]="dropdown" (getClickPath)="handler($event)"></kdi-dropdown>
+        <!-- DROPDOWN Component -->
+        <!-- <div class="kx-dropdown" role="group">
+          <button id="--17375" class="kx-dropdown__toggle kx-btn kx-btn--size-base kx-js-dropdown__toggle"
+            aria-haspopup="true" aria-expanded="false">
+            <span class="kx-btn__inner">
+              
+              <i class="kx-icon kx-icon--size-base">
+                <svg focusable="false">
+                  <use xlink:href="../../assets/img/icons/sprites/icons.svg#dots-horizontal"></use>
+                </svg>
+              </i>
+              <span class="kx-btn__txt">More</span>
+            </span>
+          </button>
+          <div class="kx-dropdown__menu kx-dropdown__menu--align-right kx-js-dropdown__menu" aria-labelledby="--17375">
+            <ul class="kx-dropdown__list">
+              <li class="kx-dropdown__item">
+                <a class="kx-dropdown__link" href="#">
+                  <span class="kx-dropdown__item__txt">Support</span>
+                </a>
+              </li>
+              <li class="kx-dropdown__item">
+                <a class="kx-dropdown__link" href="#">
+                  <span class="kx-dropdown__item__txt">Give feedback</span>
+                </a>
+              </li>
+              <li class="kx-dropdown__item">
+                <a class="kx-dropdown__link" href="#">
+                  <span class="kx-dropdown__item__txt">Community</span>
+                </a>
+              </li>
+              <li class="kx-dropdown__item">
+                <a class="kx-dropdown__link" href="#">
+                  <span class="kx-dropdown__item__txt">Privacy policy</span>
+                </a>
+              </li>
+              <li class="kx-dropdown__item">
+                <a class="kx-dropdown__link" href="#">
+                  <span class="kx-dropdown__item__txt">About Kognifai</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div> -->
+
+      </div>
+    </div>
+  </header>
+</div>
