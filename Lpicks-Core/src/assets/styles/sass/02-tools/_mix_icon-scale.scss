@@ -1,4 +1,0 @@
-@mixin icon-scale($scale, $map: $icon-scale) {
-    width: rem-calc(map-fetch($map, $scale width));
-    height: rem-calc(map-fetch($map, $scale height));
-}
