@@ -21,10 +21,6 @@ export class DropdownComponent implements OnInit {
   ngOnInit() {
   }
 
-  close() {
-    this.open = false;
-  }
-
   onClick(item: string) {
     this.getClickPath.emit(item);
   }

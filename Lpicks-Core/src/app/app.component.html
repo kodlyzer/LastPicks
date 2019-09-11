@@ -1,3 +1,16 @@
-<section>
-  <kdi-dropdown-demo></kdi-dropdown-demo>
-</section>
+<header class="kx-typescale--xlarge kx-center kx-py--base">KDI Reusable Components</header>
+<div class="kx-container">
+  <div class="kx-row">
+    <div class="kx-col--2">
+      <section class="nav">
+        <span class="kx-typescale--large kx-py--medium">COMPONENTS</span>
+        <kdi-nav [navitems]="navitems" (sendPath)="handler($event)"></kdi-nav>
+      </section>
+    </div>
+    <div class="kx-col--10">
+      <section class="main">
+        <router-outlet></router-outlet>
+      </section>
+    </div>
+  </div>
+</div>
