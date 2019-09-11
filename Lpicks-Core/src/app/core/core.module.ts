@@ -5,7 +5,7 @@ import { ClickOutsideModule } from './click-outside/click-outside.module';
 const MODULES = [DropdownModule, ClickOutsideModule];
 
 @NgModule({
-    imports: [...MODULES],
-    exports: [...MODULES]
+  imports: [...MODULES],
+  exports: [...MODULES]
 })
 export class CoreModule { }

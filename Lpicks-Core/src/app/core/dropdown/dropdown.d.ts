@@ -1,11 +1,11 @@
 interface Dropdown {
-    title: string;
-    items: DropdownItem[];
+  title: string;
+  items: DropdownItem[];
 }
 
 interface DropdownItem {
-    icon?: string;
-    link: string;
-    name: string;
-    sub?: []
+  icon?: string;
+  link: string;
+  name: string;
+  sub?: []
 }

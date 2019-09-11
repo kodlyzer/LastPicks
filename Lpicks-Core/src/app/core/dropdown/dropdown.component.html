@@ -1,9 +1,10 @@
 <div class="kx-dropdown" role="group">
-  <button id="--17883" class="kx-dropdown__toggle kx-btn kx-btn--skin-primary kx-btn--size-large" aria-haspopup="true"
-    [attr.aria-expanded]="open" (click)="open = !open" (clickOutside)="close()">
+  <button id="--17883" class="kx-dropdown__toggle kx-btn kx-btn--skin-primary 
+    kx-btn--size-large kx-px--medium"
+    [ngClass]="theme === 'primary' ? 'kx-btn--skin-secondary' : 'kx-btn--skin-secondary'" [ngStyle]="css"
+    aria-haspopup="true" [attr.aria-expanded]="open" (click)="open = !open" (clickOutside)="close()">
     <span class="kx-btn__inner">
       <span class="kx-btn__txt">{{ dropdown.title }}</span>
-      <!-- ICON Component -->
       <i class="kx-icon kx-icon--size-small">
         <img src="../../../assets/img/icons/caret-down.svg" alt="CaretDown">
       </i>

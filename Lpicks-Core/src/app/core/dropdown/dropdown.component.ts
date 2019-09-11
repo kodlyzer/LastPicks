@@ -9,6 +9,9 @@ export class DropdownComponent implements OnInit {
   open = false;
   iconPath = '../../../assets/img/icons/';
   @Input() dropdown: Dropdown;
+  @Input() split = false;
+  @Input() theme = 'primary';
+  @Input() css: {};
   @Output()
   public getClickPath = new EventEmitter<string>();
 

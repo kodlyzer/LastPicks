@@ -82,6 +82,11 @@ export class DropdownDemoComponent implements OnInit {
     ]
   };
 
+  css = {
+    'color': '#ffffff',
+    'background': '#0385cb'
+  };
+
   constructor() { }
 
   ngOnInit() {
