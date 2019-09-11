@@ -1,28 +1,16 @@
 import { NgModule } from '@angular/core';
-import { KdiCard, KdiCardFooter} from '../core/card/card';
-
+import { KdiCard, KdiCardFooter } from '../core/card/card';
 import { DemoCardComponent } from './demo-card.component';
-import {  KdiCardContent, KdiCardTitle } from '../core/card/card';
+import { KdiCardContent, KdiCardTitle } from '../core/card/card';
+const MODULE=[ DemoCardComponent, KdiCard,KdiCardFooter, KdiCardContent,  KdiCardTitle]
 @NgModule({
     declarations: [
-        DemoCardComponent,
-        KdiCard,
-        KdiCardFooter,
-    
-        KdiCardContent,
-        KdiCardTitle
+        ...MODULE
     ],
-    exports:[
-        DemoCardComponent,
-        KdiCard,
-        KdiCardFooter,
-      
-        KdiCardContent,
-        KdiCardTitle
+    exports: [
+        ...MODULE
     ],
-    imports: [],
-    providers: [],
-    bootstrap: [DemoCardComponent]
+    imports: []
 })
 export class DemoCardModule {
 }
