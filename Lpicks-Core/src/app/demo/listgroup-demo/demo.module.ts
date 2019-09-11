@@ -1,10 +1,10 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ListgroupComponent } from './listgroup.component';
+import { ListgroupDemoComponent } from './listgroup-demo.component';
 
 @NgModule({
   declarations: [
-    ListgroupComponent,
+    ListgroupDemoComponent,
   ],
 
   imports: [
@@ -12,7 +12,7 @@ import { ListgroupComponent } from './listgroup.component';
   ],
 
   exports: [
-    ListgroupComponent
+    ListgroupDemoComponent
   ]
 })
 

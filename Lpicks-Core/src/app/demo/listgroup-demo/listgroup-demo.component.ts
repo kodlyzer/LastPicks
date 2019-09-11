@@ -1,12 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'kdi-listgroup-demo',
+  selector: 'kdi-list-group-demo',
   templateUrl: './listgroup-demo.component.html',
   styleUrls: ['./listgroup-demo.component.sass']
 })
 export class ListgroupDemoComponent implements OnInit {
-  Listgroup = {
+  listGroup = {
     listTitle: 'Header',
     listitems: [{
       listName: 'Pacific Drilling',
@@ -21,7 +21,7 @@ export class ListgroupDemoComponent implements OnInit {
       listSelected: false,
 
     }]
-  }
+  };
 
   constructor() { }
 
