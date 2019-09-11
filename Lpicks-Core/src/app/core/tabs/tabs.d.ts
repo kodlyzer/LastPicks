@@ -1,7 +1,12 @@
 interface Tabs{
-    items : [];   
+  
+    items : []; 
 }
 interface items{
     txt: string;
     href: string;
+    
+}
+interface tabs{
+    active: boolean;
 }

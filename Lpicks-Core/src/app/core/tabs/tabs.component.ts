@@ -6,10 +6,12 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./tabs.component.sass']
 })
 export class TabsComponent implements OnInit {
+
 @Input() tabs:Tabs;
   constructor() { }
 
   ngOnInit() {
   }
-
 }
+
+

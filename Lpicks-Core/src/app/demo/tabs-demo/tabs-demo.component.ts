@@ -10,9 +10,11 @@ export class TabsDemoComponent implements OnInit {
  arr = {
     items: [
     {
+      "theme": "foam",
+      "classes": null,
       "txt": "Home",
       "href": "#",
-      "active": true,
+      "active": false,
       "icon": {
         "size": "base",
         "symbol": "box"
@@ -20,7 +22,7 @@ export class TabsDemoComponent implements OnInit {
     },
     {
       "txt": "Applications",
-      "href": "#"
+      "href": "#",
     },
     {
       "txt": "GSN Management",
