@@ -1,0 +1,12 @@
+<table [class]="styles[tablecontent?.type]">
+    <thead [class]="tablecontent?.theme">
+        <tr>
+            <th *ngFor="let item of tablecontent?.header">{{ item }}</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="" *ngFor="let item of tablecontent.body">
+            <td *ngFor="let _item of arrayN(item, tablecontent.header.length)">{{_item}}</td>
+        </tr>
+    </tbody>
+</table>
