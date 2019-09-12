@@ -3,12 +3,13 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-demo-table',
   templateUrl: './demo-table.component.html',
-  styleUrls: ['./demo-table.component.sass']
+  styleUrls: ['./demo-table.component.scss']
 })
 export class DemoTableComponent implements OnInit {
 
   tablecontent = {
     header: [
+      
       'FirstName',
       'LastName',
       'Phone',
@@ -18,25 +19,25 @@ export class DemoTableComponent implements OnInit {
       [
         'Naga',
         'Darshan',
-        '9008335503',
+        '9004567878',
         'Bangalore',
       ],
       [
         'shruta',
-        'Anu',
-        '7892824465',
+        'SP',
+        '1234567890',
         'Bangalore'
       ],
       [
         'subash',
-        'Anu',
-        '7892824465',
+        'Raj',
+        '1234567890',
         'Bangalore'
       ],
       [
         'Anuja',
         'Anu',
-        '7892824465',
+        '0987654321',
         'Bangalore'
       ]
     ],

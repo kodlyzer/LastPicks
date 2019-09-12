@@ -1,1 +1,64 @@
-<app-table [tablecontent]="tablecontent"></app-table>
+<div class="docs-container">
+    <p class="kx-typescale--xlarge">Table Component</p>
+    <div class="main">
+        <app-table [tablecontent]="tablecontent"></app-table>
+    </div>
+    <section>
+        <ul>
+            <li class="kx-typescale--large">Configuration Options</li>
+            <section class="code-section">
+                <p class="kx-typescale--base">Use this Selector in your component to include DropDown Component.</p>
+                <pre class="kx-p--base kx-typescale--base code">
+    &lt;app-table&gt; 
+    [tablecontent]="tablecontent" 
+    &lt;/app-table&gt;
+              </pre>
+            </section>
+            <li class="kx-typescale--large">How to use?</li>
+            <section class="code-section">
+                <p class="kx-typescale--base">Use this Format for specifying your content for your dropdwon component
+                    and pass is to the propety in the secector tag.</p>
+                <pre class="kx-p--base kx-typescale--base code js">
+    tablecontent = &#123;
+        header: [
+            
+            'FirstName',
+            'LastName',
+            'Phone',
+            'Place'
+        
+            ],
+        body: [
+            [
+            'Naga',
+            'Darshan',
+            '9004567878',
+            'Bangalore',
+            ],
+            [
+            'shruta',
+            'SP',
+            '1234567890',
+            'Bangalore'
+            ],
+            [
+            'subash',
+            'Raj',
+            '1234567890',
+            'Bangalore'
+            ],
+            [
+            'Anuja',
+            'Anu',
+            '0987654321',
+            'Bangalore'
+            ]
+            ]
+            
+      &#125;;        
+            </pre>
+            </section>
+            
+        </ul>
+    </section>
+</div>
