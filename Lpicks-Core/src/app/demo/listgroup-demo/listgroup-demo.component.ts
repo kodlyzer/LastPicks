@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'kdi-list-group-demo',
   templateUrl: './listgroup-demo.component.html',
-  styleUrls: ['./listgroup-demo.component.sass']
+  styleUrls: ['./listgroup-demo.component.scss']
 })
 export class ListgroupDemoComponent implements OnInit {
   listGroup = {
@@ -20,6 +20,13 @@ export class ListgroupDemoComponent implements OnInit {
       listLink: '#',
       listSelected: false,
 
+    },
+    {
+      listName: 'Pacific Drilling',
+      listLink: '#',
+      listSelected: true,
+      badgeNumber: 2,
+      
     }]
   };
 
