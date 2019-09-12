@@ -1,28 +1,32 @@
 import { Component, OnInit, ViewEncapsulation, Input, Output, EventEmitter } from '@angular/core';
-import { NavService } from './nav-item/nav.service';
+import { NavigationService } from './nav-item/nav.service';
 
 @Component({
   selector: 'kdi-nav',
   templateUrl: './nav.component.html',
   styleUrls: ['./nav.component.scss']
-  // encapsulation: ViewEncapsulation.None
 })
 export class NavComponent implements OnInit {
 
   @Input() navitems: NavItem[];
-  @Output() sendPath = new EventEmitter<string>();
+  @Input() type: string;
   @Output() sendLink = new EventEmitter<string>();
+  @Output() sendItem = new EventEmitter<NavItem>();
 
-  constructor(private navService: NavService) {
+  constructor(private navigationService: NavigationService) {
   }
 
   ngOnInit() {
-    this.navService.sendPath.subscribe((val: string) => {
-      this.sendPath.emit(val);
+    this.navigationService.sendItem.subscribe((val: NavItem) => {
+      if (typeof val !== 'undefined') {
+        this.sendItem.emit(val);
+      }
     });
 
-    this.navService.sendLink.subscribe((val: string) => {
-      this.sendLink.emit(val);
+    this.navigationService.sendLink.subscribe((val: string) => {
+      if (typeof val !== 'undefined') {
+        this.sendLink.emit(val);
+      }
     });
   }
 }

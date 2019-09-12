@@ -12,19 +12,27 @@ export class AppComponent {
   navitems: NavItem[] = [
     {
       displayName: 'DropDown',
+      route: 'dropdown',
       routelink: 'dropdown'
     },
     {
-      displayName: 'Nav',
+      displayName: 'NavBar',
+      route: 'nav',
       routelink: 'navbar'
+    },
+    {
+      displayName: 'LIVE',
+      route: 'live',
+      routelink: 'live'
     }
   ];
 
   constructor(private router: Router) {
-
   }
 
-  handler(path: string) {
-    this.router.navigate([path]);
+  handler(link: string) {
+    if (typeof link !== 'undefined') {
+      this.router.navigate([link]);
+    }
   }
 }

@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { NavService } from 'src/app/core/nav/nav-item/nav.service';
 
 @Component({
   selector: 'kdi-nav-demo',
@@ -7,7 +6,8 @@ import { NavService } from 'src/app/core/nav/nav-item/nav.service';
   styleUrls: ['./nav-demo.component.scss']
 })
 export class NavDemoComponent implements OnInit {
-  path: string;
+  item: NavItem;
+  link: string;
   navitems: NavItem[] = [
     {
       displayName: 'Kongsberg',
@@ -63,8 +63,11 @@ export class NavDemoComponent implements OnInit {
   ngOnInit() {
   }
 
-  handler(path: string) {
-    this.path = path;
-    console.log(path);
+  handler(item: NavItem) {
+    this.item = item;
+  }
+
+  handlerLink(link: string) {
+    this.link = link;
   }
 }

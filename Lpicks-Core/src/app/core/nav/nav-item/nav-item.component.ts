@@ -1,5 +1,6 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
-import { NavService } from './nav.service';
+import { NavigationService } from './nav.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'kdi-nav-item',
@@ -9,19 +10,21 @@ import { NavService } from './nav.service';
 export class NavItemComponent implements OnInit {
   expanded = false;
   @Input() item: NavItem;
-  @Input() depth: number;
-  constructor(private navService: NavService) {
+  @Input() depth = 0;
+  isButton: boolean;
+  @Input() type = 'button';
+  constructor(private navigationService: NavigationService) {
   }
 
   ngOnInit() {
-    if (typeof this.depth === 'undefined') {
-      this.depth = 0;
-    }
+    this.isButton = (this.type === 'button') ? true : false;
   }
-  getPath(path: string) {
-    this.navService.setPath(path);
+
+  sendItem(item: NavItem) {
+    this.navigationService.sentItem(item);
   }
-  getRouteLink(link: string) {
-    this.navService.setLink(link);
+
+  routeTo(link: string) {
+    this.navigationService.sentLink(link);
   }
 }

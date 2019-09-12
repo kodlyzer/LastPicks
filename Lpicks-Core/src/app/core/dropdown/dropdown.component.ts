@@ -9,9 +9,7 @@ export class DropdownComponent implements OnInit {
   open = false;
   iconPath = '../../../assets/img/icons/';
   @Input() dropdown: Dropdown;
-  @Input() split = false;
   @Input() theme = 'primary';
-  @Input() css: {};
   @Output() getClickPath = new EventEmitter<string>();
 
   constructor() {
@@ -22,5 +20,13 @@ export class DropdownComponent implements OnInit {
 
   onClick(item: string) {
     this.getClickPath.emit(item);
+  }
+
+  toggle() {
+    this.open = !this.open;
+  }
+
+  outside() {
+    this.open = false;
   }
 }

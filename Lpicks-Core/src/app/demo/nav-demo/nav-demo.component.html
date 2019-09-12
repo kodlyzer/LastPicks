@@ -1,9 +1,9 @@
 <div class="docs-container">
     <p class="kx-typescale--xlarge kx-mt--base">Side NavBar Component</p>
     <div class="main">
-        <kdi-nav [navitems]="navitems" (sendPath)="handler($event)"></kdi-nav>
+        <kdi-nav [navitems]="navitems" (sendItem)="handler($event)" (sendLink)="handlerLink($event)" [type] = "'button'"></kdi-nav>
       <br>
-      <p class="kx-typescale--base">{{ path }}</p>
+      <p class="kx-typescale--base">{{ item?.route }}</p>
       <br>
     </div>
     <section>

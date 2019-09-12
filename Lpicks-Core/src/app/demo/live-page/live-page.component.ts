@@ -1,14 +1,15 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ComponentFactoryResolver, OnInit, ViewChild, ViewContainerRef } from '@angular/core';
+import { DropdownComponent } from 'src/app/core/dropdown/dropdown.component';
 
 @Component({
-  // tslint:disable-next-line: component-selector
-  selector: 'kdi-dropdown-demo',
-  templateUrl: './dropdown-demo.component.html',
-  styleUrls: ['./dropdown-demo.component.scss'],
+  selector: 'kdi-live-page',
+  templateUrl: './live-page.component.html',
+  styleUrls: ['./live-page.component.scss']
 })
-export class DropdownDemoComponent implements OnInit {
-
-  path: string;
+export class LivePageComponent implements OnInit {
+  @ViewChild('adhost', { read: ViewContainerRef }) entry: ViewContainerRef;
+  name: string;
+  data: any;
   dropdown = {
     title: 'Courses',
     items: [
@@ -82,11 +83,24 @@ export class DropdownDemoComponent implements OnInit {
     ]
   };
 
-  constructor() { }
+  constructor(private resolver: ComponentFactoryResolver) { }
 
   ngOnInit() {
+    // this.entry.clear();
+    // const factory = this.resolver.resolveComponentFactory(DropdownComponent);
+    // const componentRef = this.entry.createComponent(factory);
+    // componentRef.instance.dropdown = this.dropdown;
   }
-  handler(path: string) {
-    this.path = path;
+
+  get Dropdown() {
+    return JSON.stringify(this.dropdown, null, 2);
+  }
+
+  set Dropdown(v) {
+    try {
+      this.dropdown = JSON.parse(v);
+    } catch (error) {
+      console.log('Error while typing JSON');
+    }
   }
 }
