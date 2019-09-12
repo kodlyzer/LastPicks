@@ -12,8 +12,7 @@ export class DropdownComponent implements OnInit {
   @Input() split = false;
   @Input() theme = 'primary';
   @Input() css: {};
-  @Output()
-  public getClickPath = new EventEmitter<string>();
+  @Output() getClickPath = new EventEmitter<string>();
 
   constructor() {
   }

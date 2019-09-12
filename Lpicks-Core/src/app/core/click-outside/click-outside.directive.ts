@@ -1,14 +1,13 @@
 import { Directive, ElementRef, Output, EventEmitter, HostListener } from '@angular/core';
 
 @Directive({
-  selector: '[clickOutside]'
+  selector: '[kdiClickOutside]'
 })
 export class ClickOutsideDirective {
   constructor(private elementRef: ElementRef) {
   }
 
-  @Output()
-  public clickOutside = new EventEmitter();
+  @Output() clickOutside = new EventEmitter();
 
   @HostListener('document:click', ['$event.target'])
   public onClick(targetElement: HTMLElement): void {

@@ -12,11 +12,11 @@ export class AppComponent {
   navitems: NavItem[] = [
     {
       displayName: 'DropDown',
-      route: 'dropdown'
+      routelink: 'dropdown'
     },
     {
       displayName: 'Nav',
-      route: 'navbar'
+      routelink: 'navbar'
     }
   ];
 

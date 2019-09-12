@@ -11,6 +11,7 @@ export class NavComponent implements OnInit {
 
   @Input() navitems: NavItem[];
   @Output() sendPath = new EventEmitter<string>();
+  @Output() sendLink = new EventEmitter<string>();
 
   constructor(private navService: NavService) {
   }
@@ -18,6 +19,10 @@ export class NavComponent implements OnInit {
   ngOnInit() {
     this.navService.sendPath.subscribe((val: string) => {
       this.sendPath.emit(val);
+    });
+
+    this.navService.sendLink.subscribe((val: string) => {
+      this.sendLink.emit(val);
     });
   }
 }

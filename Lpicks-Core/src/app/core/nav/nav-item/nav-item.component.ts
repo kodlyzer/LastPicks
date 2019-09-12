@@ -21,4 +21,7 @@ export class NavItemComponent implements OnInit {
   getPath(path: string) {
     this.navService.setPath(path);
   }
+  getRouteLink(link: string) {
+    this.navService.setLink(link);
+  }
 }
