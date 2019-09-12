@@ -1,0 +1,12 @@
+<div class="main-editor">
+    <button class="btn">
+      run
+    </button>
+    <div class="first" contenteditable="true" [textContent]="model" (input)="model=$event.target.textContent">
+        
+    </div>
+    <iframe class="second" frameborder="0">
+      {{model}}
+    </iframe>
+    <!-- {{model}} -->
+  </div>
