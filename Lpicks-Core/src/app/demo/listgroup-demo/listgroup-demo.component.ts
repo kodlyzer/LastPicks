@@ -24,7 +24,6 @@ export class ListgroupDemoComponent implements OnInit {
     {
       listName: 'Pacific Drilling',
       listLink: '#',
-      listSelected: true,
       badgeNumber: 2,
       
     }]
@@ -34,5 +33,8 @@ export class ListgroupDemoComponent implements OnInit {
 
   ngOnInit() {
   }
-
+handler(seletedList:Listgroup)
+{
+console.log(seletedList);
+}
 }

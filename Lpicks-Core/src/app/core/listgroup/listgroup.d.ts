@@ -1,6 +1,6 @@
 interface Listgroup {
   listName: string;
-  listLink: string;
+  listLink?: string;
   listSelected: boolean;
   listTitle: string;
   badgeNumber: number;
