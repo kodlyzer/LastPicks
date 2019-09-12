@@ -1,10 +1,11 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'kdi-demo-modal',
   templateUrl: './demo-modal.component.html',
   styleUrls: ['./demo-modal.component.scss']
 })
+
 export class DemoModalComponent implements OnInit {
 
   overlay = {
@@ -25,11 +26,17 @@ export class DemoModalComponent implements OnInit {
     ],
     size: 'medium'
   };
+
+
+
+
+
   constructor() { }
 
   ngOnInit() {
 
   }
+
 
 }
 

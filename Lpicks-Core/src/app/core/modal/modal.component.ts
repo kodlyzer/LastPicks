@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'kdi-modal',
@@ -6,11 +6,21 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./modal.component.scss']
 })
 export class ModalComponent implements OnInit {
-  @Input() overlay: { title: string, option: [], size: string };
+  // @ViewChild('myModal') myModal;
+  open = false;
+  @Input() overlay: modal;
   constructor() { }
 
   ngOnInit() {
   }
+  openModel() {
+    this.open = true;
 
+  }
+  closeModel() {
+    console.log('Close');
+    this.open = false;
+    // this.myModal.nativeElement.className = 'modal-hide';
+
+  }
 }
-

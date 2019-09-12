@@ -1,14 +1,15 @@
-<div class="kx-modal" tabindex="-1" role="dialog" aria-labelledby="--22029">
+<button class="kx-btn kx-btn--skin-primary kx-p--base" type="button" (click)="openModel()">Open Modal</button>
+<div class="kx-modal" [ngClass]="open ? 'modal-fade-show' : 'modal-hide'" tabindex="-1" role="dialog"
+    aria-labelledby="--22029">
     <div class="kx-modal__dialog kx-modal--skin-prominent kx-modal--size-{{overlay.size}}" role="document">
         <div class="kx-modal__content">
             <div class="kx-modal__header">
                 <h5 class="kx-modal__title" id="--22029">{{overlay.title}}</h5>
-                <button class="kx-btn kx-btn--size-base kx-btn--icon kx-modal__close" aria-label="Close">
+                <button class="kx-btn kx-btn--size-base kx-btn--icon kx-modal__close" (click)="closeModel()"
+                    aria-label="Close">
                     <span class="kx-btn__inner">
                         <i class="kx-icon kx-icon--size-moderate">
                             <img src="../../../assets/img/icons/close.svg" alt="Close">
-
-
                         </i>
                         <span class="kx-btn__txt kx-is-vishidden">Close</span>
                     </span>
