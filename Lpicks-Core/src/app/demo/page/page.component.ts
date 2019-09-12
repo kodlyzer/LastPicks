@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'kdi-page',
@@ -6,7 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./page.component.scss']
 })
 export class PageComponent {
+
   title = 'livedemo';
-  model = 'some text';
+  model = 'Enter code';
   constructor() { console.clear(); }
+  // Submit()
+  // {
+  //   //console.log(this.model);
+  // }
 }
