@@ -10,23 +10,23 @@ export class NavDemoComponent implements OnInit {
   path: string;
   navitems: NavItem[] = [
     {
-      displayName: 'DropDown',
-      route: 'dropdown',
+      displayName: 'Kongsberg',
+      route: 'kongsberg',
       icon: 'box',
       children: [
         {
-          displayName: 'Dropdown Primary',
-          route: 'dropdown/dropdownPrimary',
+          displayName: 'Oil and Gas',
+          route: 'kongsberg/oil_and_gas',
           icon: 'box',
           children: [
             {
-              displayName: 'DropDown Primary Normal',
-              route: 'dropdown/dropdownPrimary/dropdownPrimaryNormal',
+              displayName: 'Oil',
+              route: 'kongsberg/oil_and_gas/oil',
               icon: 'box',
             },
             {
-              displayName: 'DropDown Primary Skin',
-              route: 'dropdown/dropdownPrimary/dropdownPrimarySkin',
+              displayName: 'Gas',
+              route: 'kongsberg/oil_and_gas/gas',
               icon: 'box',
             }
           ]
@@ -34,25 +34,25 @@ export class NavDemoComponent implements OnInit {
       ]
     },
     {
-      displayName: 'Card',
-      route: 'card',
+      displayName: 'Maritime',
+      route: 'maritime',
       icon: 'box',
       children: [
         {
-          displayName: 'Image Card',
-          route: 'card/imageCard',
+          displayName: 'Simulation',
+          route: 'maritime/simulation',
           icon: 'box',
           children: [
             {
-              displayName: 'Small Image Card',
-              route: 'card/imageCard/smallImageCard',
+              displayName: 'k-spice',
+              route: 'maritime/simulation/k_spice',
               icon: 'box'
             }
           ]
         },
         {
-          displayName: 'Title Card',
-          route: 'card/titleCard',
+          displayName: 'Digital Twin',
+          route: 'maritime/digital_twin',
           icon: 'box'
         }
       ]
