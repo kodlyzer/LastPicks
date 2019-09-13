@@ -1,12 +1,13 @@
 import { NgModule } from '@angular/core';
 import { KdiCard, KdiCardFooter, KdiCardContent, KdiCardTitle } from './card';
-const MODULE=[ KdiCard,KdiCardFooter, KdiCardContent,  KdiCardTitle];
+
+const COMPONENT = [KdiCard, KdiCardFooter, KdiCardContent, KdiCardTitle];
 @NgModule({
     declarations: [
-        ...MODULE
+        ...COMPONENT
     ],
     exports: [
-        ...MODULE
+        ...COMPONENT
     ],
     imports: []
 })

@@ -5,9 +5,6 @@ import { Directive, Component } from "@angular/core";
   exportAs: "kdi-card",
   templateUrl: './card.component.html',
   styleUrls: ['card.scss'],
-  host: {
-    'class': 'kdi-card'
-  }
 })
 export class KdiCard {
 }
