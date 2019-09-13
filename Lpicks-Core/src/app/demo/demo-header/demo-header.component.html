@@ -1,1 +1,39 @@
-<kdi-header [header] = "demoheader"></kdi-header>
+<div class="docs-container">
+        <p class="kx-typescale--xlarge">Header Component</p>
+        <div class="main">
+                <div class="modal-body">
+                        <kdi-header [header]="demoheader"></kdi-header>
+                </div>
+
+
+                <br>
+                <p class="kx-typescale--base">{{ path }}</p>
+                <br>
+        </div>
+        <section>
+                <ul>
+                        <li class="kx-typescale--large">Configuration Options</li>
+                        <section class="code-section">
+                                <p class="kx-typescale--base">Use this Selector in your component to include Header
+                                        Component.</p>
+                                <pre class="kx-p--base kx-typescale--base code">
+        &lt;kdi-header [header] = "demoheader"&gt;
+        &lt;/kdi-header&gt;
+                  </pre>
+                        </section>
+                        <li class="kx-typescale--large">How to use?</li>
+                        <section class="code-section">
+                                <p class="kx-typescale--base">Use this Format for specifying your content for your
+                                        Header component
+                                        and pass is to the propety in the secector tag.</p>
+                                <pre class="kx-p--base kx-typescale--base code js">
+          demoheader = &#123;
+          hname: 'Shruta',
+          icon: 'maritime-offshore-white'
+          &#125;;        
+                </pre>
+                        </section>
+
+                </ul>
+        </section>
+</div>

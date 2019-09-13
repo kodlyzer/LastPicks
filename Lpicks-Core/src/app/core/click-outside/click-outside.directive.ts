@@ -8,7 +8,7 @@ export class ClickOutsideDirective {
   }
 
   @Output()
-  public clickOutside = new EventEmitter();
+  public kdiClickOutside = new EventEmitter();
 
   @HostListener('document:click', ['$event.target'])
   public onClick(targetElement: HTMLElement): void {
@@ -18,7 +18,7 @@ export class ClickOutsideDirective {
 
     const clickedInside = this.elementRef.nativeElement.contains(targetElement);
     if (!clickedInside) {
-      this.clickOutside.emit();
+      this.kdiClickOutside.emit();
     }
   }
 }

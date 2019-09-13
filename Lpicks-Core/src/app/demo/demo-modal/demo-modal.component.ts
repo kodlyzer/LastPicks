@@ -9,6 +9,7 @@ import { Component, OnInit, ViewChild } from '@angular/core';
 export class DemoModalComponent implements OnInit {
 
   overlay = {
+    icon: 'success',
     title: 'Modal Title',
     option: [
       {
@@ -24,7 +25,7 @@ export class DemoModalComponent implements OnInit {
         name: 'cancel'
       }
     ],
-    size: 'medium'
+    size: 'small'
   };
 
 

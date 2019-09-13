@@ -6,7 +6,7 @@ import { Component, OnInit, Input, ViewChild } from '@angular/core';
   styleUrls: ['./modal.component.scss']
 })
 export class ModalComponent implements OnInit {
-  // @ViewChild('myModal') myModal;
+
   open = false;
   @Input() overlay: modal;
   constructor() { }
@@ -20,7 +20,7 @@ export class ModalComponent implements OnInit {
   closeModel() {
     console.log('Close');
     this.open = false;
-    // this.myModal.nativeElement.className = 'modal-hide';
+
 
   }
 }

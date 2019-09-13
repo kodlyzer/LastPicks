@@ -4,6 +4,11 @@
     <div class="kx-modal__dialog kx-modal--skin-prominent kx-modal--size-{{overlay.size}}" role="document">
         <div class="kx-modal__content">
             <div class="kx-modal__header">
+                <i class="kx-icon kx-icon--size-medium kx-mr--mini" *ngIf="overlay?.icon">
+
+                    <img [src]="'../../../assets/img/icons/'+overlay.icon+'.svg'" alt="Kognifai logo">
+
+                </i>
                 <h5 class="kx-modal__title" id="--22029">{{overlay.title}}</h5>
                 <button class="kx-btn kx-btn--size-base kx-btn--icon kx-modal__close" (click)="closeModel()"
                     aria-label="Close">
@@ -20,18 +25,18 @@
             </div>
 
             <div class="kx-modal__footer">
-                <div class="kx-btngroup kx-flex kx-flex-wrap kx-justify-content-center" role="group"
-                    *ngFor="let item of overlay?.option">
+                <div class="wrap kx-btngroup" role="group">
 
-                    <a class="kx-btn kx-btn--skin-primary kx-btn--size-large" [href]="item.link">
-                        <span class="kx-btn__inner">
-                            <span class="kx-btn__txt">{{item.name}}t</span>
-                        </span>
-                    </a>
+                    <ng-container *ngFor="let item of overlay?.option">
+                        <a class="kx-btn kx-btn--skin-primary kx-btn--size-large kx-m--tiny" [href]="item.link">
+                            <span class="kx-btn__inner">
+                                <span class="kx-btn__txt">{{item.name}}t</span>
+                            </span>
+                        </a>
+                    </ng-container>
 
                 </div>
             </div>
-
         </div>
     </div>
     <div class="kx-modal__backdrop"></div>

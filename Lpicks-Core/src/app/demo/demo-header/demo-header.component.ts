@@ -6,7 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./demo-header.component.scss']
 })
 export class DemoHeaderComponent implements OnInit {
-  demoheader = 'Shruta saralaya';
+  demoheader = {
+    hname: 'Shruta',
+    icon: 'maritime-offshore-white'
+  };
 
   constructor() { }
 
