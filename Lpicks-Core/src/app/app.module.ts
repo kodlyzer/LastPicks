@@ -1,9 +1,9 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
-
 import { AppComponent } from './app.component';
 import { DemoModule } from './demo/demo.module';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -13,7 +13,8 @@ import { DemoModule } from './demo/demo.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    DemoModule
+    DemoModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

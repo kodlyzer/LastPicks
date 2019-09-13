@@ -1,0 +1,22 @@
+<div class="kx-card kx-card--skin-default">
+
+    <header class="kx-card__header">
+        <h3 class="kx-card__title"><a class="kx-card__title-link" href="#">
+                <ng-content select="kdi-card-title"></ng-content>
+            </a></h3>
+    </header>
+
+    <div class="kx-card__body">
+        <ng-content select="kdi-card-content"> </ng-content>
+    </div>
+
+    <footer class="kx-card__footer">
+        <a class="kx-btn kx-btn--skin-flat kx-btn--size-base kx-card__cta" href="#">
+            <span class="kx-btn__inner">
+                <span class="kx-btn__txt">
+                    <ng-content select="kdi-card-footer"></ng-content>
+                </span>
+            </span>
+        </a>
+    </footer>
+</div>
