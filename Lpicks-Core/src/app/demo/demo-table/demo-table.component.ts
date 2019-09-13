@@ -7,39 +7,52 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DemoTableComponent implements OnInit {
 
+
   tablecontent = {
-    header: [
-      
-      'FirstName',
-      'LastName',
-      'Phone',
-      'Place'
-    ],
+    header: {
+      firstname: 'FirstName',
+      lastname: 'LastName',
+      phonenumber: 'Phone',
+      place: 'Place',
+      pincode: 'Pincode'
+    },
     body: [
-      [
-        'Naga',
-        'Darshan',
-        '9004567878',
-        'Bangalore',
-      ],
-      [
-        'shruta',
-        'SP',
-        '1234567890',
-        'Bangalore'
-      ],
-      [
-        'subash',
-        'Raj',
-        '1234567890',
-        'Bangalore'
-      ],
-      [
-        'Anuja',
-        'Anu',
-        '0987654321',
-        'Bangalore'
-      ]
+      {
+        firstname: 'subash',
+        lastname: 'raj',
+        place: 'Bangalore',
+        pincode: '560045'
+      },
+      {
+        firstname: 'Naga',
+        lastname: 'Darshan',
+        phonenumber: '1234567890',
+        place: 'Bangalore'
+      },
+      {
+        firstname: 'anuja',
+        lastname: 'anu',
+        phonenumber: '1234567890',
+        place: 'Bangalore'
+      },
+      {
+        firstname: 'shruta',
+        lastname: 'saralaya',
+        phonenumber: '1234567890',
+        place: 'Bangalore'
+      },
+      {
+        firstname: 'shubam',
+        lastname: 'patro',
+        phonenumber: '12347890',
+        place: 'Bangalore'
+      },
+      {
+        firstname: 'sonali',
+        lastname: 'rawat',
+        phonenumber: '12347890',
+        place: 'Bangalore'
+      },
     ],
     theme: 'kx-theme--teal',
     type: 'teal'

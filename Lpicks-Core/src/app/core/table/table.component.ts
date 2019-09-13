@@ -6,7 +6,7 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./table.component.sass']
 })
 export class TableComponent implements OnInit {
-
+  objectKeys = Object.keys;
   @Input() tablecontent: TableContent;
 
   styles = {
@@ -30,9 +30,15 @@ export class TableComponent implements OnInit {
   }
   //It is used to remove the extra fields if user accidentally adds more fields to a particular row
   // than the number of headers. suppose there are 3 columns
-   //and in JS object users sends 4 fields it just displays 3 fields and omits the 4th field.
+  //and in JS object users sends 4 fields it just displays 3 fields and omits the 4th field.
   arrayN(item: string[], n: number): string[] {
-    return item.slice(0 ,n);
+    return item.slice(0, n);
   }
 
+  check(key: string) {
+    if (typeof key === 'undefined') {
+      return false;
+    }
+    return true;
+  }
 }

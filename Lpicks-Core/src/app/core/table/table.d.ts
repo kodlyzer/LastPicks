@@ -1,4 +1,10 @@
 interface TableContent {
-    header: string[];
-    body: string[][];
+    header: header;
+    body: header[];
+}
+interface header{
+    firstname:string;
+    lastname:string;
+    phonenumber:string;
+    place:string;
 }
