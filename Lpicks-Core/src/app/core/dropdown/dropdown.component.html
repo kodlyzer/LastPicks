@@ -1,8 +1,8 @@
 <div class="kx-dropdown" role="group">
   <button id="--17883" class="kx-dropdown__toggle kx-btn kx-btn--skin-primary 
     kx-btn--size-large kx-px--medium"
-    [ngClass]="theme === 'primary' ? 'kx-btn--skin-secondary' : 'kx-btn--skin-secondary'"
-    aria-haspopup="true" [attr.aria-expanded]="open" (click)="toggle()" (kdiClickOutside)="outside()">
+    [ngClass]="theme === 'primary' ? 'kx-btn--skin-secondary' : 'kx-btn--skin-secondary'" aria-haspopup="true"
+    [attr.aria-expanded]="open" (click)="toggle()" (kdiClickOutside)="outside()">
     <span class="kx-btn__inner">
       <span class="kx-btn__txt">{{ dropdown.title }}</span>
       <i class="kx-icon kx-icon--size-small">
@@ -37,8 +37,7 @@
               <div class="kx-dropdown__menu" *ngIf="_item?.sub?.length > 0">
                 <ul class="kx-dropdown__list">
                   <li class="kx-dropdown__item" *ngFor="let __item of _item.sub">
-                    <a class="kx-dropdown__link" (click)="onClick(item.name+'/'+_item.name+'/'+__item.name)"
-                      >
+                    <a class="kx-dropdown__link" (click)="onClick(item.name+'/'+_item.name+'/'+__item.name)">
                       <i class="kx-icon kx-icon--size-base" *ngIf="__item?.icon">
                         <img [src]="iconPath+__item.icon+'.svg'" [alt]="__item.icon">
                       </i>

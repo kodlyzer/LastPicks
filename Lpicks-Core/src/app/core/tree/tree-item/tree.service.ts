@@ -3,14 +3,14 @@ import { Injectable, Output, EventEmitter } from '@angular/core';
 @Injectable({
   providedIn: 'root'
 })
-export class NavigationService {
+export class TreeService {
 
   @Output() sendLink = new EventEmitter<string>();
-  @Output() sendItem = new EventEmitter<NavItem>();
+  @Output() sendItem = new EventEmitter<TreeItem>();
   constructor() {
   }
 
-  sentItem(item: NavItem) {
+  sentItem(item: TreeItem) {
     this.sendItem.emit(item);
   }
 

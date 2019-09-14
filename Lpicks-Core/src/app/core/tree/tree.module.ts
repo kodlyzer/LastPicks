@@ -1,9 +1,9 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { NavComponent } from './nav.component';
-import { NavItemComponent } from './nav-item/nav-item.component';
+import { TreeComponent } from './tree.component';
+import { TreeItemComponent } from './tree-item/tree-item.component';
 
-const COMPONENTS = [NavComponent, NavItemComponent];
+const COMPONENTS = [TreeComponent, TreeItemComponent];
 
 @NgModule({
   declarations: [...COMPONENTS],
@@ -12,4 +12,4 @@ const COMPONENTS = [NavComponent, NavItemComponent];
   ],
   exports: [...COMPONENTS]
 })
-export class NavModule { }
+export class TreeModule { }

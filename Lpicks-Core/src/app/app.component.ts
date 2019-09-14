@@ -9,16 +9,16 @@ import { Router } from '@angular/router';
 export class AppComponent {
   title = 'Lpicks-Core';
 
-  navitems: NavItem[] = [
+  navItems: TreeItem[] = [
     {
       displayName: 'DropDown',
       route: 'dropdown',
       routelink: 'dropdown'
     },
     {
-      displayName: 'NavBar',
-      route: 'nav',
-      routelink: 'navbar'
+      displayName: 'Tree',
+      route: 'tree',
+      routelink: 'tree'
     },
     {
       displayName: 'Card',

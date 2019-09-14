@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { DropdownComponent } from './core/dropdown/dropdown.component';
-import { NavModule } from './core/nav/nav.module';
+import { TreeModule } from './core/tree/tree.module';
 import { DemoModule } from './demo/demo.module';
 import { FormsModule } from '@angular/forms';
 
@@ -16,7 +16,7 @@ import { FormsModule } from '@angular/forms';
     BrowserModule,
     AppRoutingModule,
     DemoModule,
-    NavModule,
+    TreeModule,
     FormsModule
   ],
   providers: [],

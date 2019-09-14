@@ -5,7 +5,7 @@ import { CommonModule } from '@angular/common';
 import { DropdownDemoComponent } from './dropdown-demo/dropdown-demo.component';
 import { LivePageComponent } from './live-page/live-page.component';
 import { TabsDemoComponent } from './tabs-demo/tabs-demo.component';
-import { NavDemoComponent } from './nav-demo/nav-demo.component';
+import { TreeDemoComponent } from './tree-demo/tree-demo.component';
 import { DemoCardComponent } from './demo-card-demo/demo-card.component';
 import { PageComponent } from './page/page.component';
 import { FormsModule } from '@angular/forms';
@@ -13,7 +13,7 @@ import { FormsModule } from '@angular/forms';
 
 const COMPONENTS = [
     DropdownDemoComponent,
-    NavDemoComponent,
+    TreeDemoComponent,
     LivePageComponent,
     TabsDemoComponent,
     DemoCardComponent,

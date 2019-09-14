@@ -19,7 +19,7 @@
               <img [src]="'../../../assets/img/icons/'+item.icon+'.svg'" alt="CaretDown">
             </i>
           </ng-container>
-          <span class="kx-tree__link__txt kx-typescale--base nav-item"
+          <span class="kx-tree__link__txt kx-typescale--base tree-item"
             (click)="sendItem(item)">{{ item.displayName }}</span>
         </a>
       </ng-template>
@@ -40,13 +40,13 @@
               <img [src]="'../../../assets/img/icons/'+item.icon+'.svg'" alt="CaretDown">
             </i>
           </ng-container>
-          <span class="kx-tree__link__txt kx-typescale--base nav-item"
+          <span class="kx-tree__link__txt kx-typescale--base tree-item"
             (click)="routeTo(item.routelink)">{{ item.displayName }}</span>
         </a>
       </ng-template>
       <ng-container *ngIf="item.children && item.children.length">
-        <kdi-nav-item [ngClass]="expanded ? 'active' : 'nested'" *ngFor="let child of item.children" [item]="child"
-          [depth]="depth+1"></kdi-nav-item>
+        <kdi-tree-item [ngClass]="expanded ? 'active' : 'nested'" *ngFor="let child of item.children" [item]="child"
+          [depth]="depth+1"></kdi-tree-item>
       </ng-container>
     </li>
   </ul>

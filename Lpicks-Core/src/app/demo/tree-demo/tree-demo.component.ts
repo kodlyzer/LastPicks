@@ -1,14 +1,14 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'kdi-nav-demo',
-  templateUrl: './nav-demo.component.html',
-  styleUrls: ['./nav-demo.component.scss']
+  selector: 'kdi-tree-demo',
+  templateUrl: './tree-demo.component.html',
+  styleUrls: ['./tree-demo.component.scss']
 })
-export class NavDemoComponent implements OnInit {
-  item: NavItem;
+export class TreeDemoComponent implements OnInit {
+  item: TreeItem;
   link: string;
-  navitems: NavItem[] = [
+  treeItems: TreeItem[] = [
     {
       displayName: 'Kongsberg',
       route: 'kongsberg',
@@ -63,20 +63,20 @@ export class NavDemoComponent implements OnInit {
   ngOnInit() {
   }
 
-  handler(item: NavItem) {
+  handler(item: TreeItem) {
     this.item = item;
   }
 
   handlerLink(link: string) {
     this.link = link;
   }
-  get NavItems() {
-    return JSON.stringify(this.navitems, null, 2);
+  get TreeItems() {
+    return JSON.stringify(this.treeItems, null, 2);
   }
 
-  set NavItems(v) {
+  set TreeItems(v) {
     try {
-      this.navitems = JSON.parse(v);
+      this.treeItems = JSON.parse(v);
     } catch (error) {
       console.log('Error while typing JSON');
     }

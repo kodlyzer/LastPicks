@@ -4,9 +4,9 @@
     <div class="kx-row">
       <div class="kx-col--6">
         <section class="output-section">
-          <kdi-nav [navitems]="navitems" (sendItem)="handler($event)" (sendLink)="handlerLink($event)"
+          <kdi-tree [treeItems]="treeItems" (sendItem)="handler($event)" (sendLink)="handlerLink($event)"
             [type]="'button'">
-          </kdi-nav>
+          </kdi-tree>
           <br>
           <p class="kx-typescale--base">{{ item?.route }}</p>
           <br>
@@ -15,45 +15,25 @@
       <div class="kx-col--6">
         <section class="json-section">
           <p class="kx-typescale--base kx-m--small kx-m">Json DATA</p>
-          <textarea class="json" [(ngModel)]="NavItems"></textarea>
+          <textarea class="json" [(ngModel)]="TreeItems"></textarea>
         </section>
       </div>
     </div>
   </div>
-  <!-- <div class="main">
-    <div class="kx-row">
-      <div class="kx-col--6">
-        <section class="output-section">
-          <kdi-nav [navitems]="navitems" (sendItem)="handler($event)" (sendLink)="handlerLink($event)"
-            [type]="'button'"></kdi-nav>
-          <br>
-          <p class="kx-typescale--base">{{ item.route }}</p>
-          <br>
-        </section>
-      </div>
-      <div class="kx-col--6">
-        <section class="json-section">
-          <p class="kx-typescale--base kx-m--small kx-m">JSON DATA</p>
-          <textarea class="json" [(ngModel)]="NavItems"></textarea>
-        </section>
-      </div>
-    </div>
-  </div> -->
   <section>
     <ul>
       <li class="kx-typescale--large">Configuration Options</li>
       <section class="code-section">
         <p class="kx-typescale--base">Use this Selector in your component to include DropDown Component.</p>
-        <pre class="kx-p--base kx-typescale--base code">
-    &lt;kdi-nav [navitems]="navitems"&gt;&lt;/kdi-nav&gt;
-              </pre>
+        <pre class="kx-p--base kx-typescale--base code mh">
+    &lt;kdi-nav [treeItems]="treeItems"&gt;&lt;/kdi-nav&gt;</pre>
       </section>
       <li class="kx-typescale--large">How to use?</li>
       <section class="code-section">
         <p class="kx-typescale--base">Use this Format for specifying your content for your dropdwon component
           and pass is to the propety in the secector tag.</p>
-        <pre class="kx-p--base kx-typescale--base code js">
-      navitems: NavItem[] = [
+        <pre class="kx-p--base kx-typescale--base code mh">
+      treeItems: TreeItem[] = [
       &#123;
         displayName: 'Kongsberg',
         route: 'kongsberg',
@@ -102,28 +82,26 @@
           &#125;
         ]
       &#125;
-    ];        
-            </pre>
+    ];</pre>
       </section>
       <li class="kx-typescale--large">How to listen to selecte item from drop down?</li>
       <section class="code-section">
         <p class="kx-typescale--base">Use this EventListener in your selector tag to listen to the selected path
           and you have to create a event handler function in your component.
         </p>
-        <pre class="kx-p--base kx-typescale--base code">
+        <pre class="kx-p--base kx-typescale--base code mh">
       Add this in your selecor tag 
       
       (sendItem)="handler($event)" 
       (sendLink)="handlerLink($event)"
       
-      handler(item: NavItem) &#123;
+      handler(item: TreeItem) &#123;
         this.item = item;
       &#125;
     
       handlerLink(link: string) &#123;
         this.link = link;
-      &#125;
-          </pre>
+      &#125;</pre>
       </section>
     </ul>
   </section>
