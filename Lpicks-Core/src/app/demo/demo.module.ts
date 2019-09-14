@@ -1,14 +1,27 @@
 import { NgModule } from '@angular/core';
 import { CoreModule } from '../core/core.module';
+import { CommonModule } from '@angular/common';
+
 import { DropdownDemoComponent } from './dropdown-demo/dropdown-demo.component';
 import { LivePageComponent } from './live-page/live-page.component';
+import { TabsDemoComponent } from './tabs-demo/tabs-demo.component';
 import { NavDemoComponent } from './nav-demo/nav-demo.component';
+import { DemoCardComponent } from './demo-card-demo/demo-card.component';
+import { PageComponent } from './page/page.component';
 import { FormsModule } from '@angular/forms';
 
-const COMPONENTS = [DropdownDemoComponent, NavDemoComponent, LivePageComponent];
+
+const COMPONENTS = [
+    DropdownDemoComponent,
+    NavDemoComponent,
+    LivePageComponent,
+    TabsDemoComponent,
+    DemoCardComponent,
+    PageComponent
+];
 
 @NgModule({
-    imports: [CoreModule,FormsModule],
+    imports: [CoreModule, FormsModule, CommonModule],
     declarations: [...COMPONENTS],
     exports: [...COMPONENTS]
 })

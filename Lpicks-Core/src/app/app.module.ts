@@ -5,17 +5,19 @@ import { AppComponent } from './app.component';
 import { DropdownComponent } from './core/dropdown/dropdown.component';
 import { NavModule } from './core/nav/nav.module';
 import { DemoModule } from './demo/demo.module';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     DemoModule,
-    NavModule
+    NavModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent],

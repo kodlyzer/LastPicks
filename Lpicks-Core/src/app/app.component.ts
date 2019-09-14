@@ -19,6 +19,16 @@ export class AppComponent {
       displayName: 'NavBar',
       route: 'nav',
       routelink: 'navbar'
+    },
+    {
+      displayName: 'Card',
+      route: 'card',
+      routelink: 'card'
+    },
+    {
+      displayName: 'Tab',
+      route: 'tab',
+      routelink: 'tab'
     }
   ];
 
