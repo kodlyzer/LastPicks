@@ -19,11 +19,6 @@ export class AppComponent {
       displayName: 'NavBar',
       route: 'nav',
       routelink: 'navbar'
-    },
-    {
-      displayName: 'LIVE',
-      route: 'live',
-      routelink: 'live'
     }
   ];
 

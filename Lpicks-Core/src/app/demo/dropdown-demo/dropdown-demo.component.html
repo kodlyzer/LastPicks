@@ -1,10 +1,22 @@
 <div class="docs-container">
   <p class="kx-typescale--xlarge kx-mt--base">Drop Down Component</p>
   <div class="main">
-    <kdi-dropdown [dropdown]="dropdown" (getClickPath)="handler($event)"></kdi-dropdown>
-    <br>
-    <p class="kx-typescale--base">{{ path }}</p>
-    <br>
+    <div class="kx-row">
+      <div class="kx-col--6">
+        <section class="output-section">
+          <kdi-dropdown [dropdown]="dropdown" (getClickPath)="handler($event)"></kdi-dropdown>
+          <br>
+          <p class="kx-typescale--base">{{ path }}</p>
+          <br>
+        </section>
+      </div>
+      <div class="kx-col--6">
+        <section class="json-section">
+          <p class="kx-typescale--base kx-m--small kx-m">JSON DATA</p>
+          <textarea class="json" [(ngModel)]="Dropdown"></textarea>
+        </section>
+      </div>
+    </div>
   </div>
   <section>
     <ul>

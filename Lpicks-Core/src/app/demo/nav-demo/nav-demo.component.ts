@@ -70,4 +70,15 @@ export class NavDemoComponent implements OnInit {
   handlerLink(link: string) {
     this.link = link;
   }
+  get NavItems() {
+    return JSON.stringify(this.navitems, null, 2);
+  }
+
+  set NavItems(v) {
+    try {
+      this.navitems = JSON.parse(v);
+    } catch (error) {
+      console.log('Error while typing JSON');
+    }
+  }
 }

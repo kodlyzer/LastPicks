@@ -7,8 +7,7 @@ import { LivePageComponent } from './demo/live-page/live-page.component';
 const routes: Routes = [
   { path: 'dropdown', component: DropdownDemoComponent },
   { path: 'navbar', component: NavDemoComponent },
-  { path: 'live', component: LivePageComponent },
-  { path: '', redirectTo: 'dropdown', pathMatch: 'full'}
+  { path: '', redirectTo: 'dropdown', pathMatch: 'full' }
 ];
 
 @NgModule({

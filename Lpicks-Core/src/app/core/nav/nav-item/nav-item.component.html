@@ -24,7 +24,7 @@
         </a>
       </ng-template>
       <ng-template #link>
-        <a class="kx-tree__link" routerLinkActive="router-link-active">
+        <a class="kx-tree__link">
           <ng-container *ngIf="item.children && item.children.length">
             <i class="kx-icon kx-icon--size-base" (click)="expanded = !expanded">
               <ng-container *ngIf="!expanded">
