@@ -1,0 +1,53 @@
+<div class="main">
+  <ul class="kx-tree kx-is-root">
+    <li class="kx-tree__item kx-is-open" [ngStyle]="{'padding-left': (depth * 20) + 'px'}" data-treedepth="depth">
+      <ng-container *ngIf="isButton; then button else link"></ng-container>
+      <ng-template #button>
+        <a class="kx-tree__link">
+          <ng-container *ngIf="item.children && item.children.length">
+            <i class="kx-icon kx-icon--size-base" (click)="expanded = !expanded">
+              <ng-container *ngIf="!expanded">
+                <img src="../../../assets/img/icons/caret-right.svg" alt="CaretRight">
+              </ng-container>
+              <ng-container *ngIf="expanded">
+                <img src="../../../assets/img/icons/caret-down.svg" alt="CaretDown">
+              </ng-container>
+            </i>
+          </ng-container>
+          <ng-container *ngIf="item?.icon">
+            <i class="kx-icon kx-icon--size-base">
+              <img [src]="'../../../assets/img/icons/'+item.icon+'.svg'" alt="CaretDown">
+            </i>
+          </ng-container>
+          <span class="kx-tree__link__txt kx-typescale--base tree-item"
+            (click)="sendItem(item)">{{ item.displayName }}</span>
+        </a>
+      </ng-template>
+      <ng-template #link>
+        <a class="kx-tree__link">
+          <ng-container *ngIf="item.children && item.children.length">
+            <i class="kx-icon kx-icon--size-base" (click)="expanded = !expanded">
+              <ng-container *ngIf="!expanded">
+                <img src="../../../assets/img/icons/caret-right.svg" alt="CaretRight">
+              </ng-container>
+              <ng-container *ngIf="expanded">
+                <img src="../../../assets/img/icons/caret-down.svg" alt="CaretDown">
+              </ng-container>
+            </i>
+          </ng-container>
+          <ng-container *ngIf="item?.icon">
+            <i class="kx-icon kx-icon--size-base">
+              <img [src]="'../../../assets/img/icons/'+item.icon+'.svg'" alt="CaretDown">
+            </i>
+          </ng-container>
+          <span class="kx-tree__link__txt kx-typescale--base tree-item"
+            (click)="routeTo(item.routelink)">{{ item.displayName }}</span>
+        </a>
+      </ng-template>
+      <ng-container *ngIf="item.children && item.children.length">
+        <kdi-tree-item [ngClass]="expanded ? 'active' : 'nested'" *ngFor="let child of item.children" [item]="child"
+          [depth]="depth+1"></kdi-tree-item>
+      </ng-container>
+    </li>
+  </ul>
+</div>

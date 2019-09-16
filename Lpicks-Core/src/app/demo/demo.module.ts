@@ -7,7 +7,18 @@ import { PageComponent } from './page/page.component';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { DemoCardComponent } from './demo-card-demo/demo-card.component';
-const COMPONENTS = [DemoModalComponent, DropdownDemoComponent, DemoHeaderComponent, PageComponent, DemoCardComponent];
+import { LivePageComponent } from './live-page/live-page.component';
+import { TabsDemoComponent } from './tabs-demo/tabs-demo.component';
+import { TreeDemoComponent } from './tree-demo/tree-demo.component';
+const COMPONENTS = [DemoModalComponent, DropdownDemoComponent, DemoHeaderComponent, PageComponent, DemoCardComponent,TreeDemoComponent,
+    LivePageComponent,
+    TabsDemoComponent];
+
+
+
+
+
+
 
 
 
