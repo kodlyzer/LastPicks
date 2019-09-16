@@ -37,6 +37,18 @@ export class DemoModalComponent implements OnInit {
   ngOnInit() {
 
   }
+  get Modal() {
+    return JSON.stringify(this.overlay, null, 2);
+  }
+
+  set Modal(v) {
+    try {
+      this.overlay = JSON.parse(v);
+    } catch (error) {
+      console.log('Error while typing JSON');
+    }
+  }
+
 
 
 }

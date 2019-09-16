@@ -16,4 +16,16 @@ export class DemoHeaderComponent implements OnInit {
   ngOnInit() {
   }
 
+  get Header() {
+    return JSON.stringify(this.demoheader, null, 2);
+  }
+
+  set Header(v) {
+    try {
+      this.demoheader = JSON.parse(v);
+    } catch (error) {
+      console.log('Error while typing JSON');
+    }
+  }
+
 }

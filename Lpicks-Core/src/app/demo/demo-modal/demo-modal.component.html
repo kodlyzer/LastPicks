@@ -1,20 +1,36 @@
 <div class="docs-container">
         <p class="kx-typescale--xlarge">Modal Component</p>
         <div class="main">
-                <div class="modal-body">
-                        <kdi-modal [overlay]="overlay">
-                                In user interface design for computer applications, a modal window is a graphical
-                                control
-                                element subordinate to an application's main window. It creates a mode that disables the
-                                main
-                                window, but keeps it visible with the modal window as a child window in front of it.
-                        </kdi-modal>
+                <div class="kx-row">
+                        <div class="kx-col--6">
+                                <section class="output-section">
+                                        <kdi-modal [overlay]="overlay">
+                                                In user interface design for computer applications, a modal window is a
+                                                graphical
+                                                control
+                                                element subordinate to an application's main window. It creates a mode
+                                                that disables the
+                                                main
+                                                window, but keeps it visible with the modal window as a child window in
+                                                front of it.
+                                        </kdi-modal>
+                                        <br>
+                                        <p class="kx-typescale--base">{{ path }}</p>
+                                        <br>
+                                </section>
+                        </div>
+                        <span style="border-right: 2px solid lightblue; margin-left: 10px;"></span>
+                        <div class="kx-col--5">
+                                <section class="json-section">
+                                        <p class="kx-typescale--base kx-m--small kx-m">JSON DATA</p>
+                                        <textarea class="json" [(ngModel)]="Modal"></textarea>
+                                </section>
+                        </div>
                 </div>
 
 
-                <br>
-                <p class="kx-typescale--base">{{ path }}</p>
-                <br>
+
+
         </div>
         <section>
                 <ul>
