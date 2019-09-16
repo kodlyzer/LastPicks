@@ -1,0 +1,12 @@
+.temp{
+    width:auto; 
+    padding: 10px;
+    margin:10px;
+}
+.container{  
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+}
