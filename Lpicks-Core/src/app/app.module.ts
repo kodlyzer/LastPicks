@@ -9,10 +9,12 @@ import { ListGroupModule } from './core/listgroup/listgroup.module';
 import { DemoModule } from './demo/demo.module';
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
     ListgroupDemoComponent,
+    
   ],
   imports: [
     BrowserModule,

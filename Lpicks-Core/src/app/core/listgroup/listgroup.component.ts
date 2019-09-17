@@ -16,11 +16,9 @@ export class ListgroupComponent implements OnInit {
     console.log('act as buttons from parent', this.actAsButtons);
   }
 
-  emitSelectedList(selecte: Listgroup) {
-    // console.log('selected list', selecte);
-    this.selectedList.emit(selecte);
-
-  }
+  // actAsAButton(listSelected) {
+  //   this.listSelected== true;
+  // }
 }
 
 
