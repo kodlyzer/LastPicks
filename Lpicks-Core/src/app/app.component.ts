@@ -29,6 +29,16 @@ export class AppComponent {
       displayName: 'Tab',
       route: 'tab',
       routelink: 'tab'
+    },
+    {
+      displayName: 'Header',
+      route: 'header',
+      routelink: 'header'
+    },
+    {
+      displayName: 'Modal',
+      route: 'modal',
+      routelink: 'modal'
     }
   ];
 

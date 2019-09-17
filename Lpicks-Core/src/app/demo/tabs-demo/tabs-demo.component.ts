@@ -6,42 +6,42 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./tabs-demo.component.scss']
 })
 export class TabsDemoComponent implements OnInit {
-  // demotabs="KOGNIFAI DESIGN SYSTEM";
- arr = {
+
+  arr = {
     items: [
-    {
-      "theme": "foam",
-      "classes": null,
-      "txt": "Home",
-      "href": "#",
-      "active": false,
-      "icon": {
-        "size": "base",
-        "symbol": "box"
+      {
+        theme: 'foam',
+        classes: null,
+        txt: 'Home',
+        href: '#',
+        active: false,
+        icon: {
+          size: 'base',
+          symbol: 'box'
+        }
+      },
+      {
+        txt: 'Applications',
+        href: '#',
+      },
+      {
+        txt: 'GSN Management',
+        href: '#'
+      },
+      {
+        txt: 'Node Offshore',
+        href: '#'
+      },
+      {
+        txt: 'Shipping',
+        href: '#'
+      },
+      {
+        txt: 'Tracking',
+        href: '#'
       }
-    },
-    {
-      "txt": "Applications",
-      "href": "#",
-    },
-    {
-      "txt": "GSN Management",
-      "href": "#"
-    },
-    {
-      "txt": "Node Offshore",
-      "href": "#"
-    },
-    {
-      "txt": "Shipping",
-      "href": "#"
-    },
-    {
-      "txt": "Tracking",
-      "href": "#"
-    }
-  ]
-}
+    ]
+  }
   constructor() { }
 
   ngOnInit() {

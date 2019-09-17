@@ -7,7 +7,6 @@ import { TreeModule } from './core/tree/tree.module';
 import { DemoModule } from './demo/demo.module';
 import { FormsModule } from '@angular/forms';
 
-
 @NgModule({
   declarations: [
     AppComponent,
