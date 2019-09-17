@@ -14,43 +14,13 @@ export class HeaderComponent implements OnInit {
         icon: 'box',
         link: '#',
         name: 'My Profile',
-        sub: [
-          // {
-          //   icon: 'box',
-          //   link: '#',
-          //   name: 'Spring',
-          //   sub: [
-          //     {
-          //       link: '#',
-          //       name: 'Applets'
-          //     },
-          //     {
-          //       icon: 'papers',
-          //       link: '#',
-          //       name: 'JFrame'
-          //     }
-          //   ]
-          // },
-          // {
-          //   link: '#',
-          //   name: 'Swing'
-          // }
-        ]
+        sub: [ ]
       },
       {
         icon: 'papers',
         link: '#',
         name: 'Notification Settings',
-        sub: [
-          // {
-          //   link: '#',
-          //   name: 'FrameWork'
-          // },
-          // {
-          //   link: '#',
-          //   name: 'Core'
-          // }
-        ]
+        sub: [ ]
       },
       {
         icon: 'success',
@@ -61,16 +31,7 @@ export class HeaderComponent implements OnInit {
         icon: 'danger',
         link: '#',
         name: 'Usage',
-        sub: [
-          // {
-          //   link: '#',
-          //   name: 'Djanjo'
-          // },
-          // {
-          //   link: '#',
-          //   name: 'Tkinter'
-          // }
-        ]
+        sub: [ ]
       },
       {
         icon: 'info',

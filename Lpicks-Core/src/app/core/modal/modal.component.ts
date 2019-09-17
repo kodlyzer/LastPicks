@@ -15,12 +15,8 @@ export class ModalComponent implements OnInit {
   }
   openModel() {
     this.open = true;
-
   }
   closeModel() {
-    console.log('Close');
     this.open = false;
-
-
   }
 }
