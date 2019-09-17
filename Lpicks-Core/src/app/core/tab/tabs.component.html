@@ -1,0 +1,14 @@
+<nav class="kx-tabs">
+  <ol class="kx-tabs__list">
+    <li class="kx-tabs--theme-white kx-mr--tiny tab-title" *ngFor="let tab of tabs">
+      <a class="kx-tabs__label" [ngClass]="tab.selected ? 'active' : null" (click)="selectTab(tab)">
+        <!-- ICON Component -->
+        <i class="kx-icon kx-icon--size-base">
+          <img src="../../../assets/img/icons/box.svg">
+        </i>
+        <span class="kx-tabs__txt">{{tab.tabTitle}}</span>
+      </a>
+    </li>
+  </ol>
+</nav>
+<ng-content></ng-content>

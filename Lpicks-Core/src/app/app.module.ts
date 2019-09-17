@@ -1,13 +1,13 @@
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
+import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
-
 import { AppComponent } from './app.component';
-import { ListgroupComponent } from './core/listgroup/listgroup.component';
-import { ListgroupDemoComponent } from './demo/listgroup-demo/listgroup-demo.component';
+import { DropdownComponent } from './core/dropdown/dropdown.component';
 import { ListGroupModule } from './core/listgroup/listgroup.module';
+import { TreeModule } from './core/tree/tree.module';
 import { DemoModule } from './demo/demo.module';
-
+import { ListgroupDemoComponent } from './demo/listgroup-demo/listgroup-demo.component';
 
 
 @NgModule({
@@ -20,9 +20,12 @@ import { DemoModule } from './demo/demo.module';
     BrowserModule,
     AppRoutingModule,
     ListGroupModule,
-    DemoModule
+    DemoModule,
+    TreeModule,
+    FormsModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  entryComponents: [DropdownComponent]
 })
 export class AppModule { }

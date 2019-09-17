@@ -82,18 +82,22 @@ export class DropdownDemoComponent implements OnInit {
     ]
   };
 
-  css = {
-    // tslint:disable-next-line: object-literal-key-quotes
-    'color': '#ffffff',
-    // tslint:disable-next-line: object-literal-key-quotes
-    'background': '#0385cb'
-  };
-
   constructor() { }
 
   ngOnInit() {
   }
   handler(path: string) {
     this.path = path;
+  }
+  get Dropdown() {
+    return JSON.stringify(this.dropdown, null, 2);
+  }
+
+  set Dropdown(v) {
+    try {
+      this.dropdown = JSON.parse(v);
+    } catch (error) {
+      console.log('Error while typing JSON');
+    }
   }
 }

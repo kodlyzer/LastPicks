@@ -1,0 +1,22 @@
+<div class="main-editor">
+  <div class="first">
+    <div class="rows">
+      <button class="btn" (click)="snippetActionTrue()" ng-class="{true: 'green', false: 'blue'}"
+        ng-click="yupNope.isSelected = false">
+        code snippet
+      </button>
+      <button class="btn" (click)="snippetActionFalse()" ng-class="{true: 'green', false: 'yupNope'}"
+        ng-click="yupNope.isSelected = true">
+        Json file
+      </button>
+    </div>
+    <div class="editSection">
+      <textarea *ngIf="snippet" id="chkInputTextArea" [(ngModel)]="model" placeholder="Enter code"></textarea>
+      <textarea name="checkbox place" *ngIf="!snippet" id=" checkbox" rows="10" cols="30"
+        [(ngModel)]="dropdownValues"> {{ snippet }}</textarea>
+    </div>
+  </div>
+  <div class="second" [innerHTML]="model">
+  </div>
+</div>
+

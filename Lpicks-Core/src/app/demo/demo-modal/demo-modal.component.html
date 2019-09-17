@@ -1,0 +1,75 @@
+<div class="docs-container">
+        <p class="kx-typescale--xlarge">Modal Component</p>
+        <div class="main">
+                <div class="kx-row">
+                        <div class="kx-col--6">
+                                <section class="output-section">
+                                        <kdi-modal [overlay]="overlay">
+                                                In user interface design for computer applications, a modal window is a
+                                                graphical
+                                                control
+                                                element subordinate to an application's main window. It creates a mode
+                                                that disables the
+                                                main
+                                                window, but keeps it visible with the modal window as a child window in
+                                                front of it.
+                                        </kdi-modal>
+                                        <br>
+                                        <p class="kx-typescale--base">{{ path }}</p>
+                                        <br>
+                                </section>
+                        </div>
+                        <span style="border-right: 2px solid lightblue; margin-left: 10px;"></span>
+                        <div class="kx-col--5">
+                                <section class="json-section">
+                                        <p class="kx-typescale--base kx-m--small kx-m">JSON DATA</p>
+                                        <textarea class="json" [(ngModel)]="Modal"></textarea>
+                                </section>
+                        </div>
+                </div>
+
+
+
+
+        </div>
+        <section>
+                <ul>
+                        <li class="kx-typescale--large">Configuration Options</li>
+                        <section class="code-section">
+                                <p class="kx-typescale--base">Use this Selector in your component to include Modal
+                                        Component.</p>
+                                <pre class="kx-p--base kx-typescale--base code">
+        &lt;kdi-modal [overlay]="overlay" &gt;
+        &lt;/kdi-modal&gt;
+                  </pre>
+                        </section>
+                        <li class="kx-typescale--large">How to use?</li>
+                        <section class="code-section">
+                                <p class="kx-typescale--base">Use this Format for specifying your content for your
+                                        Modal component
+                                        and pass is to the propety in the secector tag.</p>
+                                <pre class="kx-p--base kx-typescale--base code js">
+          overlay = &#123;
+          title: 'Modal Title',
+          option: [
+              &#123;
+              link: '#',
+              name: 'Got It'
+              &#125;,
+              &#123;
+              link: 'https://en.wikipedia.org/wiki/Modal_window',
+              name: 'Did not Get It'
+              &#125;,
+              &#123;
+              link: '#',
+              name: 'cancel'
+              &#125;
+            ],
+          size: 'small'
+          &#125;;        
+                </pre>
+                        </section>
+
+                </ul>
+        </section>
+</div>
