@@ -1,0 +1,53 @@
+<div class="docs-container">
+  <p class="kx-typescale--xlarge kx-mt--base">List Group Component</p>
+  <div class="main">
+    <kdi-listgroup [listgroup]="listGroup" [actAsButtons]="true" (selectedList)="handler($event)"></kdi-listgroup>
+    <br>
+    <!-- <p class="kx-typescale--base">{{ path }}</p> -->
+    <br>
+  </div>
+  <section>
+    <ul>
+      <li class="kx-typescale--large">Configuration Options</li>
+      <section class="code-section">
+        <p class="kx-typescale--base">Use this Selector in your component to include DropDown Component.</p>
+        <pre class="kx-p--base kx-typescale--base code">
+    &lt;kdi-listgroup 
+    [listgroup]= "listGroup" 
+    &lt;/kdi-listgroup&gt;
+            </pre>
+      </section>
+      <li class="kx-typescale--large">How to use?</li>
+      <section class="code-section">
+        <p class="kx-typescale--base">Use this Format for specifying your content for your dropdwon component
+          and pass is to the property in the selector tag.</p>
+        <pre class="kx-p--base kx-typescale--base code js">
+    listGroup = &#123;
+      listTitle: 'Header',
+      listitems: [&#123;
+        listName: 'Pacific Drilling',
+        listLink: '#',
+        listSelected: true,
+        badgeNumber: 2,
+        metadata: '25 minutes ago',
+        &#125;,
+      &#123;
+        listName: 'Floatel test',
+        listLink: '#',
+        listSelected: false,
+  
+        &#125;,
+      &#123;
+        listName: 'Pacific Drilling',
+        listLink: '#',
+        listSelected: true,
+        badgeNumber: 2,
+        
+        &#125;]
+        &#125;;
+          
+          </pre>
+      </section>
+    </ul>
+  </section>
+</div>

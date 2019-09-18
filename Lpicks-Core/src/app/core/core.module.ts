@@ -12,10 +12,6 @@ const MODULES = [DropdownModule, ClickOutsideModule, ModalModule, HeaderModule, 
     TabModule, TreeModule];
 
 
-
-
-
-
 @NgModule({
     imports: [...MODULES],
     exports: [...MODULES],
