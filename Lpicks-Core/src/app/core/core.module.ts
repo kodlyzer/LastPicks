@@ -8,9 +8,10 @@ import { TreeModule } from './tree/tree.module';
 import { TabModule } from './tab/tab.module';
 import { DropdownModule } from './dropdown/dropdown.module';
 import { StopPropogationModule } from './stop-propogation/stop-propogation.module';
+import { ListGroupModule } from './listgroup/listgroup.module';
 
 const MODULES = [DropdownModule, ClickOutsideModule, ModalModule, HeaderModule, CardModule, StopPropogationModule,
-    TabModule, TreeModule, TableModule];
+    TabModule, TreeModule, TableModule,ListGroupModule];
 
 
 @NgModule({
