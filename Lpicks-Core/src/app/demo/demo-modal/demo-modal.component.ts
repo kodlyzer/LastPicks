@@ -11,20 +11,6 @@ export class DemoModalComponent implements OnInit {
   overlay = {
     icon: 'success',
     title: 'Modal Title',
-    option: [
-      {
-        link: '#',
-        name: 'Got It'
-      },
-      {
-        link: 'https://en.wikipedia.org/wiki/Modal_window',
-        name: 'Did not Get It'
-      },
-      {
-        link: '#',
-        name: 'cancel'
-      }
-    ],
     size: 'small'
   };
 
