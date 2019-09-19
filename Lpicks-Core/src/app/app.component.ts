@@ -34,6 +34,16 @@ export class AppComponent {
       displayName: 'Table',
       route: 'table',
       routelink: 'table'
+    }, 
+    {
+      displayName: 'Header',
+      route: 'header',
+      routelink: 'header'
+    },
+    {
+      displayName: 'Modal',
+      route: 'modal',
+      routelink: 'modal'
     }
   ];
 

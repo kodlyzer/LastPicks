@@ -1,0 +1,50 @@
+<header class="kx-listgroup__header">
+  <h4 class="kx-listgroup__title">
+    {{listgroup.listTitle}}
+  </h4>
+</header>
+<div class="kx-listgroup">
+  <ul class="kx-listgroup__list">
+    <li class="kx-listgroup__row" *ngFor="let item of listgroup.listitems"
+      [ngClass]="item.listSelected? 'kx-is-selected': null">
+      <ng-container *ngIf="actAsButtons; then buttons else links"></ng-container>
+      <ng-template #buttons>
+        <a class="kx-btn kx-listgroup__link linkClass" href="javascript:void(0);" (click)=emitSelectedList(item)> <span
+            class="kx-btn__inner">
+            <span class="kx-btn__inner">
+              <span class="kx-btn__txt">{{item.listName}}</span>
+            </span>
+          </span>
+          <div *ngIf="item.metadata">
+            <div class="kx-listgroup__metadata metadataClass">{{item.metadata}}</div>
+          </div>
+          <div *ngIf="item.badgeNumber">
+            <span class="kx-badge kx-inline-flex kx-align-items-center">
+              <span class="kx-badge__fill kx-badge--skin-info kx-inline-flex kx-align-items-center">
+                <span class="kx-badge__txt">{{item.badgeNumber}}</span>
+              </span>
+            </span>
+          </div>
+        </a>
+      </ng-template>
+      <ng-template #links>
+        <a class="kx-btn kx-listgroup__link linkClass" href="{{item.listLink}}"> <span class="kx-btn__inner">
+            <span class="kx-btn__inner">
+              <span class="kx-btn__txt">{{item.listName}}</span>
+            </span>
+          </span>
+          <div *ngIf="item.metadata">
+            <div class="kx-listgroup__metadata metadataClass">{{item.metadata}}</div>
+          </div>
+          <div *ngIf="item.badgeNumber">
+            <span class="kx-badge kx-inline-flex kx-align-items-center">
+              <span class="kx-badge__fill kx-badge--skin-info kx-inline-flex kx-align-items-center">
+                <span class="kx-badge__txt">{{item.badgeNumber}}</span>
+              </span>
+            </span>
+          </div>
+        </a>
+      </ng-template>
+    </li>
+  </ul>
+</div>

@@ -1,0 +1,12 @@
+.modal-fade-show {
+    display: block;
+}
+.modal-hide {
+    display: none;
+}
+.wrap {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}

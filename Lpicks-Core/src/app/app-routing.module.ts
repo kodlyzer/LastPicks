@@ -5,15 +5,20 @@ import { DropdownDemoComponent } from './demo/dropdown-demo/dropdown-demo.compon
 import { TreeDemoComponent } from './demo/tree-demo/tree-demo.component';
 import { TabsDemoComponent } from './demo/tabs-demo/tabs-demo.component';
 import { DemoTableComponent } from './demo/demo-table/demo-table.component';
+import { DemoHeaderComponent } from './demo/demo-header/demo-header.component';
+import { DemoModalComponent } from './demo/demo-modal/demo-modal.component';
+import { ListgroupDemoComponent } from './demo/listgroup-demo/listgroup-demo.component';
 
 const routes: Routes = [
   { path: 'dropdown', component: DropdownDemoComponent },
   { path: 'tree', component: TreeDemoComponent },
   { path: 'card', component: DemoCardComponent },
   { path: 'tab', component: TabsDemoComponent },
-  {path:'table',component:DemoTableComponent},
-  { path: '', redirectTo: 'dropdown', pathMatch: 'full' },
-  
+  { path:'table', component:DemoTableComponent},
+  { path: 'header', component: DemoHeaderComponent},
+  { path: 'modal', component: DemoModalComponent},
+  { path: 'listgroup', component: ListgroupDemoComponent},
+  { path: '', redirectTo: 'dropdown', pathMatch: 'full' }
 ];
 
 @NgModule({
