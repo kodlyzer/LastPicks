@@ -6,6 +6,7 @@ import { TreeDemoComponent } from './demo/tree-demo/tree-demo.component';
 import { TabsDemoComponent } from './demo/tabs-demo/tabs-demo.component';
 import { DemoHeaderComponent } from './demo/demo-header/demo-header.component';
 import { DemoModalComponent } from './demo/demo-modal/demo-modal.component';
+import { ListgroupDemoComponent } from './demo/listgroup-demo/listgroup-demo.component';
 
 const routes: Routes = [
   { path: 'dropdown', component: DropdownDemoComponent },
@@ -14,6 +15,7 @@ const routes: Routes = [
   { path: 'tab', component: TabsDemoComponent },
   { path: 'header', component: DemoHeaderComponent},
   { path: 'modal', component: DemoModalComponent},
+  { path: 'listgroup', component: ListgroupDemoComponent},
   { path: '', redirectTo: 'dropdown', pathMatch: 'full' }
 ];
 
