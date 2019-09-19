@@ -39,6 +39,11 @@ export class AppComponent {
       displayName: 'Modal',
       route: 'modal',
       routelink: 'modal'
+    },
+    {
+      displayName: 'ListGroup',
+      route: 'listgroup',
+      routelink: 'listgroup'
     }
   ];
 
