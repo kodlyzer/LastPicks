@@ -1,0 +1,42 @@
+<div class="docs-container">
+  <p class="kx-typescale--xlarge">Tabs Component</p>
+  <div class="main">
+    <app-tabs>
+      <app-tab tabTitle="Title 1">
+        <content>
+          <p> Content 1</p>
+        </content>
+      </app-tab>
+      <app-tab tabTitle="Title 2">
+        <content>
+          <p> Content 2</p>
+        </content>
+      </app-tab>
+      <app-tab [tabTitle]="'Title 3'">
+        <content>
+          <p>Content 3</p>
+        </content>
+      </app-tab>
+    </app-tabs>
+  </div>
+  <section>
+    <ul>
+      <li class="kx-typescale--large">Configuration Options</li>
+      <section class="code-section">
+        <p class="kx-typescale--base">Use this Selector in your component to include Tabs Component.</p>
+        <pre class="kx-p--base kx-typescale--base code mh">
+    &lt;app-tabs 
+    &lt;/app-tabs&gt;</pre>
+      </section>
+      <li class="kx-typescale--large">How to use?</li>
+      <section class="code-section">
+        <p class="kx-typescale--base">Use this Format for specifying your content for your tabs component
+          and pass it to the property in the selector tag.</p>
+        <pre class="kx-p--base kx-typescale--base code mh">
+    &lt;content&gt;
+    put your content here
+    &lt;content&gt;</pre>
+      </section>
+    </ul>
+  </section>
+</div>

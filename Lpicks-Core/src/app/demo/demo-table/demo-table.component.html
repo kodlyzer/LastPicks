@@ -1,7 +1,20 @@
 <div class="docs-container">
     <p class="kx-typescale--xlarge">Table Component</p>
     <div class="main">
-        <app-table [tablecontent]="tablecontent"></app-table>
+        <div class="kx-row">
+            <div class="kx-col--6">
+                <section class="output-section">
+                    <app-table [tablecontent]="table"></app-table>
+                </section>
+            </div>
+            <div class="kx-col--6">
+                <section class="json-section">
+                    <p class="kx-typescale--base kx-m--small kx-m">JSON DATA</p>
+                    <textarea class="json" [(ngModel)]="Table"></textarea>
+                </section>
+            </div>
+        </div>
+
     </div>
     <section>
         <ul>
@@ -58,7 +71,7 @@
       &#125;;        
             </pre>
             </section>
-            
+
         </ul>
     </section>
 </div>

@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class DemoTableComponent implements OnInit {
 
 
-  tablecontent = {
+  table:TableContent = {
     header: {
       firstname: 'FirstName',
       lastname: 'LastName',
@@ -20,7 +20,6 @@ export class DemoTableComponent implements OnInit {
       {
         firstname: 'subash',
         lastname: 'raj',
-        place: 'Bangalore',
         pincode: '560045'
       },
       {
@@ -62,4 +61,15 @@ export class DemoTableComponent implements OnInit {
   ngOnInit() {
   }
 
+  get Table() {
+    return JSON.stringify(this.table, null, 2);
+  }
+
+  set Table(v) {
+    try {
+      this.table = JSON.parse(v);
+    } catch (error) {
+      console.log('Error while typing JSON');
+    }
+  }
 }

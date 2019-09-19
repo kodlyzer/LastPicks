@@ -1,10 +1,13 @@
 interface TableContent {
-    header: header;
-    body: header[];
+    header: {};
+    body: {}[];
+    theme?:string;
+    type?:string;
 }
-interface header{
-    firstname:string;
-    lastname:string;
-    phonenumber:string;
-    place:string;
-}
+// interface header{
+//     firstname?:string;
+//     lastname?:string;
+//     phonenumber?:string;
+//     place?:string;
+//     pincode?:string;
+// }

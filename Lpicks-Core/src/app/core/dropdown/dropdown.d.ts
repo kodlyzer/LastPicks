@@ -7,5 +7,5 @@ interface DropdownItem {
   icon?: string;
   link: string;
   name: string;
-  sub?: []
+  sub?: DropdownItem[]
 }

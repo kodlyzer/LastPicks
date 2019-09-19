@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'kdi-root',
@@ -7,4 +8,41 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Lpicks-Core';
+
+  navItems: TreeItem[] = [
+    {
+      displayName: 'DropDown',
+      route: 'dropdown',
+      routelink: 'dropdown'
+    },
+    {
+      displayName: 'Tree',
+      route: 'tree',
+      routelink: 'tree'
+    },
+    {
+      displayName: 'Card',
+      route: 'card',
+      routelink: 'card'
+    },
+    {
+      displayName: 'Tab',
+      route: 'tab',
+      routelink: 'tab'
+    },
+    {
+      displayName: 'Table',
+      route: 'table',
+      routelink: 'table'
+    }
+  ];
+
+  constructor(private router: Router) {
+  }
+
+  handler(link: string) {
+    if (typeof link !== 'undefined') {
+      this.router.navigate([link]);
+    }
+  }
 }

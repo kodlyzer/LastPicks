@@ -1,0 +1,24 @@
+.main {
+    width: 90%;
+    margin: auto;
+}
+.html {
+    background: #e8f6fe;
+}
+.json {
+    color: black;
+    background: #e9f2f6;
+}
+.html, .json{
+    width: 100%;
+    resize: vertical;
+    border: 0.1em solid #e9f2f6;
+    margin-right: 10px;
+    border-radius: 2px;
+}
+.output {
+    border: 0.1em solid #e9f2f6;
+    height: 247px;
+    margin-left: 10px;
+    border-radius: 2px;
+}
