@@ -1,0 +1,27 @@
+<div class="kx-page__header kx-flex">
+  <header class="kx-header kx-flex kx-align-items-center" role="banner">
+    <button class="kx-btn kx-hamburger kx-hamburger--spin kx-header__nav-toggle kx-js-header__nav-toggle">
+      <span class="kx-hamburger__inner">
+        <span class="kx-hamburger__icon"></span>
+      </span>
+      <span class="kx-hamburger__txt kx-is-vishidden">Menu</span>
+    </button>
+    <a class="kx-header__logo" href="#" *ngIf="header?.icon">
+      <img [src]="'../../../assets/img/icons/industries/'+header.icon+'.svg'" alt="Kognifai logo">
+    </a>
+    <a class="kx-header__title" href="#">
+      {{ header.hname }}
+    </a>
+    <div class="kx-header__tools">
+      <!-- BUTTON-GROUP Component -->
+      <div class="kx-btngroup kx-flex kx-flex-wrap kx-btngroup--fit-tight kx-ui" role="group"
+        aria-label="Tools and settings">
+
+
+        <kdi-dropdown [dropdown]="dropdown" (getClickPath)="handler($event)"></kdi-dropdown>
+
+
+      </div>
+    </div>
+  </header>
+</div>

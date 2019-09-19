@@ -1,17 +1,22 @@
-import {NgModule} from '@angular/core';
-// import { TabsModule } from './tabs/tabs.module';
-import { DropdownModule } from './dropdown/dropdown.module';
+import { NgModule } from '@angular/core';
 import { ClickOutsideModule } from './click-outside/click-outside.module';
-import { TabModule } from './tab/tab.module';
+import { ModalModule } from './modal/modal.module';
+import { HeaderModule } from './header/header.module';
 import { CardModule } from './card/card.module';
+import { TreeModule } from './tree/tree.module';
+import { TabModule } from './tab/tab.module';
+import { DropdownModule } from './dropdown/dropdown.module';
+import { StopPropogationModule } from './stop-propogation/stop-propogation.module';
 
-const MODULES = [TabModule,DropdownModule, ClickOutsideModule, CardModule];
+const MODULES = [DropdownModule, ClickOutsideModule, ModalModule, HeaderModule, CardModule, StopPropogationModule,
+    TabModule, TreeModule];
+
 
 @NgModule({
-    imports:[...MODULES],
-    exports:[...MODULES],
+    imports: [...MODULES],
+    exports: [...MODULES],
     declarations: []
 })
-export class CoreModule{
-    
+export class CoreModule {
+
 }
