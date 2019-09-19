@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DemoHeaderComponent implements OnInit {
   demoheader = {
-    hname: 'Shruta',
+    headername: 'Shruta',
     icon: 'maritime-offshore-white'
   };
 

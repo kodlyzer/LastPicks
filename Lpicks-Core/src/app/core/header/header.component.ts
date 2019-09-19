@@ -6,7 +6,7 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
-  @Input() header: { hname: string, icon?: string };
+  @Input() header: { headername: string, icon?: string };
   dropdown = {
     title: 'Profile Setiings',
     items: [
