@@ -3,7 +3,6 @@
   <div class="main">
 
     <app-tabs>
-
       <app-tab tabTitle="Title 1">
         <content>
           <p> Content 1</p>
@@ -20,6 +19,7 @@
         </content>
       </app-tab>
     </app-tabs>
+
   </div>
   <section>
     <ul>
@@ -27,20 +27,20 @@
       <section class="code-section">
         <p class="kx-typescale--base">Use this Selector in your component to include Tabs Component.</p>
         <pre class="kx-p--base kx-typescale--base code">
-    &lt;app-tabs 
-   
-    &lt;/app-tabs&gt;
-              </pre>
+    &lt;app-tabs&gt;
+      &lt;app-tab&gt; tabTitle="Title 1"&gt;
+        &lt;content&gt;&lt;/content&gt;
+      &lt;/app-tab&gt;
+    &lt;/app-tabs&gt;</pre>
       </section>
-      <li class="kx-typescale--large">How to use?</li>
+      <li class="kx-typescale--large">How to give the content?</li>
       <section class="code-section">
         <p class="kx-typescale--base">Use this Format for specifying your content for your tabs component
           and pass it to the property in the selector tag.</p>
         <pre class="kx-p--base kx-typescale--base code js">
-                &lt;content&gt;
-                put your content here
-                &lt;content&gt;
-            </pre>
+    &lt;content&gt;
+    put your content here
+    &lt;content&gt;</pre>
       </section>
     </ul>
   </section>
