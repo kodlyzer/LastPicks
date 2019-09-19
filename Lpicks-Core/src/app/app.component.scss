@@ -1,11 +1,33 @@
 header {
-    background: #e8f6fe;
+    background: #2c3136;
+    color: #efefef;
+    margin: 0px;
 }
-
 .main {
-    border-left: 0.5em solid #e9f2f6;
+    padding: 10px;
+    background: #2c3136;
+    color: #9f9f9f;
 }
-
 .nav {
     padding: 10px;
+    background: #2c3136;
+    color: #efefef;
+    border-right: 5px solid grey;
+}
+.logo{
+    background: #2c3136;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.col--1{
+    width: 5%;
+}
+.col--11{
+    width: 95%;
+}
+.body{
+    border-top: 5px solid grey;
 }

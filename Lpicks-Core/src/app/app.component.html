@@ -1,18 +1,28 @@
-<header class="kx-typescale--xlarge kx-center kx-py--base">KDI Reusable Components</header>
-<div class="kx-container">
+<div class="">
+  <div class="row">
+    <div class="col--1">
+      <img src="../assets/img/logo5.png" alt="">
+    </div>
+    <div class="col--11">
+      <header class="kx-typescale--xlarge kx-center kx-py--large">KDI Reusable Components</header>
+    </div>
+  </div>
+</div>
+<!-- <header class="kx-typescale--xlarge kx-center kx-py--base">KDI Reusable Components</header> -->
+<div class="body">
   <div class="kx-row">
-    <div class="kx-col--2">
-      <section class="nav">
+    <div class="kx-col--2 nav">
+      <section>
         <span class="kx-typescale--large kx-py--medium">COMPONENTS</span>
-        <kdi-tree [treeItems]="navItems" (sendLink)="handler($event)" [type] = "'link'"></kdi-tree>
+        <br>
+        <br>
+        <kdi-tree [treeItems]="navItems" (sendLink)="handler($event)" [type]="'link'" [color]="'#9f9f9f'"></kdi-tree>
       </section>
     </div>
-    <div class="kx-col--10">  
+    <div class="kx-col--10">
       <section class="main">
         <router-outlet></router-outlet>
       </section>
     </div>
   </div>
 </div>
-
-

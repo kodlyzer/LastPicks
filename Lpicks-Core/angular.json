@@ -31,7 +31,8 @@
               "node_modules/@kognifai/design-system/www/assets/styles/css/kx-styles.css",
               "src/styles.scss"
             ],
-            "scripts": [],
+            "scripts": [
+            ],
             "es5BrowserSupport": true
           },
           "configurations": {

@@ -10,6 +10,8 @@ export class TreeComponent implements OnInit {
 
   @Input() treeItems: TreeItem[];
   @Input() type: string;
+  @Input() color: string;
+
   @Output() sendLink = new EventEmitter<string>();
   @Output() sendItem = new EventEmitter<TreeItem>();
 

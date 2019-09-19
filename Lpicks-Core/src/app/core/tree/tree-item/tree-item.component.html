@@ -20,7 +20,7 @@
             </i>
           </ng-container>
           <span class="kx-tree__link__txt kx-typescale--base tree-item"
-            (click)="sendItem(item)">{{ item.displayName }}</span>
+            (click)="sendItem(item)" [ngStyle]="{'color': color}">{{ item.displayName }}</span>
         </a>
       </ng-template>
       <ng-template #link>
@@ -41,12 +41,12 @@
             </i>
           </ng-container>
           <span class="kx-tree__link__txt kx-typescale--base tree-item"
-            (click)="routeTo(item.routelink)">{{ item.displayName }}</span>
+            (click)="routeTo(item.routelink)" [ngStyle]="{'color': color}">{{ item.displayName }}</span>
         </a>
       </ng-template>
       <ng-container *ngIf="item.children && item.children.length">
         <kdi-tree-item [ngClass]="expanded ? 'active' : 'nested'" *ngFor="let child of item.children" [item]="child"
-          [depth]="depth+1"></kdi-tree-item>
+          [depth]="depth+1" [color]="color"></kdi-tree-item>
       </ng-container>
     </li>
   </ul>

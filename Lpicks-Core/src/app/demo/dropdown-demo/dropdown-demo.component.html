@@ -1,19 +1,28 @@
 <div class="docs-container">
-  <p class="kx-typescale--xlarge kx-mt--base">Drop Down Component</p>
+  <p class="kx-typescale--xlarge title">Drop Down Component</p>
   <div class="main">
     <div class="kx-row">
       <div class="kx-col--6">
         <section class="output-section">
           <kdi-dropdown [dropdown]="dropdown" (getClickPath)="handler($event)"></kdi-dropdown>
           <br>
-          <p class="kx-typescale--base">{{ path }}</p>
+          <p class="kx-typescale--base black">{{ path }}</p>
           <br>
         </section>
       </div>
       <div class="kx-col--6">
         <section class="json-section">
-          <p class="kx-typescale--base kx-m--small kx-m">JSON DATA</p>
-          <textarea class="json" [(ngModel)]="Dropdown"></textarea>
+          <p class="kx-typescale--base kx-m--small kx-m kx-txt-center" style="color:#efefef;">JSON DATA</p>
+          <div class="copy">
+              <div class="tooltip">
+                <img src="../../../assets/img/copy2.png" alt="" width="20px" (click)="CopyFromTextArea(jsonContent)">
+                <span class="tooltiptext">Copy To Clipboard</span>
+              </div>
+            </div>
+          <textarea #jsonContent class="json prettyprint" [(ngModel)]="Dropdown"></textarea>
+          <!-- <editor [init]="{plugins: 'link'}" [(ngModel)]="Dropdown"></editor> -->
+          <!-- <textarea highlight-js [(ngModel)]="Dropdown"></textarea> -->
+          <!-- <codemirror class="json" [(ngModel)]="Dropdown"></codemirror> -->
         </section>
       </div>
     </div>
@@ -23,65 +32,89 @@
       <li class="kx-typescale--large">Configuration Options</li>
       <section class="code-section">
         <p class="kx-typescale--base">Use this Selector in your component to include DropDown Component.</p>
-        <pre class="kx-p--base kx-typescale--base code mh">
-  &lt;kdi-dropdown 
-    [dropdown]="dropdown" 
-    (getClickPath)="handler($event)"&gt;
-  &lt;/kdi-dropdown&gt;</pre>
+        <div class="copy1">
+            <div class="tooltip">
+              <img src="../../../assets/img/copy2.png" alt="" width="20px" (click)="CopyFromPre(tagSnippet1)">
+              <span class="tooltiptext">Copy To Clipboard</span>
+            </div>
+          </div>
+        <pre class="kx-p--base kx-typescale--base code mh prettyprint" #tagSnippet1>
+&lt;kdi-dropdown 
+  [dropdown]="dropdown" 
+  (getClickPath)="handler($event)"&gt;
+&lt;/kdi-dropdown&gt;</pre>
       </section>
       <li class="kx-typescale--large">How to use?</li>
       <section class="code-section">
         <p class="kx-typescale--base">Use this Format for specifying your content for your dropdwon component
           and pass is to the propety in the secector tag.</p>
-        <pre class="kx-p--base kx-typescale--base code mh">
-    dropdown = &#123;
-      title: 'Courses',
-      items: [
+          <div class="copy1">
+              <div class="tooltip">
+                <img src="../../../assets/img/copy2.png" alt="" width="20px" (click)="CopyFromPre(tagSnippet2)">
+                <span class="tooltiptext">Copy To Clipboard</span>
+              </div>
+            </div>
+        <pre class="kx-p--base kx-typescale--base code mh prettyprint" #tagSnippet2>
+dropdown = &#123;
+  title: 'Courses',
+  items: [
+    &#123;
+      icon: 'box',
+      link: '#',
+      name: 'Java',
+    &#125;,
+    &#123;
+      icon: 'papers',
+      link: '#',
+      name: '.Net',
+      sub: [
         &#123;
-          icon: 'box',
           link: '#',
-          name: 'Java',
+          name: 'FrameWork'
         &#125;,
         &#123;
-          icon: 'papers',
           link: '#',
-          name: '.Net',
-          sub: [
-            &#123;
-              link: '#',
-              name: 'FrameWork'
-            &#125;,
-            &#123;
-              link: '#',
-              name: 'Core'
-            &#125;
-          ]
-        &#125;,
-        &#123;
-          icon: 'success',
-          link: '#',
-          name: 'C++'
-        &#125;,
-        &#123;
-          icon: 'danger',
-          link: '#',
-          name: 'Python',
+          name: 'Core'
         &#125;
       ]
-    &#125;;</pre>
+    &#125;,
+    &#123;
+      icon: 'success',
+      link: '#',
+      name: 'C++'
+    &#125;,
+    &#123;
+      icon: 'danger',
+      link: '#',
+      name: 'Python',
+    &#125;
+  ]
+&#125;;</pre>
       </section>
-      <li class="kx-typescale--large">How to listen to selecte item from drop down?</li>
+      <li class="kx-typescale--large">How to listen to select item from drop down?</li>
       <section class="code-section">
         <p class="kx-typescale--base">Use this EventListener in your selector tag to listen to the selected path
           and you have to create a event handler function in your component.
         </p>
-        <pre class="kx-p--base kx-typescale--base code mh">
-    Add this in your selecor tag (getClickPath)="handler($event)"
-    
-    handler(path: string) &#123;
-      this.path = path;
-    &#125;</pre>
+        <div class="copy1">
+            <div class="tooltip">
+              <img src="../../../assets/img/copy2.png" alt="" width="20px" (click)="CopyFromPre(tagSnippet3)">
+              <span class="tooltiptext">Copy To Clipboard</span>
+            </div>
+          </div>
+        <pre class="kx-p--base kx-typescale--base code mh prettyprint" #tagSnippet3>
+(getClickPath)="handler($event)"
+
+handler(path: string) &#123;
+  this.path = path;
+&#125;</pre>
       </section>
     </ul>
   </section>
 </div>
+<!-- <script>
+    var editor = CodeMirror.fromTextArea(document.getElementById("1textarea"), {
+        lineNumbers: true,
+        theme: "base16-dark"
+    });
+</script> -->

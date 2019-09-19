@@ -1,11 +1,11 @@
 <div class="docs-container">
-  <p class="kx-typescale--xlarge kx-mt--base">Side NavBar Component</p>
+  <p class="kx-typescale--xlarge title">Tree Component</p>
   <div class="main">
     <div class="kx-row">
       <div class="kx-col--6">
         <section class="output-section">
           <kdi-tree [treeItems]="treeItems" (sendItem)="handler($event)" (sendLink)="handlerLink($event)"
-            [type]="'button'">
+            [type]="'button'" [color]="'#9f9f9f'">
           </kdi-tree>
           <br>
           <p class="kx-typescale--base">{{ item?.route }}</p>
@@ -14,8 +14,14 @@
       </div>
       <div class="kx-col--6">
         <section class="json-section">
-          <p class="kx-typescale--base kx-m--small kx-m">Json DATA</p>
-          <textarea class="json" [(ngModel)]="TreeItems"></textarea>
+          <p class="kx-typescale--base kx-m--small kx-center" style="color:#efefef;">JSON DATA</p>
+          <div class="copy">
+            <div class="tooltip">
+              <img src="../../../assets/img/copy2.png" alt="" width="20px" (click)="CopyFromTextArea(jsonContent)">
+              <span class="tooltiptext">Copy To Clipboard</span>
+            </div>
+          </div>
+          <textarea #jsonContent class="json" [(ngModel)]="TreeItems"></textarea>
         </section>
       </div>
     </div>
@@ -25,83 +31,99 @@
       <li class="kx-typescale--large">Configuration Options</li>
       <section class="code-section">
         <p class="kx-typescale--base">Use this Selector in your component to include DropDown Component.</p>
-        <pre class="kx-p--base kx-typescale--base code mh">
-    &lt;kdi-nav [treeItems]="treeItems"&gt;&lt;/kdi-nav&gt;</pre>
+        <div class="copy1">
+          <div class="tooltip">
+            <img src="../../../assets/img/copy2.png" alt="" width="20px" (click)="CopyFromPre(tagSnippet1)">
+            <span class="tooltiptext">Copy To Clipboard</span>
+          </div>
+        </div>
+        <pre class="kx-p--base kx-typescale--base code mh prettyprint" #tagSnippet1>
+&lt;kdi-nav [treeItems]="treeItems"&gt;&lt;/kdi-nav&gt;</pre>
       </section>
       <li class="kx-typescale--large">How to use?</li>
       <section class="code-section">
         <p class="kx-typescale--base">Use this Format for specifying your content for your dropdwon component
           and pass is to the propety in the secector tag.</p>
-        <pre class="kx-p--base kx-typescale--base code mh">
-      treeItems: TreeItem[] = [
-      &#123;
-        displayName: 'Kongsberg',
-        route: 'kongsberg',
-        icon: 'box',
-        children: [
+        <div class="copy1">
+          <div class="tooltip">
+            <img src="../../../assets/img/copy2.png" alt="" width="20px" (click)="CopyFromPre(tagSnippet2)">
+            <span class="tooltiptext">Copy To Clipboard</span>
+          </div>
+        </div>
+        <pre class="kx-p--base kx-typescale--base code mh prettyprint" #tagSnippet2>
+treeItems: TreeItem[] = [
+&#123;
+  displayName: 'Kongsberg',
+  route: 'kongsberg',
+  icon: 'box',
+  children: [
+  &#123;
+      displayName: 'Oil and Gas',
+      route: 'kongsberg/oil_and_gas',
+      icon: 'box',
+      children: [
+      &#123;          
+          displayName: 'Oil',
+          route: 'kongsberg/oil_and_gas/oil',
+          icon: 'box',
+          &#125;,
         &#123;
-            displayName: 'Oil and Gas',
-            route: 'kongsberg/oil_and_gas',
-            icon: 'box',
-            children: [
-            &#123;          
-                displayName: 'Oil',
-                route: 'kongsberg/oil_and_gas/oil',
-                icon: 'box',
-                &#125;,
-              &#123;
-                displayName: 'Gas',
-                route: 'kongsberg/oil_and_gas/gas',
-                icon: 'box',
-              &#125;
-            ]
-          &#125;
-        ]
-        &#125;,
+          displayName: 'Gas',
+          route: 'kongsberg/oil_and_gas/gas',
+          icon: 'box',
+        &#125;
+      ]
+    &#125;
+  ]
+  &#125;,
+&#123;
+  displayName: 'Maritime',
+  route: 'maritime',
+  icon: 'box',
+  children: [
+  &#123;
+      displayName: 'Simulation',
+      route: 'maritime/simulation',
+      icon: 'box',
+      children: [
       &#123;
-        displayName: 'Maritime',
-        route: 'maritime',
-        icon: 'box',
-        children: [
-        &#123;
-            displayName: 'Simulation',
-            route: 'maritime/simulation',
-            icon: 'box',
-            children: [
-            &#123;
-                displayName: 'k-spice',
-                route: 'maritime/simulation/k_spice',
-                icon: 'box'
-              &#125;
-            ]
-            &#125;,
-          &#123;
-            displayName: 'Digital Twin',
-            route: 'maritime/digital_twin',
-            icon: 'box'
-          &#125;
-        ]
-      &#125;
-    ];</pre>
+          displayName: 'k-spice',
+          route: 'maritime/simulation/k_spice',
+          icon: 'box'
+        &#125;
+      ]
+      &#125;,
+    &#123;
+      displayName: 'Digital Twin',
+      route: 'maritime/digital_twin',
+      icon: 'box'
+    &#125;
+  ]
+&#125;
+];</pre>
       </section>
       <li class="kx-typescale--large">How to listen to selecte item from drop down?</li>
       <section class="code-section">
         <p class="kx-typescale--base">Use this EventListener in your selector tag to listen to the selected path
           and you have to create a event handler function in your component.
         </p>
-        <pre class="kx-p--base kx-typescale--base code mh">
-      Add this in your selecor tag 
-      
-      (sendItem)="handler($event)" 
-      (sendLink)="handlerLink($event)"
-      
-      handler(item: TreeItem) &#123;
-        this.item = item;
-      &#125;
-    
-      handlerLink(link: string) &#123;
-        this.link = link;
-      &#125;</pre>
+        <div class="copy1">
+          <div class="tooltip">
+            <img src="../../../assets/img/copy2.png" alt="" width="20px" (click)="CopyFromPre(tagSnippet3)">
+            <span class="tooltiptext">Copy To Clipboard</span>
+          </div>
+        </div>
+        <pre class="kx-p--base kx-typescale--base code mh prettyprint" #tagSnippet3>
+(sendItem)="handler($event)" 
+(sendLink)="handlerLink($event)"
+
+handler(item: TreeItem) &#123;
+  this.item = item;
+&#125;
+
+handlerLink(link: string) &#123;
+  this.link = link;
+&#125;</pre>
       </section>
     </ul>
   </section>

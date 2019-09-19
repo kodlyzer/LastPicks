@@ -10,26 +10,28 @@ import { DemoCardComponent } from './demo-card-demo/demo-card.component';
 import { LivePageComponent } from './live-page/live-page.component';
 import { TabsDemoComponent } from './tabs-demo/tabs-demo.component';
 import { TreeDemoComponent } from './tree-demo/tree-demo.component';
-const COMPONENTS = [DemoModalComponent, DropdownDemoComponent, DemoHeaderComponent, PageComponent, DemoCardComponent,TreeDemoComponent,
+import { EditorModule } from '@tinymce/tinymce-angular';
+import { HighlightJsModule } from 'ngx-highlight-js';
+import { CodemirrorModule } from 'ng2-codemirror';
+
+const COMPONENTS = [
+    DemoModalComponent,
+    DropdownDemoComponent,
+    DemoHeaderComponent,
+    PageComponent,
+    DemoCardComponent,
+    TreeDemoComponent,
     LivePageComponent,
     TabsDemoComponent];
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @NgModule({
-    imports: [CoreModule, FormsModule, CommonModule],
+    imports: [
+        CoreModule,
+        FormsModule,
+        CommonModule,
+        EditorModule,
+        HighlightJsModule,
+        CodemirrorModule],
     declarations: [...COMPONENTS],
     exports: [...COMPONENTS]
 })

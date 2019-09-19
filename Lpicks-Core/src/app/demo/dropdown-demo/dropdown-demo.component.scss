@@ -2,51 +2,97 @@
   margin: 10px 0px;
   height: 400px;
   padding: 20px;
-  border: 0.1em solid #e9f2f6;
+  border: 0.1em solid grey;
   border-radius: 2px;
+}
+.title{
+  color: #efefef;
 }
 .output-section {
   width: 100%;
   height: 100%;
 }
+
 .json-section {
+  position: relative;
   width: 100%;
   height: 100%;
 }
-.json{
+
+.json {
   resize: none;
-  border: 0.1em solid #e9f2f6;
   margin-left: 25px;
   height: 286px;
   width: 90%;
-  border-radius: 5px;
-  color: #e9f2f6;
-  background: #004e5a;
+  color: rgb(0, 195, 255);
+  background: #000000;
 }
 .docs-container {
   width: 90%;
   margin: auto;
 }
+
 .code-section {
   padding: 10px;
   margin: 10px 0px;
   width: 100%;
+  position: relative;
 }
+
 .code {
   width: 100%;
   white-space: pre-wrap;
   padding: 10px;
   margin: 10px 0px;
-  background: #e8f6fe;
-  border-radius: 10px;
+  // background: #4f4f4f;
+  border-radius: 2px;
 }
+
 .mh {
   max-height: 300px;
 }
+
 ul {
   margin: 0px;
   padding: 0px;
 }
+
 li {
   list-style-type: lower-roman;
+  color: #efefef;
+}
+.copy{
+  position: absolute;
+  top:45px;
+  right:55px;
+}
+.copy1{
+  position: absolute;
+  top:20px;
+  right:15px;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltiptext {
+  visibility: hidden;
+  width: 90px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  font-size: 9px;
+  
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  top: -30px;
+  left: 0px;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
 }

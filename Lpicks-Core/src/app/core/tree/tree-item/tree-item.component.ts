@@ -10,8 +10,9 @@ export class TreeItemComponent implements OnInit {
   expanded = false;
   @Input() item: TreeItem;
   @Input() depth = 0;
-  isButton: boolean;
   @Input() type = 'button';
+  @Input() color: string;
+  isButton: boolean;
   constructor(private navigationService: TreeService) {
   }
 

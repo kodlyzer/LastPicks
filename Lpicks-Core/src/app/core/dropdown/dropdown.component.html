@@ -13,7 +13,7 @@
   <div class="kx-dropdown__menu kx-dropdown__menu--align-left kx-js-dropdown__menu" aria-labelledby="--17883">
     <ul class="kx-dropdown__list" *ngIf="dropdown?.items?.length > 0">
       <li class="kx-dropdown__item" *ngFor="let item of dropdown.items">
-        <a class="kx-dropdown__link" (click)="onClick(item.name)">
+        <a class="kx-dropdown__link" (click)="onClick(item.name)" tabindex="0">
           <i class="kx-icon kx-icon--size-base" *ngIf="item?.icon">
             <img [src]="iconPath+item.icon+'.svg'" [alt]="item.icon">
           </i>
@@ -25,7 +25,7 @@
         <div class="kx-dropdown__menu" *ngIf="item?.sub?.length > 0">
           <ul class="kx-dropdown__list">
             <li class="kx-dropdown__item" *ngFor="let _item of item.sub">
-              <a class="kx-dropdown__link" (click)="onClick(item.name+'/'+_item.name)">
+              <a class="kx-dropdown__link" (click)="onClick(item.name+'/'+_item.name)" tabindex="0">
                 <i class="kx-icon kx-icon--size-base" *ngIf="_item?.icon">
                   <img [src]="iconPath+_item.icon+'.svg'" [alt]="_item.icon">
                 </i>
@@ -36,12 +36,12 @@
               </a>
               <div class="kx-dropdown__menu" *ngIf="_item?.sub?.length > 0">
                 <ul class="kx-dropdown__list">
-                  <li class="kx-dropdown__item" *ngFor="let __item of _item.sub">
-                    <a class="kx-dropdown__link" (click)="onClick(item.name+'/'+_item.name+'/'+__item.name)">
+                  <li class="kx-dropdown__item" *ngFor="let __item of _item.sub" >
+                    <a class="kx-dropdown__link" (click)="onClick(item.name+'/'+_item.name+'/'+__item.name)" tabindex="0">
                       <i class="kx-icon kx-icon--size-base" *ngIf="__item?.icon">
                         <img [src]="iconPath+__item.icon+'.svg'" [alt]="__item.icon">
                       </i>
-                      <span class="kx-dropdown__item__txt">{{ __item.name }}</span>
+                      <span class="kx-dropdown__item__txt" >{{ __item.name }}</span>
                     </a>
                   </li>
                 </ul>

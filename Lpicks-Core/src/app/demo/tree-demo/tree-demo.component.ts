@@ -81,4 +81,19 @@ export class TreeDemoComponent implements OnInit {
       console.log('Error while typing JSON');
     }
   }
+
+  CopyFromTextArea(jsonContent: HTMLTextAreaElement) {
+    console.log('Clicked Copy Icon');
+    jsonContent.select();
+    document.execCommand('copy');
+  }
+  CopyFromPre(pre: HTMLPreElement) {
+    const selBox = document.createElement('textarea');
+    selBox.value = pre.textContent;
+    document.body.appendChild(selBox);
+    selBox.focus();
+    selBox.select();
+    document.execCommand('copy');
+    document.body.removeChild(selBox);
+  }
 }
