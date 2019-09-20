@@ -12,7 +12,7 @@ import { PageComponent } from './page/page.component';
 import { TabsDemoComponent } from './tabs-demo/tabs-demo.component';
 import { TreeDemoComponent } from './tree-demo/tree-demo.component';
 const COMPONENTS = [DemoModalComponent, DropdownDemoComponent, DemoHeaderComponent, PageComponent, DemoCardComponent,TreeDemoComponent,
-    LivePageComponent,ListgroupDemoComponent,
+    LivePageComponent, ListgroupDemoComponent,
     TabsDemoComponent];
 
 @NgModule({

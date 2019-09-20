@@ -21,7 +21,6 @@ export class DemoModalComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-
   }
   get Modal() {
     return JSON.stringify(this.overlay, null, 2);

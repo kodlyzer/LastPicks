@@ -1,8 +1,8 @@
 <div class="docs-container">
         <p class="kx-typescale--xlarge">Modal Component</p>
         <div class="main">
-                <div class="kx-row">
-                        <div class="kx-col--6">
+                <div class="row">
+                        <div class="col--1">
                                 <section class="output-section">
                                         <kdi-modal [overlay]="overlay">
                                                 <content>
@@ -27,10 +27,9 @@
                                         <br>
                                 </section>
                         </div>
-                        <span style="border-right: 2px solid lightblue; margin-left: 10px;"></span>
-                        <div class="kx-col--5">
+                        <div class="col--2">
                                 <section class="json-section">
-                                        <p class="kx-typescale--base kx-m--small kx-m">JSON DATA</p>
+                                        <p class="kx-typescale--base kx-m--small">JSON DATA</p>
                                         <textarea class="json" [(ngModel)]="Modal"></textarea>
                                 </section>
                         </div>

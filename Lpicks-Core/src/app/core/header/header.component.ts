@@ -19,7 +19,7 @@ export class HeaderComponent implements OnInit {
       {
         icon: 'papers',
         link: '#',
-        name: 'Notification Settings',
+        name: 'Notification qwertyusdfyhujsedrftgu',
         sub: [ ]
       },
       {

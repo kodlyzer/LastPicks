@@ -1,9 +1,15 @@
-.kx-row {
+.row {
   margin: 10px 0px;
   height: 400px;
   padding: 20px;
   border: 0.1em solid #e9f2f6;
   border-radius: 2px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.col--1, .col--2{
+  width: 50%;
 }
 .output-section {
   width: 100%;
@@ -50,4 +56,3 @@ ul {
 li {
   list-style-type: lower-roman;
 }
-  

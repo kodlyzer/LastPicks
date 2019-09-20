@@ -14,12 +14,10 @@
     </a>
     <div class="kx-header__tools">
       <!-- BUTTON-GROUP Component -->
-      <div class="kx-btngroup kx-flex kx-flex-wrap kx-btngroup--fit-tight kx-ui" role="group"
+      <div class="kx-btngroup kx-flex kx-flex-wrap kx-btngroup--fit-tight kx-ui kx-pt--tiny" role="group"
         aria-label="Tools and settings">
 
-
-        <kdi-dropdown [dropdown]="dropdown" (getClickPath)="handler($event)"></kdi-dropdown>
-
+        <kdi-dropdown [dropdown]="dropdown" (getClickPath)="handler($event)" class="kx-pt-small"></kdi-dropdown>
 
       </div>
     </div>

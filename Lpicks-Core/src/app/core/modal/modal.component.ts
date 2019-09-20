@@ -34,4 +34,8 @@ export class ModalComponent implements OnInit {
   closeModel() {
     this.open = false;
   }
+
+  outside(){
+    this.open = false;
+  }
 }

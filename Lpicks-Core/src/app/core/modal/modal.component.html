@@ -1,7 +1,7 @@
 <button class="kx-btn kx-btn--skin-primary kx-p--base" type="button" (click)="openModel()">Open Modal</button>
 <div class="kx-modal" [ngClass]="open ? 'modal-fade-show' : 'modal-hide'" tabindex="-1" role="dialog"
     aria-labelledby="--22029">
-    <div class="kx-modal__dialog kx-modal--skin-prominent kx-modal--size-{{overlay.size}}" role="document">
+    <div class="kx-modal__dialog kx-modal--skin-prominent kx-modal--size-{{overlay.size}}" role="document" (kdiClickOutside)="outside()">
         <div class="kx-modal__content">
             <div class="kx-modal__header">
                 <i class="kx-icon kx-icon--size-medium kx-mr--mini" *ngIf="overlay?.icon">
