@@ -1,7 +1,18 @@
-<!-- <demo-card> </demo-card>
-<!-- <section>
-  <kdi-dropdown-demo></kdi-dropdown-demo>
-</section> --> -->
-<kdi-page>
-  
-</kdi-page>
+<header class="kx-typescale--xlarge kx-center kx-py--base">KDI Reusable Components</header>
+<div class="kx-container">
+  <div class="kx-row">
+    <div class="kx-col--2">
+      <section class="nav">
+        <span class="kx-typescale--large kx-py--medium">COMPONENTS</span>
+        <kdi-tree [treeItems]="navItems" (sendLink)="handler($event)" [type] = "'link'"></kdi-tree>
+      </section>
+    </div>
+    <div class="kx-col--10">  
+      <section class="main">
+        <router-outlet></router-outlet>
+      </section>
+    </div>
+  </div>
+</div>
+
+
