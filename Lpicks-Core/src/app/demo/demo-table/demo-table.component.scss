@@ -1,0 +1,53 @@
+.kx-row {
+  margin: 10px 0px;
+  height: 400px;
+  padding: 20px;
+  border: 0.1em solid #e9f2f6;
+  border-radius: 2px;
+}
+.output-section {
+  width: 100%;
+  overflow: scroll;
+  height: 100%;
+}
+.json-section {
+  width: 100%;
+  height: 100%;
+}
+.json{
+  resize: none;
+  border: 0.1em solid #e9f2f6;
+  margin-left: 25px;
+  height: 286px;
+  width: 90%;
+  border-radius: 5px;
+  color: #e9f2f6;
+  background: #004e5a;
+}
+.docs-container {
+  width: 90%;
+  margin: auto;
+}
+.code-section {
+  padding: 10px;
+  margin: 10px 0px;
+  width: 100%;
+}
+.code {
+  width: 100%;
+  white-space: pre-wrap;
+  padding: 10px;
+  margin: 10px 0px;
+  background: #e8f6fe;
+  border-radius: 10px;
+}
+.mh {
+  max-height: 300px;
+}
+ul {
+  margin: 0px;
+  padding: 0px;
+}
+li {
+  list-style-type: lower-roman;
+}

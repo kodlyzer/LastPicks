@@ -31,6 +31,11 @@ export class AppComponent {
       routelink: 'tab'
     },
     {
+      displayName: 'Table',
+      route: 'table',
+      routelink: 'table'
+    }, 
+    {
       displayName: 'Header',
       route: 'header',
       routelink: 'header'
