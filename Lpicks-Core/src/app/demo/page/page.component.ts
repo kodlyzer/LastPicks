@@ -1,4 +1,18 @@
-import { Component, Input } from '@angular/core';
+import { Component } from '@angular/core';
+
+
+export const darkTheme = {
+  'primary-color': '#455363',
+  'background-color': '#1f2935',
+  'text-color': '#fff'
+};
+
+export const lightTheme = {
+  'primary-color': '#fff',
+  'background-color': '#e5e5e5',
+  'text-color': '#2d2d2d'
+};
+
 
 @Component({
   selector: 'kdi-page',
@@ -7,56 +21,29 @@ import { Component, Input } from '@angular/core';
 })
 export class PageComponent {
 
+
   title = 'livedemo';
   model = '';
   snippet: boolean = true;
-  constructor() { console.clear(); }
+  currentTheme:string;
+  oppositeTheme:string;
+  constructor() {
+    console.clear();
+    this.currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : null;
+    if (this.currentTheme==null) {
+      localStorage.setItem('theme','light');
+      this.setTheme(lightTheme);
+      this.oppositeTheme='dark';
+    }
+    else{
+      this.setTheme(darkTheme);
+      this.oppositeTheme='light';
+    }
+  }
 
-  dropdown = {
+  JsonValue = {
     title: 'Courses',
     items: [
-      {
-        icon: 'box',
-        link: '#',
-        name: 'Java',
-        sub: [
-          {
-            icon: 'box',
-            link: '#',
-            name: 'Spring',
-            sub: [
-              {
-                link: '#',
-                name: 'Applets'
-              },
-              {
-                icon: 'papers',
-                link: '#',
-                name: 'JFrame'
-              }
-            ]
-          },
-          {
-            link: '#',
-            name: 'Swing'
-          }
-        ]
-      },
-      {
-        icon: 'papers',
-        link: '#',
-        name: '.Net',
-        sub: [
-          {
-            link: '#',
-            name: 'FrameWork'
-          },
-          {
-            link: '#',
-            name: 'Core'
-          }
-        ]
-      },
       {
         icon: 'success',
         link: '#',
@@ -66,16 +53,6 @@ export class PageComponent {
         icon: 'danger',
         link: '#',
         name: 'Python',
-        sub: [
-          {
-            link: '#',
-            name: 'Djanjo'
-          },
-          {
-            link: '#',
-            name: 'Tkinter'
-          }
-        ]
       },
       {
         icon: 'info',
@@ -85,12 +62,12 @@ export class PageComponent {
     ]
   };
 
-  get dropdownValues() {
-    return JSON.stringify(this.dropdown, null, 2);
+  get JsonValues() {
+    return JSON.stringify(this.JsonValue, null, 2);
   }
-  set dropdownValues(v) {
+  set JsonValues(v) {
     try {
-      this.dropdown = JSON.parse(v);
+      this.JsonValue = JSON.parse(v);
     } catch (error) {
       console.log('Error while typing JSON');
     }
@@ -104,8 +81,44 @@ export class PageComponent {
     this.snippet = false;
     console.log(this.snippet);
   }
+
+
+  CopyToClipBoard() {
+    let selBox1 = document.getElementById("chkInputTextArea") as HTMLTextAreaElement;
+    selBox1.focus();
+    selBox1.select();
+    document.execCommand('copy');
+  }
+  outFunc(event) {
+    var tooltip = document.getElementById(event.id);
+    tooltip.innerHTML = "Copy to clipboard";
+    console.log();
+  }
   // Submit()
   // {
   //   //console.log(this.model);
   // }
+
+
+  chngetheme() {
+    if (this.currentTheme == 'light') {
+      this.currentTheme = 'dark';
+      this.setTheme(darkTheme);
+      localStorage.setItem('theme','dark');
+      this.oppositeTheme='light';
+    }
+    else {
+      this.currentTheme = 'light';
+      this.setTheme(lightTheme);
+      localStorage.setItem('theme','light');
+      this.oppositeTheme='dark';
+    }
+  }
+
+  private setTheme(theme: {}) {
+    Object.keys(theme).forEach(k =>
+      document.documentElement.style.setProperty(`--${k}`, theme[k])
+    );
+  }
+
 }

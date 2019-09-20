@@ -5,22 +5,43 @@
         ng-click="yupNope.isSelected = false">
         code snippet
       </button>
-      <button class="btn" (click)="snippetActionFalse()" ng-class="{true: 'green', false: 'yupNope'}"
-        ng-click="yupNope.isSelected = true">
-        Json file
+
+      <button class="btn" onclick="document.getElementById('getFile').click()">Edit the Json
       </button>
+      <input type='file' id="getFile" style="display:none" accept="application/json"
+        (change)="showPreviewJson($event)" />
+
     </div>
-    <div class="editSection">
-      <textarea *ngIf="snippet" id="chkInputTextArea" [(ngModel)]="model" placeholder="Enter code"></textarea>
-      <textarea name="checkbox place" *ngIf="!snippet" id=" checkbox" rows="10" cols="30"
-        [(ngModel)]="dropdownValues"> {{ snippet }}</textarea>
+
+    <div class="CodeContainer">
+      <div class="editSection">
+        <textarea *ngIf="snippet" id="chkInputTextArea" [(ngModel)]="model" placeholder="Enter code"
+          #codesection></textarea>
+        <textarea name="checkbox place" *ngIf="!snippet" id=" checkbox" rows="10" cols="30"
+          [(ngModel)]="dropdownValues"> {{ snippet }}</textarea>
+        <div class="tooltip">
+          <button class="codebtn" (click)="CopyToClipBoard(codesection)" (mouseout)="outFunc(CopyButton)">
+            <img src="../../../assets/img/icons/papers.svg" width="30px">
+            <span id="CopyButton" class="tooltiptext" #CopyButton>Copy to clipboard</span>
+          </button>
+        </div>
+      </div>
     </div>
+
   </div>
   <div class="second" [innerHTML]="model">
   </div>
 </div>
 
-<!-- {{dropdownValues}} -->
+<div class="theme-switch-wrapper">
+  <label class="theme-switch" for="checkbox">
+    <input type="checkbox" id="checkbox" (change)="chngetheme()" />
+    <div class="slider round"></div>
+  </label>
+  <em>Enable {{oppositeTheme}} mode!</em>
+</div>
+
+
 <!-- <button class="btn" (click)="Submit()">
           run
         </button> -->

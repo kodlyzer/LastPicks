@@ -1,15 +1,83 @@
-<div class="container">
+<div class="docs-container">
+  <p class="kx-typescale--xlarge">Drop Down Component</p>
+  <div class="main">
     <kdicard>
-        <kdi-card-title>
-            Kongsberg Digital
-        </kdi-card-title>
-        <kdi-card-content>
-            Kongsberg Digital is a provider of next generation software and digital solutions to customers within
-            maritime, oil & gas and renewables & utilities.
-            KOGNIFAI, OUR DIGITAL PLATFORM,
-        </kdi-card-content>
-        <kdi-card-footer>
-            its footer
-        </kdi-card-footer>
+      <kdi-card-title>
+        Kongsberg Digital
+      </kdi-card-title>
+      <kdi-card-content>
+        <p>
+          <img src="../../../assets/kdi.jfif" alt="KDI">
+          Kongsberg Digital is a provider of next generation software and digital solutions to customers within
+          maritime, oil & gas and renewables & utilities.
+          KOGNIFAI, OUR DIGITAL PLATFORM
+        </p>
+        <p>
+          At KONGSBERG we want to help you to unlock the value of your data. Kognifai, our digital platform, combines
+          high quality data, technology and domain knowledge to enable rapid generation of insights and innovation.
+        </p>
+      </kdi-card-content>
+      <kdi-card-footer>
+        <p>Contact information: <a href="mailto:someone@example.com">
+            someone@example.com</a>.</p>
+      </kdi-card-footer>
     </kdicard>
+
+  </div>
+  <section>
+    <ul>
+      <li class="kx-typescale--large">Configuration Options</li>
+      <section class="code-section">
+        <p class="kx-typescale--base">Use this Selector in your component to include Card Component.</p>
+        <pre class="kx-p--base kx-typescale--base code">
+    &lt;kdi-card&gt;
+    &lt;/kdi-card&gt;
+              </pre>
+      </section>
+      <li class="kx-typescale--large">How to use?</li>
+      <section class="code-section">
+        The most basic card needs only an &lt;kdi-card&gt; element with some content. However, Angular Material provides
+        a
+        number of preset sections that you can use inside of an &lt;kdi-card&gt;
+        <table cellspacing="10">
+          <thead cellspacing="50">
+            <tr>
+              <th>Element</th>
+              <th>Description</th>
+            </tr>
+          </thead>
+          <tr>
+            <th>
+              &lt;kdi-card-title&gt;
+
+            </th>
+            <th style="text-align: left">
+              Card title
+            </th>
+          </tr>
+          <tr>
+            <th>
+              &lt;kdi-card-content&gt;
+
+            </th>
+            <th style="text-align: left">
+                Primary card content. Intended for blocks of text
+            </th>
+          </tr>
+          <tr>
+            <th>
+              &lt;kdi-card-footer&gt;
+
+            </th>
+            <th style="text-align: left">
+              Card Footer
+            </th>
+          </tr>
+        </table>
+
+
+      </section>
+
+    </ul>
+  </section>
 </div>
