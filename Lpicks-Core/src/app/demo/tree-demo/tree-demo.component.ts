@@ -1,11 +1,12 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, AfterViewInit } from '@angular/core';
+declare var PR;
 
 @Component({
   selector: 'kdi-tree-demo',
   templateUrl: './tree-demo.component.html',
   styleUrls: ['./tree-demo.component.scss']
 })
-export class TreeDemoComponent implements OnInit {
+export class TreeDemoComponent implements OnInit, AfterViewInit {
   item: TreeItem;
   link: string;
   treeItems: TreeItem[] = [
@@ -61,6 +62,10 @@ export class TreeDemoComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+  }
+
+  ngAfterViewInit() {
+    PR.prettyPrint();
   }
 
   handler(item: TreeItem) {

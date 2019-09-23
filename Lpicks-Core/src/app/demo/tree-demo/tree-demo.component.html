@@ -3,16 +3,6 @@
   <div class="main">
     <div class="kx-row">
       <div class="kx-col--6">
-        <section class="output-section">
-          <kdi-tree [treeItems]="treeItems" (sendItem)="handler($event)" (sendLink)="handlerLink($event)"
-            [type]="'button'" [color]="'#9f9f9f'">
-          </kdi-tree>
-          <br>
-          <p class="kx-typescale--base">{{ item?.route }}</p>
-          <br>
-        </section>
-      </div>
-      <div class="kx-col--6">
         <section class="json-section">
           <p class="kx-typescale--base kx-m--small kx-center" style="color:#efefef;">JSON DATA</p>
           <div class="copy">
@@ -22,6 +12,16 @@
             </div>
           </div>
           <textarea #jsonContent class="json" [(ngModel)]="TreeItems"></textarea>
+        </section>
+      </div>
+      <div class="kx-col--6">
+        <section class="output-section">
+          <kdi-tree [treeItems]="treeItems" (sendItem)="handler($event)" (sendLink)="handlerLink($event)"
+            [type]="'button'" [color]="'#9f9f9f'">
+          </kdi-tree>
+          <br>
+          <p class="kx-typescale--base">{{ item?.route }}</p>
+          <br>
         </section>
       </div>
     </div>

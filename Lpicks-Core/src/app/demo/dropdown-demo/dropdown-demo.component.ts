@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, AfterViewInit } from '@angular/core';
+declare var PR;
 
 @Component({
   // tslint:disable-next-line: component-selector
@@ -6,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './dropdown-demo.component.html',
   styleUrls: ['./dropdown-demo.component.scss'],
 })
-export class DropdownDemoComponent implements OnInit {
+export class DropdownDemoComponent implements OnInit, AfterViewInit {
 
   path: string;
   dropdown = {
@@ -86,6 +87,11 @@ export class DropdownDemoComponent implements OnInit {
 
   ngOnInit() {
   }
+
+  ngAfterViewInit() {
+    PR.prettyPrint();
+  }
+
   handler(path: string) {
     this.path = path;
   }

@@ -3,26 +3,23 @@
   <div class="main">
     <div class="kx-row">
       <div class="kx-col--6">
+        <section class="json-section">
+          <p class="kx-typescale--base kx-m--small kx-m kx-txt-center" style="color:#efefef;">JSON DATA</p>
+          <div class="copy">
+            <div class="tooltip">
+              <img src="../../../assets/img/copy2.png" alt="" width="20px" (click)="CopyFromTextArea(jsonContent)">
+              <span class="tooltiptext">Copy To Clipboard</span>
+            </div>
+          </div>
+          <textarea #jsonContent class="json prettyprint" [(ngModel)]="Dropdown"></textarea>
+        </section>
+      </div>
+      <div class="kx-col--6">
         <section class="output-section">
           <kdi-dropdown [dropdown]="dropdown" (getClickPath)="handler($event)" [theme]="'primary'"></kdi-dropdown>
           <br>
           <p class="kx-typescale--base black">{{ path }}</p>
           <br>
-        </section>
-      </div>
-      <div class="kx-col--6">
-        <section class="json-section">
-          <p class="kx-typescale--base kx-m--small kx-m kx-txt-center" style="color:#efefef;">JSON DATA</p>
-          <div class="copy">
-              <div class="tooltip">
-                <img src="../../../assets/img/copy2.png" alt="" width="20px" (click)="CopyFromTextArea(jsonContent)">
-                <span class="tooltiptext">Copy To Clipboard</span>
-              </div>
-            </div>
-          <textarea #jsonContent class="json prettyprint" [(ngModel)]="Dropdown"></textarea>
-          <!-- <editor [init]="{plugins: 'link'}" [(ngModel)]="Dropdown"></editor> -->
-          <!-- <textarea highlight-js [(ngModel)]="Dropdown"></textarea> -->
-          <!-- <codemirror class="json" [(ngModel)]="Dropdown"></codemirror> -->
         </section>
       </div>
     </div>
@@ -33,11 +30,11 @@
       <section class="code-section">
         <p class="kx-typescale--base">Use this Selector in your component to include DropDown Component.</p>
         <div class="copy1">
-            <div class="tooltip">
-              <img src="../../../assets/img/copy2.png" alt="" width="20px" (click)="CopyFromPre(tagSnippet1)">
-              <span class="tooltiptext">Copy To Clipboard</span>
-            </div>
+          <div class="tooltip">
+            <img src="../../../assets/img/copy2.png" alt="" width="20px" (click)="CopyFromPre(tagSnippet1)">
+            <span class="tooltiptext">Copy To Clipboard</span>
           </div>
+        </div>
         <pre class="kx-p--base kx-typescale--base code mh prettyprint" #tagSnippet1>
 &lt;kdi-dropdown 
   [dropdown]="dropdown" 
@@ -48,12 +45,12 @@
       <section class="code-section">
         <p class="kx-typescale--base">Use this Format for specifying your content for your dropdwon component
           and pass is to the propety in the secector tag.</p>
-          <div class="copy1">
-              <div class="tooltip">
-                <img src="../../../assets/img/copy2.png" alt="" width="20px" (click)="CopyFromPre(tagSnippet2)">
-                <span class="tooltiptext">Copy To Clipboard</span>
-              </div>
-            </div>
+        <div class="copy1">
+          <div class="tooltip">
+            <img src="../../../assets/img/copy2.png" alt="" width="20px" (click)="CopyFromPre(tagSnippet2)">
+            <span class="tooltiptext">Copy To Clipboard</span>
+          </div>
+        </div>
         <pre class="kx-p--base kx-typescale--base code mh prettyprint" #tagSnippet2>
 dropdown = &#123;
   title: 'Courses',
@@ -97,11 +94,11 @@ dropdown = &#123;
           and you have to create a event handler function in your component.
         </p>
         <div class="copy1">
-            <div class="tooltip">
-              <img src="../../../assets/img/copy2.png" alt="" width="20px" (click)="CopyFromPre(tagSnippet3)">
-              <span class="tooltiptext">Copy To Clipboard</span>
-            </div>
+          <div class="tooltip">
+            <img src="../../../assets/img/copy2.png" alt="" width="20px" (click)="CopyFromPre(tagSnippet3)">
+            <span class="tooltiptext">Copy To Clipboard</span>
           </div>
+        </div>
         <pre class="kx-p--base kx-typescale--base code mh prettyprint" #tagSnippet3>
 (getClickPath)="handler($event)"
 
