@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+import { TableModule } from './table/table.module';
 import { ClickOutsideModule } from './click-outside/click-outside.module';
 import { ModalModule } from './modal/modal.module';
 import { HeaderModule } from './header/header.module';
@@ -10,7 +11,7 @@ import { StopPropogationModule } from './stop-propogation/stop-propogation.modul
 import { ListGroupModule } from './listgroup/listgroup.module';
 
 const MODULES = [DropdownModule, ClickOutsideModule, ModalModule, HeaderModule, CardModule, StopPropogationModule,
-    TabModule, TreeModule, ListGroupModule];
+    TabModule, TreeModule, TableModule, ListGroupModule];
 
 
 @NgModule({

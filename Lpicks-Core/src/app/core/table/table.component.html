@@ -1,0 +1,16 @@
+<table [class]="styles[tablecontent?.type]">
+    <thead [class]="tablecontent?.theme">
+            <tr>
+                <th *ngFor="let key of objectKeys(tablecontent?.header)">
+                    {{ tablecontent?.header[key] }}
+                </th>
+            </tr>
+    </thead>
+    <tbody>
+        <tr class="" *ngFor="let _item of tablecontent?.body">
+            <td *ngFor="let key of objectKeys(tablecontent?.header)">
+                 <ng-container *ngIf="check(_item[key])">{{ _item[key] }}</ng-container>
+            </td>
+        </tr>
+    </tbody>
+</table>

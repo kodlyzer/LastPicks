@@ -1,4 +1,5 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
+import { Component, OnInit, ViewChild, AfterViewInit } from '@angular/core';
+declare var PR;
 
 @Component({
   selector: 'kdi-demo-modal',
@@ -6,7 +7,7 @@ import { Component, OnInit, ViewChild } from '@angular/core';
   styleUrls: ['./demo-modal.component.scss']
 })
 
-export class DemoModalComponent implements OnInit {
+export class DemoModalComponent implements OnInit, AfterViewInit {
 
   overlay = {
     icon: 'success',
@@ -37,6 +38,11 @@ export class DemoModalComponent implements OnInit {
   ngOnInit() {
 
   }
+
+  ngAfterViewInit() {
+    PR.prettyPrint();
+  }
+
   get Modal() {
     return JSON.stringify(this.overlay, null, 2);
   }
@@ -49,7 +55,20 @@ export class DemoModalComponent implements OnInit {
     }
   }
 
-
+  CopyFromTextArea(jsonContent: HTMLTextAreaElement) {
+    console.log('Clicked Copy Icon');
+    jsonContent.select();
+    document.execCommand('copy');
+  }
+  CopyFromPre(pre: HTMLPreElement) {
+    const selBox = document.createElement('textarea');
+    selBox.value = pre.textContent;
+    document.body.appendChild(selBox);
+    selBox.focus();
+    selBox.select();
+    document.execCommand('copy');
+    document.body.removeChild(selBox);
+  }
 
 }
 

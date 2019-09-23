@@ -8,7 +8,7 @@
           <div class="copy">
             <div class="tooltip">
               <img src="../../../assets/img/copy2.png" alt="" width="20px" (click)="CopyFromTextArea(jsonContent)">
-              <span class="tooltiptext">Copy To Clipboard</span>
+              <span id="tooltipid" class="tooltiptext">Copy To Clipboard</span>
             </div>
           </div>
           <textarea #jsonContent class="json prettyprint" [(ngModel)]="Dropdown"></textarea>
@@ -32,7 +32,7 @@
         <div class="copy1">
           <div class="tooltip">
             <img src="../../../assets/img/copy2.png" alt="" width="20px" (click)="CopyFromPre(tagSnippet1)">
-            <span class="tooltiptext">Copy To Clipboard</span>
+            <span id="tooltipid" class="tooltiptext">Copy To Clipboard</span>
           </div>
         </div>
         <pre class="kx-p--base kx-typescale--base code mh prettyprint" #tagSnippet1>
@@ -48,7 +48,7 @@
         <div class="copy1">
           <div class="tooltip">
             <img src="../../../assets/img/copy2.png" alt="" width="20px" (click)="CopyFromPre(tagSnippet2)">
-            <span class="tooltiptext">Copy To Clipboard</span>
+            <span  id="tooltipid" class="tooltiptext">Copy To Clipboard</span>
           </div>
         </div>
         <pre class="kx-p--base kx-typescale--base code mh prettyprint" #tagSnippet2>
@@ -96,7 +96,7 @@ dropdown = &#123;
         <div class="copy1">
           <div class="tooltip">
             <img src="../../../assets/img/copy2.png" alt="" width="20px" (click)="CopyFromPre(tagSnippet3)">
-            <span class="tooltiptext">Copy To Clipboard</span>
+            <span id="tooltipid" class="tooltiptext">Copy To Clipboard</span>
           </div>
         </div>
         <pre class="kx-p--base kx-typescale--base code mh prettyprint" #tagSnippet3>
@@ -109,9 +109,3 @@ handler(path: string) &#123;
     </ul>
   </section>
 </div>
-<!-- <script>
-    var editor = CodeMirror.fromTextArea(document.getElementById("1textarea"), {
-        lineNumbers: true,
-        theme: "base16-dark"
-    });
-</script> -->

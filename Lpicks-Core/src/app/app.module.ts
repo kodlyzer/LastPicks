@@ -6,8 +6,6 @@ import { AppComponent } from './app.component';
 import { TreeModule } from './core/tree/tree.module';
 import { DemoModule } from './demo/demo.module';
 
-
-
 @NgModule({
   declarations: [
     AppComponent

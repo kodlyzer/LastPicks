@@ -11,24 +11,14 @@ export class AppComponent {
 
   navItems: TreeItem[] = [
     {
-      displayName: 'DropDown',
-      route: 'dropdown',
-      routelink: 'dropdown'
-    },
-    {
-      displayName: 'Tree',
-      route: 'tree',
-      routelink: 'tree'
-    },
-    {
       displayName: 'Card',
       route: 'card',
       routelink: 'card'
     },
     {
-      displayName: 'Tab',
-      route: 'tab',
-      routelink: 'tab'
+      displayName: 'DropDown',
+      route: 'dropdown',
+      routelink: 'dropdown'
     },
     {
       displayName: 'Header',
@@ -36,14 +26,29 @@ export class AppComponent {
       routelink: 'header'
     },
     {
+      displayName: 'ListGroup',
+      route: 'listgroup',
+      routelink: 'listgroup'
+    },
+    {
       displayName: 'Modal',
       route: 'modal',
       routelink: 'modal'
     },
     {
-      displayName: 'ListGroup',
-      route: 'listgroup',
-      routelink: 'listgroup'
+      displayName: 'Tab',
+      route: 'tab',
+      routelink: 'tab'
+    },
+    {
+      displayName: 'Table',
+      route: 'table',
+      routelink: 'table'
+    },
+    {
+      displayName: 'Tree',
+      route: 'tree',
+      routelink: 'tree'
     }
   ];
 

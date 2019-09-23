@@ -109,11 +109,19 @@ export class DropdownDemoComponent implements OnInit, AfterViewInit {
 
   CopyFromTextArea(jsonContent: HTMLTextAreaElement) {
     console.log('Clicked Copy Icon');
+    document.getElementById('tooltipid').innerHTML = 'Copied';
+    setTimeout(() => {
+      document.getElementById('tooltipid').innerHTML = 'Copy to Clipboard';
+    }, 2000);
     jsonContent.select();
     document.execCommand('copy');
   }
   CopyFromPre(pre: HTMLPreElement) {
     const selBox = document.createElement('textarea');
+    document.getElementById('tooltipid').innerHTML = 'Copied';
+    setTimeout(() => {
+      document.getElementById('tooltipid').innerHTML = 'Copy to Clipboard';
+    }, 2000);
     selBox.value = pre.textContent;
     document.body.appendChild(selBox);
     selBox.focus();

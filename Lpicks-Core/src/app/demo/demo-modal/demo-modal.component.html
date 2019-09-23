@@ -3,6 +3,20 @@
         <div class="main">
                 <div class="kx-row">
                         <div class="kx-col--6">
+                                <section class="json-section">
+                                        <p class="kx-typescale--base kx-m--small kx-m kx-txt-center"
+                                                style="color:#efefef;">JSON DATA</p>
+                                        <div class="copy">
+                                                <div class="tooltip">
+                                                        <img src="../../../assets/img/copy2.png" alt="" width="20px"
+                                                                (click)="CopyFromTextArea(jsonContent)">
+                                                        <span class="tooltiptext">Copy To Clipboard</span>
+                                                </div>
+                                        </div>
+                                        <textarea #jsonContent class="json prettyprint" [(ngModel)]="Modal"></textarea>
+                                </section>
+                        </div>
+                        <div class="kx-col--6">
                                 <section class="output-section">
                                         <kdi-modal [overlay]="overlay">
                                                 In user interface design for computer applications, a modal window is a
@@ -14,23 +28,10 @@
                                                 window, but keeps it visible with the modal window as a child window in
                                                 front of it.
                                         </kdi-modal>
-                                        <br>
-                                        <p class="kx-typescale--base">{{ path }}</p>
-                                        <br>
-                                </section>
-                        </div>
-                        <span style="border-right: 2px solid lightblue; margin-left: 10px;"></span>
-                        <div class="kx-col--5">
-                                <section class="json-section">
-                                        <p class="kx-typescale--base kx-m--small kx-m">JSON DATA</p>
-                                        <textarea class="json" [(ngModel)]="Modal"></textarea>
+
                                 </section>
                         </div>
                 </div>
-
-
-
-
         </div>
         <section>
                 <ul>
@@ -38,38 +39,48 @@
                         <section class="code-section">
                                 <p class="kx-typescale--base">Use this Selector in your component to include Modal
                                         Component.</p>
-                                <pre class="kx-p--base kx-typescale--base code">
+                                <div class="copy1">
+                                        <div class="tooltip">
+                                                <img src="../../../assets/img/copy2.png" alt="" width="20px"
+                                                        (click)="CopyFromPre(tagSnippet1)">
+                                                <span class="tooltiptext">Copy To Clipboard</span>
+                                        </div>
+                                </div>
+                                <pre class="kx-p--base kx-typescale--base code mh prettyprint" #tagSnippet1>
         &lt;kdi-modal [overlay]="overlay" &gt;
-        &lt;/kdi-modal&gt;
-                  </pre>
+        &lt;/kdi-modal&gt;</pre>
                         </section>
                         <li class="kx-typescale--large">How to use?</li>
                         <section class="code-section">
-                                <p class="kx-typescale--base">Use this Format for specifying your content for your
-                                        Modal component
-                                        and pass is to the propety in the secector tag.</p>
-                                <pre class="kx-p--base kx-typescale--base code js">
-          overlay = &#123;
-          title: 'Modal Title',
-          option: [
-              &#123;
-              link: '#',
-              name: 'Got It'
-              &#125;,
-              &#123;
-              link: 'https://en.wikipedia.org/wiki/Modal_window',
-              name: 'Did not Get It'
-              &#125;,
-              &#123;
-              link: '#',
-              name: 'cancel'
-              &#125;
-            ],
-          size: 'small'
-          &#125;;        
-                </pre>
+                                <p class="kx-typescale--base">Use this Format for specifying your content for your Modal
+                                        component and pass is to the propety in the secector tag.</p>
+                                <div class="copy1">
+                                        <div class="tooltip">
+                                                <img src="../../../assets/img/copy2.png" alt="" width="20px"
+                                                        (click)="CopyFromPre(tagSnippet2)">
+                                                <span class="tooltiptext">Copy To Clipboard</span>
+                                        </div>
+                                </div>
+                                <pre class="kx-p--base kx-typescale--base code mh prettyprint" #tagSnippet2>
+        overlay = &#123;
+        title: 'Modal Title',
+        option: [
+                &#123;
+                link: '#',
+                name: 'Got It'
+                &#125;,
+                &#123;
+                link: 'https://en.wikipedia.org/wiki/Modal_window',
+                name: 'Did not Get It'
+                &#125;,
+                &#123;
+                link: '#',
+                name: 'cancel'
+                &#125;
+                ],
+        size: 'small'
+        &#125;;</pre>
                         </section>
-
                 </ul>
         </section>
 </div>
