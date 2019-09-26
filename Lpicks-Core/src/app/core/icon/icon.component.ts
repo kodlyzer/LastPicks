@@ -8,12 +8,12 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class IconComponent implements OnInit {
   @Input('icon') icon: string;
-  //iconHref: string;
+
 
   constructor() { }
 
   ngOnInit() {
-    //  this.iconHref = `../../assets/img/icons/sprites/icons.svg#${this.icon}`
+
   }
 
 }

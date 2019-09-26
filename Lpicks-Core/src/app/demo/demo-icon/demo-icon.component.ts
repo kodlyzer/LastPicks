@@ -1,9 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 
-
-
-
-
 @Component({
   selector: 'kdi-demo-icon',
   templateUrl: './demo-icon.component.html',
