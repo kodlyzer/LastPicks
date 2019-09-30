@@ -39,5 +39,17 @@ export class DemoBadgeComponent implements OnInit {
 
   ngOnInit() {
   }
+  get Badge() {
+    return JSON.stringify(this.demoBadge2, null, 2);
+  }
+
+  set Badge(v) {
+    try {
+      this.demoBadge1 = JSON.parse(v);
+    } catch (error) {
+      console.log('Error while typing JSON');
+    }
+  }
+
 
 }
