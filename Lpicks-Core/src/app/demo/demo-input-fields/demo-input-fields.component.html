@@ -1,0 +1,69 @@
+<div class="docs-container">
+  <p class="kx-typescale--xlarge">Input Field Component</p>
+  <div class="main">
+    <div class="kx-row">
+      <div class="kx-col--6">
+        <div class="output-container">
+          <section class="output-section">
+
+            <div class="output-section-field">
+              <kdi-input-field [inputField]="demoInputField1"></kdi-input-field>
+            </div>
+            <div class="output-section-field">
+              <kdi-input-field [inputField]="demoInputField2"></kdi-input-field>
+            </div>
+            <div class="output-section-field">
+              <kdi-input-field [inputField]="demoInputField3"></kdi-input-field>
+            </div>
+            <div class="output-section-field">
+              <kdi-input-field [inputField]="demoInputField4"></kdi-input-field>
+            </div>
+
+          </section>
+          <section class="json-section">
+            <p class="kx-typescale--base kx-m--small kx-m">Test Inputs (JSON DATA)</p>
+            <textarea class="json" [(ngModel)]="InputField"></textarea>
+          </section>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+
+  <section>
+    <ul>
+      <li class="kx-typescale--large">Description</li>
+      <section class="code-section">
+        <p class="kx-typescale--base"> Input Fields allow users to enter inputs into a UI. They typically appear in forms and dialogs.. </p>
+
+      </section>
+
+      <li class="kx-typescale--large">Configuration Options</li>
+      <section class="code-section">
+        <p class="kx-typescale--base">Use this Selector in your component to include Badge Component.</p>
+        <pre class="kx-p--base kx-typescale--base code mh">
+            &lt;kdi-input-field [inputField]="demoInputField"&gt;
+            &lt;/kdi-input-field&gt;</pre>
+      </section>
+      <li class="kx-typescale--large">How to use ?</li>
+      <section class="code-section">
+        <p class="kx-typescale--base">Follow the following format to use it.</p>
+        <pre class="kx-p--base kx-typescale--base code mh">
+           <b>  demoInputField= &#123;  <b>type</b>:"name of the type of input (from the list of colors provided by KDI)",  
+              <b>label</b>:"name of the label you want to display "   &#125; ; </b>                        
+           <i>Here we have used :</i>
+             demoInputField1= &#123;  type: 'text',  label:'text' &#125; ;
+             demoInputField2= &#123; type:'number', label:'number'  &#125; ;
+             and so on.    
+             
+            
+             </pre>
+        <p>
+          For the list of "type"s available refer to KDI design system.
+        </p>
+      </section>
+
+    </ul>
+  </section>
+</div>

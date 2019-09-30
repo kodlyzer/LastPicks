@@ -13,6 +13,7 @@ import { DemoCardComponent } from './demo-card-demo/demo-card.component';
 import { PageComponent } from './page/page.component';
 import { FormsModule } from '@angular/forms';
 import { CoreModule } from '../core/core.module';
+import { DemoInputFieldsComponent } from './demo-input-fields/demo-input-fields.component';
 
 
 
@@ -22,7 +23,7 @@ const COMPONENTS = [DemoModalComponent, DropdownDemoComponent, DemoHeaderCompone
 
 @NgModule({
     imports: [CoreModule, FormsModule, CommonModule],
-    declarations: [...COMPONENTS],
+    declarations: [...COMPONENTS, DemoInputFieldsComponent],
     exports: [...COMPONENTS]
 })
 export class DemoModule { }
