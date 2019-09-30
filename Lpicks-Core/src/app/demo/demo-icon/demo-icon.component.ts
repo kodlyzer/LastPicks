@@ -15,5 +15,16 @@ export class DemoIconComponent implements OnInit {
 
   ngOnInit() {
   }
+  get Icon() {
+    return JSON.stringify(this.iconName1, null, 2);
+  }
+
+  set Icon(v) {
+    try {
+      this.iconName1 = JSON.parse(v);
+    } catch (error) {
+      console.log('Error while typing JSON');
+    }
+  }
 
 }

@@ -44,3 +44,18 @@
       flex-direction: row;
       justify-content: space-around;
   }
+  .json{
+    display:flex;
+    justify-content:center;
+    resize: none;
+    border: 0.1em solid #e9f2f6;
+    height:  50px;
+    width: 70%;
+    border-radius: 5px;
+    color: #e9f2f6;
+    background: #004e5a;
+  }
+  .kx-typescale--base {
+    margin-top:30px;
+
+  }
