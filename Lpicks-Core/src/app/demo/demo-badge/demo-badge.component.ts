@@ -45,7 +45,7 @@ export class DemoBadgeComponent implements OnInit {
 
   set Badge(v) {
     try {
-      this.demoBadge1 = JSON.parse(v);
+      this.demoBadge2 = JSON.parse(v);
     } catch (error) {
       console.log('Error while typing JSON');
     }
