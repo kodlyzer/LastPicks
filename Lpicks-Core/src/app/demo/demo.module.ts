@@ -14,16 +14,17 @@ import { PageComponent } from './page/page.component';
 import { FormsModule } from '@angular/forms';
 import { CoreModule } from '../core/core.module';
 import { DemoIconComponent } from './demo-icon/demo-icon.component';
+import { DemoBadgeComponent } from './demo-badge/demo-badge.component';
 
 
 
-const COMPONENTS = [DemoModalComponent, DropdownDemoComponent, DemoHeaderComponent, PageComponent, DemoCardComponent,TreeDemoComponent,
-    LivePageComponent,ListgroupDemoComponent,
-    TabsDemoComponent,DemoTableComponent];
+const COMPONENTS = [DemoModalComponent, DropdownDemoComponent, DemoHeaderComponent, PageComponent, DemoCardComponent, TreeDemoComponent,
+    LivePageComponent, ListgroupDemoComponent,
+    TabsDemoComponent, DemoTableComponent];
 
 @NgModule({
     imports: [CoreModule, FormsModule, CommonModule],
-    declarations: [...COMPONENTS, DemoIconComponent],
+    declarations: [...COMPONENTS, DemoIconComponent, DemoBadgeComponent],
     exports: [...COMPONENTS]
 })
 export class DemoModule { }

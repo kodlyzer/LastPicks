@@ -1,0 +1,77 @@
+<div class="docs-container">
+  <p class="kx-typescale--xlarge">Badge Component</p>
+  <div class="main">
+    <div class="kx-row">
+      <div class="kx-col--6">
+        <section class="output-section">
+          <div class="output-section-badges-list">
+            <div class="output-section-badge">
+              <kdi-badge [badge]="demoBadge7"></kdi-badge>
+            </div>
+            <div class="output-section-badge">
+              <kdi-badge [badge]="demoBadge2"></kdi-badge>
+            </div>
+            <div class="output-section-badge">
+              <kdi-badge [badge]="demoBadge3"></kdi-badge>
+            </div>
+            <div class="output-section-badge">
+              <kdi-badge [badge]="demoBadge4"></kdi-badge>
+            </div>
+            <div class="output-section-badge">
+              <kdi-badge [badge]="demoBadge5"></kdi-badge>
+            </div>
+            <div class="output-section-badge">
+              <kdi-badge [badge]="demoBadge6"></kdi-badge>
+            </div>
+            <div class="output-section-badge">
+              <kdi-badge [badge]="demoBadge1"></kdi-badge>
+            </div>
+          </div>
+
+        </section>
+        <section class="json-section">
+          <p class="kx-typescale--base kx-m--small kx-m">Test Inputs (JSON DATA)</p>
+          <textarea class="json" [(ngModel)]="Badge"></textarea>
+        </section>
+      </div>
+    </div>
+  </div>
+
+  <section>
+    <ul>
+      <li class="kx-typescale--large">Description</li>
+      <section class="code-section">
+        <p class="kx-typescale--base"> A badge can serve as a central element for the identity of a website and emerge as a reminder feature on every sub-site.
+          In contrast to the button(which is a useful element for call to action), badge is usually more than a call to action.
+          Generally, the badge is used for its importance as a home button, but there are more possibilities for use. </p>
+
+      </section>
+
+      <li class="kx-typescale--large">Configuration Options</li>
+      <section class="code-section">
+        <p class="kx-typescale--base">Use this Selector in your component to include Badge Component.</p>
+        <pre class="kx-p--base kx-typescale--base code mh">
+            &lt;kdi-badge [badge]="demoBadge"&gt;
+            &lt;/kdi-badge&gt;</pre>
+      </section>
+      <li class="kx-typescale--large">How to use ?</li>
+      <section class="code-section">
+        <p class="kx-typescale--base">Follow the following format to use it.</p>
+        <pre class="kx-p--base kx-typescale--base code mh">
+           <b>  demoBadge= &#123;  <b>color</b>:"name of the color (from the list of colors provided by KDI)",  
+              <b>label</b>:"name of the label you want to display "   &#125; ; </b>                        
+           <i>Here we have used :</i>
+             demoBadge1= &#123;  color: 'primary',  label:'Primary' &#125; ;
+             demoBadge2= &#123; color:'success', label:'Success'  &#125; ;
+             and so on.    
+             
+             Note: If you don't provide the "color" value, by default it will give the "foam" as color.
+             </pre>
+        <p> The list of colors present now are
+          <i>primary, secondary, success, danger, foam, navy and warning</i>.
+        </p>
+      </section>
+
+    </ul>
+  </section>
+</div>
