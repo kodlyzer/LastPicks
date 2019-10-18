@@ -1,0 +1,65 @@
+<div class="docs-container">
+  <p class="kx-typescale--xlarge">Icon Component</p>
+  <div class="main">
+    <div class="kx-row">
+      <div class="kx-col--6">
+        <section class="output-section">
+          <div class="output-section-icons-list">
+            <div class="output-section-icon">
+              <kdi-icon [icon]="iconName1"></kdi-icon>
+            </div>
+            <div class="output-section-icon">
+              <kdi-icon [icon]="iconName4"></kdi-icon>
+            </div>
+            <div class="output-section-icon">
+              <kdi-icon [icon]="iconName2"></kdi-icon>
+            </div>
+            <div class="output-section-icon">
+              <kdi-icon [icon]="iconName3"></kdi-icon>
+            </div>
+          </div>
+        </section>
+        <section class="json-section">
+          <p class="kx-typescale--base kx-m--small kx-m">Test Inputs (JSON DATA)</p>
+          <textarea class="json" [(ngModel)]="Icon"></textarea>
+        </section>
+      </div>
+    </div>
+  </div>
+  <section>
+    <ul>
+      <li class="kx-typescale--large">Description</li>
+      <section class="code-section">
+        <p class="kx-typescale--base"> An icon can be used to symbolize a command, file, device, or directory. System icons are also used to represent common
+          actions like trash, print, and save, and are commonly found in app bars, toolbars, buttons, and lists. In order
+          to use one from the set of icons provided by KDI follow the guidelines given below. </p>
+
+      </section>
+
+      <li class="kx-typescale--large">Configuration Options</li>
+      <section class="code-section">
+        <p class="kx-typescale--base">Use this Selector in your component to include Icon Component.</p>
+        <pre class="kx-p--base kx-typescale--base code mh">
+          &lt;kdi-icon [icon]="iconName"&gt;
+          &lt;/kdi-icon&gt;</pre>
+      </section>
+      <li class="kx-typescale--large">How to use ?</li>
+      <section class="code-section">
+        <p class="kx-typescale--base">Follow the following format to use it.</p>
+        <pre class="kx-p--base kx-typescale--base code mh">
+         <b>  iconName="name of the icon you want to display"; </b>
+          
+          
+         <i>Here we have used :</i>
+           iconName1="box" ;
+           iconName2="search";
+           iconName3="bookmark"
+           iconName4="angle-left"
+           </pre>
+        <p> The list of the icons are present in our assets/img/icons folder. Just assign the icon name to the "iconName" variable.
+          (.svg extension after the icon name is not required) </p>
+      </section>
+
+    </ul>
+  </section>
+</div>

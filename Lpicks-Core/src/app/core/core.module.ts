@@ -9,9 +9,10 @@ import { TabModule } from './tab/tab.module';
 import { DropdownModule } from './dropdown/dropdown.module';
 import { StopPropogationModule } from './stop-propogation/stop-propogation.module';
 import { ListGroupModule } from './listgroup/listgroup.module';
+import { IconModule } from './icon/icon.module';
 import { BadgeModule } from './badge/badge.module';
 const MODULES = [DropdownModule, ClickOutsideModule, ModalModule, HeaderModule, CardModule, StopPropogationModule,
-    TabModule, TreeModule, TableModule, ListGroupModule, BadgeModule];
+    TabModule, TreeModule, TableModule, ListGroupModule, BadgeModule, IconModule];
 
 
 @NgModule({

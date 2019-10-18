@@ -46,6 +46,11 @@ export class AppComponent {
       routelink: 'modal'
     },
     {
+      displayName: 'Icon',
+      route: 'icon',
+      routelink: 'icon'
+    },
+    {
       displayName: 'Badge',
       route: 'badge',
       routelink: 'badge'
