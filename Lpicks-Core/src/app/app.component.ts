@@ -34,7 +34,7 @@ export class AppComponent {
       displayName: 'Table',
       route: 'table',
       routelink: 'table'
-    }, 
+    },
     {
       displayName: 'Header',
       route: 'header',
@@ -44,6 +44,11 @@ export class AppComponent {
       displayName: 'Modal',
       route: 'modal',
       routelink: 'modal'
+    },
+    {
+      displayName: 'Badge',
+      route: 'badge',
+      routelink: 'badge'
     }
   ];
 
