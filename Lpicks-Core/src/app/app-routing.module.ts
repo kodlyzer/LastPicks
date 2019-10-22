@@ -10,6 +10,8 @@ import { DemoModalComponent } from './demo/demo-modal/demo-modal.component';
 import { ListgroupDemoComponent } from './demo/listgroup-demo/listgroup-demo.component';
 import { DemoIconComponent } from './demo/demo-icon/demo-icon.component';
 import { DemoBadgeComponent } from './demo/demo-badge/demo-badge.component';
+import { DemoHomeComponent } from './demo/demo-home/demo-home.component';
+
 
 const routes: Routes = [
   { path: 'dropdown', component: DropdownDemoComponent },
@@ -20,9 +22,10 @@ const routes: Routes = [
   { path: 'header', component: DemoHeaderComponent },
   { path: 'modal', component: DemoModalComponent },
   { path: 'listgroup', component: ListgroupDemoComponent },
-  { path: '', redirectTo: 'dropdown', pathMatch: 'full' },
+  { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: 'icon', component: DemoIconComponent },
   { path: 'badge', component: DemoBadgeComponent },
+  { path: 'home', component: DemoHomeComponent },
 ];
 
 @NgModule({

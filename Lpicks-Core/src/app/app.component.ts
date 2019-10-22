@@ -8,7 +8,10 @@ import { Router } from '@angular/router';
 })
 export class AppComponent {
   title = 'Lpicks-Core';
-
+  badge = {
+    color: "navy",
+    label: "Home"
+  }
   navItems: TreeItem[] = [
     {
       displayName: 'DropDown',
@@ -64,5 +67,8 @@ export class AppComponent {
     if (typeof link !== 'undefined') {
       this.router.navigate([link]);
     }
+  }
+  onSelect() {
+    this.router.navigate(["home"]);
   }
 }
