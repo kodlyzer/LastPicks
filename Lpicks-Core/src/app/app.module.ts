@@ -6,18 +6,23 @@ import { AppComponent } from './app.component';
 import { DropdownComponent } from './core/dropdown/dropdown.component';
 import { TreeModule } from './core/tree/tree.module';
 import { DemoModule } from './demo/demo.module';
+import { HeaderModule } from './core/header/header.module';
+import { BadgeModule } from './core/badge/badge.module';
+
 
 
 @NgModule({
   declarations: [
-    AppComponent    
+    AppComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     DemoModule,
     TreeModule,
-    FormsModule
+    FormsModule,
+    HeaderModule,
+    BadgeModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

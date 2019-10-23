@@ -15,6 +15,8 @@ import { FormsModule } from '@angular/forms';
 import { CoreModule } from '../core/core.module';
 import { DemoIconComponent } from './demo-icon/demo-icon.component';
 import { DemoBadgeComponent } from './demo-badge/demo-badge.component';
+import { DemoHomeComponent } from './demo-home/demo-home.component';
+
 
 
 
@@ -24,7 +26,7 @@ const COMPONENTS = [DemoModalComponent, DropdownDemoComponent, DemoHeaderCompone
 
 @NgModule({
     imports: [CoreModule, FormsModule, CommonModule],
-    declarations: [...COMPONENTS, DemoIconComponent, DemoBadgeComponent],
+    declarations: [...COMPONENTS, DemoIconComponent, DemoBadgeComponent, DemoHomeComponent],
     exports: [...COMPONENTS]
 })
 export class DemoModule { }
